@@ -24,7 +24,7 @@ export default function MobileNav() {
             <Menu size={32} />
           </Button>
         </SheetTrigger>
-        <SheetContent className="flex w-full min-w-[224px] flex-col items-center gap-4 py-4">
+        <SheetContent className="flex w-full min-w-[224px] flex-col items-center gap-8 p-8">
           <div className="flex w-full items-center">
             <Link
               href="/"

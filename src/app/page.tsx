@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 import Container from "@components/structure/Container";
 import H1 from "@components/typography/h1";
@@ -15,7 +15,8 @@ export default function Home() {
           <Image
             src={avatar}
             alt="Picture of the author"
-            className="bg-muted border-border h-40 w-40 rounded-full border p-2"
+            className="h-40 w-40 lg:h-48 lg:w-48 xl:h-56 xl:w-56"
+            // className="bg-muted border-border h-40 w-40 rounded-full border p-2"
           />
           <div className="animate-blob animation-delay-1000 absolute -left-20 bottom-0 -z-20 h-80 w-80 rounded-full bg-sky-300 opacity-70 mix-blend-darken blur-2xl ease-linear dark:bg-sky-600 dark:opacity-30 dark:mix-blend-lighten" />
           <div className="animate-blob absolute -bottom-20 -z-20 h-80 w-80 rounded-full bg-blue-300 opacity-70 mix-blend-darken blur-2xl ease-linear dark:bg-blue-600 dark:opacity-30 dark:mix-blend-lighten" />
@@ -39,6 +40,11 @@ export default function Home() {
             <Button asChild variant={"ghost"} size={"icon"}>
               <Link href={"https://github.com/mikelong10/"}>
                 <Github />
+              </Link>
+            </Button>
+            <Button asChild variant={"ghost"} size={"icon"}>
+              <Link href={"mailto:long.mich@northeastern.edu"}>
+                <Mail />
               </Link>
             </Button>
           </div>
