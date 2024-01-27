@@ -25,7 +25,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="bg-noise fixed left-0 top-0 -z-10 h-full w-full opacity-10" />
+          <div className="bg-noise fixed left-0 top-0 -z-10 h-full w-full opacity-[0.08]" />
           <Header />
           {children}
         </ThemeProvider>
