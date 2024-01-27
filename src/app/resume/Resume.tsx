@@ -218,10 +218,10 @@ const hometapBullets = [
     bullet: (
       <p>
         Building <span className="font-extrabold">REST + GraphQL APIs</span>{" "}
-        with <span className="font-extrabold">Django (Python)</span> Dockerized
-        backend to handle business logic and perform interactions with{" "}
-        <span className="font-extrabold">PostgreSQL</span>
-        database
+        with <span className="font-extrabold">Django (Python)</span> backend run
+        with <span className="font-extrabold">Docker</span> to handle business
+        logic and perform interactions with{" "}
+        <span className="font-extrabold">PostgreSQL</span> database
       </p>
     ),
   },
@@ -245,10 +245,9 @@ const powerAdvocateBullets: ResumeBullet[] = [
         <span className="font-extrabold">
           Spearheaded brand-new data curation web application
         </span>{" "}
-        with <span className="font-extrabold">React (TypeScript)</span>
-        frontend and{" "}
-        <span className="font-extrabold">Node (TypeScript) REST API</span> that
-        served requests and responses to/from shared{" "}
+        with <span className="font-extrabold">React (TypeScript)</span> frontend
+        and <span className="font-extrabold">Node (TypeScript) REST API</span>{" "}
+        that served requests and responses to/from shared{" "}
         <span className="font-extrabold">Django (Python)</span> microservice
       </p>
     ),
@@ -259,10 +258,8 @@ const powerAdvocateBullets: ResumeBullet[] = [
       <p>
         <span className="font-extrabold">Deployed tool</span> to{" "}
         <span className="font-extrabold">production environment</span> by
-        writing and running <span className="font-extrabold">Jenkins</span>
-        pipelines and constructing <span className="font-extrabold">
-          AWS
-        </span>{" "}
+        writing and running <span className="font-extrabold">Jenkins</span>{" "}
+        pipelines and constructing <span className="font-extrabold">AWS</span>{" "}
         CDK stacks using ECS Fargate containers and Route 53 public and private
         zones
       </p>
@@ -311,7 +308,7 @@ const wsaBullets: ResumeBullet[] = [
         <span className="font-extrabold">
           Envisioned, launched, and managed local odd jobs business
         </span>{" "}
-        that completed
+        that completed{" "}
         <span className="font-extrabold">260+ jobs for 140+ clients</span>{" "}
         across 10+ towns{" "}
         <span className="font-extrabold">earning $48,000+ in revenue</span> and
@@ -326,8 +323,8 @@ const wsaBullets: ResumeBullet[] = [
         <span className="font-extrabold">Developed business website</span> with{" "}
         <span className="font-extrabold">
           TypeScript, Next.js, React, TailwindCSS, and MySQL
-        </span>
-        mplementing a user request form and admin job dashboard to connect
+        </span>{" "}
+        implementing a user request form and admin job dashboard to connect
         families with requests for odd jobs to high school students
       </p>
     ),
