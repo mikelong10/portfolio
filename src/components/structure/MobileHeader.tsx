@@ -34,7 +34,7 @@ export default function MobileNav() {
           </Button>
         </SheetTrigger>
         <SheetContent className="flex w-full min-w-[360px] flex-col items-center gap-8 p-8">
-          <div className="flex w-full items-center justify-center gap-4 pb-8 pt-16">
+          <div className="flex w-full items-center justify-center gap-4 pb-4 pt-8">
             <Link
               href="/"
               className="hover:animate-pulse"
