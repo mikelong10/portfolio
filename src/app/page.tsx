@@ -16,7 +16,6 @@ export default function Home() {
             src={avatar}
             alt="Picture of the author"
             className="h-40 w-40 lg:h-48 lg:w-48 xl:h-56 xl:w-56"
-            // className="bg-muted border-border h-40 w-40 rounded-full border p-2"
           />
           <div className="animate-blob animation-delay-1000 absolute -left-20 bottom-0 -z-20 h-80 w-80 rounded-full bg-sky-300 opacity-70 mix-blend-darken blur-2xl ease-linear dark:bg-sky-600 dark:opacity-30 dark:mix-blend-lighten" />
           <div className="animate-blob absolute -bottom-20 -z-20 h-80 w-80 rounded-full bg-blue-300 opacity-70 mix-blend-darken blur-2xl ease-linear dark:bg-blue-600 dark:opacity-30 dark:mix-blend-lighten" />
@@ -49,11 +48,6 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        {/* <Image
-          src={profileFull}
-          alt="Full body picture of Michael"
-          className="max-w-96 rounded-2xl sm:w-64 md:w-72 lg:w-80 xl:w-96"
-        /> */}
       </div>
     </Container>
   );
