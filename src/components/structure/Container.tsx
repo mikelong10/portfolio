@@ -4,20 +4,28 @@ export default function Container({
   children,
   className,
   id,
+  noisy,
 }: {
   children: React.ReactNode;
   className?: string;
   id?: string;
+  noisy?: boolean;
 }) {
   return (
-    <section
-      id={id}
-      className={cn(
-        "xs:px-12 w-full max-w-[1600px] px-8 sm:px-16 md:px-24 lg:px-32 xl:px-44 2xl:px-56",
-        className
-      )}
-    >
-      {children}
-    </section>
+    <>
+      <section
+        id={id}
+        className={cn(
+          "xs:px-12 sm:px-18 lg:px-30 2xl:px-42 w-full px-6 md:px-24 xl:px-36",
+          className,
+          noisy && "relative"
+        )}
+      >
+        {noisy && (
+          <div className="bg-noise absolute left-0 top-0 -z-10 h-full w-full opacity-[0.08]" />
+        )}
+        {children}
+      </section>
+    </>
   );
 }

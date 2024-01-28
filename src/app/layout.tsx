@@ -15,7 +15,7 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "bg-background text-foreground -z-30 flex min-h-screen min-w-[360px] justify-center antialiased",
+          "bg-background text-foreground -z-30 flex min-h-screen min-w-[360px] justify-center scroll-smooth antialiased",
           dmSans.className
         )}
       >
@@ -25,7 +25,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="bg-noise fixed left-0 top-0 -z-10 h-full w-full opacity-[0.08]" />
           <Header />
           {children}
         </ThemeProvider>

@@ -9,7 +9,7 @@ type ResumeBullet = { key: string | number; bullet: React.ReactNode };
 
 export default function Resume() {
   return (
-    <Card className="w-full max-w-4xl">
+    <Card className="bg-background w-full max-w-4xl">
       <div className="flex flex-col gap-4 p-8 text-sm">
         <ResumeHeader />
         <EducationSection />
@@ -77,7 +77,7 @@ function EducationSection() {
       <Separator className="h-1 rounded-full" />
       <div className="flex flex-col justify-between sm:flex-row">
         <p>
-          <span className="text-primary font-extrabold">
+          <span className="text-accent-foreground font-extrabold">
             Northeastern University
           </span>
           , Boston, MA
@@ -86,7 +86,7 @@ function EducationSection() {
       </div>
       <div className="flex flex-col justify-between md:flex-row">
         <p>
-          <span className="text-primary font-extrabold">
+          <span className="text-accent-foreground font-extrabold">
             B.S. in Computer Science and Business Administration
           </span>
         </p>
@@ -94,8 +94,10 @@ function EducationSection() {
       </div>
       <div className="flex flex-col sm:flex-row">
         <p>
-          <span className="text-primary font-extrabold">Coursework</span>:
-          Algorithms & Data Structures, Object-Oriented Design, Networks &
+          <span className="text-accent-foreground font-extrabold">
+            Coursework
+          </span>
+          : Algorithms & Data Structures, Object-Oriented Design, Networks &
           Distributed Systems, Database Design, Software Engineering, Data
           Science, Discrete Mathematics, Calculus 3
         </p>
@@ -111,16 +113,18 @@ function SkillsSection() {
       <Separator className="h-1 rounded-full" />
       <div className="flex flex-col sm:flex-row">
         <p>
-          <span className="text-primary font-extrabold">Languages</span>:
-          TypeScript / JavaScript, Python, Java, HTML, CSS, SQL, Swift
+          <span className="text-accent-foreground font-extrabold">
+            Languages
+          </span>
+          : TypeScript / JavaScript, Python, Java, HTML, CSS, SQL, Swift
         </p>
       </div>
       <div className="flex flex-col sm:flex-row">
         <p>
-          <span className="text-primary font-extrabold">Tools</span>: React,
-          Node.js, Express.js, Next.js, Django, SwiftUI, MySQL, PostgreSQL,
-          MongoDB, AWS (ECS+Fargate, S3, CDK), Git, Jenkins, Docker, GraphQL,
-          NumPy, Pandas, Matplotlib, Scikit-Learn, BeautifulSoup
+          <span className="text-accent-foreground font-extrabold">Tools</span>:
+          React, Node.js, Express.js, Next.js, Django, SwiftUI, MySQL,
+          PostgreSQL, MongoDB, AWS (ECS+Fargate, S3, CDK), Git, Jenkins, Docker,
+          GraphQL, NumPy, Pandas, Matplotlib, Scikit-Learn, BeautifulSoup
         </p>
       </div>
     </div>
@@ -182,8 +186,10 @@ function ExperienceBlock({
       <div className="flex flex-col gap-2">
         <div className="flex flex-col justify-between md:flex-row">
           <p>
-            <span className="text-primary font-extrabold">{company}</span>,{" "}
-            {location}
+            <span className="text-accent-foreground font-extrabold">
+              {company}
+            </span>
+            , {location}
           </p>
           <p className="italic">
             {start} — {end}
@@ -202,7 +208,7 @@ function ExperienceBlock({
   );
 }
 
-const hometapBullets = [
+export const hometapBullets = [
   {
     key: 1,
     bullet: (
@@ -237,7 +243,7 @@ const hometapBullets = [
   },
 ];
 
-const powerAdvocateBullets: ResumeBullet[] = [
+export const powerAdvocateBullets: ResumeBullet[] = [
   {
     key: 1,
     bullet: (
@@ -300,7 +306,7 @@ const powerAdvocateBullets: ResumeBullet[] = [
   },
 ];
 
-const wsaBullets: ResumeBullet[] = [
+export const wsaBullets: ResumeBullet[] = [
   {
     key: 1,
     bullet: (
@@ -378,7 +384,9 @@ function ProjectBlock({
   return (
     <div className="flex flex-col gap-2">
       <div className="flex flex-col gap-2 lg:flex-row">
-        <p className="text-primary min-w-24 font-extrabold">{company}</p>
+        <p className="text-accent-foreground min-w-24 font-extrabold">
+          {company}
+        </p>
         <ul className="ml-6 flex flex-col gap-2">
           {bullets.map((bullet) => (
             <li key={bullet.key} className="list-disc">

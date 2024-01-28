@@ -33,7 +33,7 @@ export default function MobileNav() {
             <Menu size={32} />
           </Button>
         </SheetTrigger>
-        <SheetContent className="flex w-full min-w-[360px] flex-col items-center gap-8 p-8">
+        <SheetContent className="flex w-full min-w-[360px] flex-col items-center gap-6 p-6">
           <div className="flex w-full items-center justify-center gap-4 pb-4 pt-8">
             <Link
               href="/"

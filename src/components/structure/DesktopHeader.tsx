@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
@@ -16,7 +15,6 @@ import {
 import { cn } from "@lib/utils";
 import H1 from "@components/typography/h1";
 import ThemeToggle from "@components/utils/ThemeToggle";
-import avatar from "../../../public/avatar.svg";
 
 const projects: { title: string; href: string; description: string }[] = [
   {
@@ -70,36 +68,26 @@ export default function DesktopHeader() {
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
-                    <a
+                    <Link
                       className="from-muted/50 to-muted flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
-                      href="/"
+                      href="/experience"
                     >
-                      <Image
-                        src={avatar}
-                        alt="Picture of the author"
-                        width={32}
-                        height={32}
-                        className="rounded-full"
-                      />
+                      <p className="text-4xl">👨‍💻</p>
                       <div className="mb-2 mt-4 text-lg font-medium">
-                        michael long
+                        work experience
                       </div>
                       <p className="text-muted-foreground text-sm leading-tight">
-                        Beautifully designed components that you can copy and
-                        paste into your apps. Accessible. Customizable. Open
-                        Source.
+                        9 months and counting of real-world industry experience
+                        as a software engineer
                       </p>
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                 </li>
-                <ListItem href="/docs" title="Introduction">
+                <ListItem href="/experience#hometap" title="Hometap">
                   Re-usable components built using Radix UI and Tailwind CSS.
                 </ListItem>
-                <ListItem href="/docs/installation" title="Installation">
+                <ListItem href="/experience#woodmac" title="PowerAdvocate">
                   How to install dependencies and structure your app.
-                </ListItem>
-                <ListItem href="/docs/primitives/typography" title="Typography">
-                  Styles for headings, paragraphs, lists...etc
                 </ListItem>
               </ul>
             </NavigationMenuContent>
