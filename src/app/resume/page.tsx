@@ -7,7 +7,7 @@ import Resume from "./Resume";
 
 export default function ResumePage() {
   return (
-    <Container className="min-h-screen py-32">
+    <Container className="bg-accent min-h-screen py-32">
       <div className="flex w-full flex-col items-center justify-center gap-8">
         <Resume />
         <Button asChild className="flex gap-4" size={"lg"}>

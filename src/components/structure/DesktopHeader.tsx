@@ -84,10 +84,11 @@ export default function DesktopHeader() {
                   </NavigationMenuLink>
                 </li>
                 <ListItem href="/experience#hometap" title="Hometap">
-                  Re-usable components built using Radix UI and Tailwind CSS.
+                  making homeownership less stressful and more accessible
                 </ListItem>
-                <ListItem href="/experience#woodmac" title="PowerAdvocate">
-                  How to install dependencies and structure your app.
+                <ListItem href="/experience#woodmac" title="Wood Mackenzie">
+                  providing the data and insights that power smart decisions to
+                  power our planet
                 </ListItem>
               </ul>
             </NavigationMenuContent>
@@ -147,7 +148,7 @@ const ListItem = React.forwardRef<
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+          <p className="text-muted-foreground line-clamp-3 text-sm leading-snug">
             {children}
           </p>
         </a>

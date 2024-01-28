@@ -146,7 +146,7 @@ function ExperienceSection() {
       />
       <Separator />
       <ExperienceBlock
-        company="PowerAdvocate (Wood Mackenzie)"
+        company="Wood Mackenzie"
         location="Boston, MA"
         start="Jan 2023"
         end="Aug 2023"

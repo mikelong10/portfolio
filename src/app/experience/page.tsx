@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { hometapBullets } from "@app/resume/Resume";
+import { hometapBullets, powerAdvocateBullets } from "@app/resume/Resume";
 
 import Container from "@components/structure/Container";
 import Content from "@components/structure/Content";
@@ -228,19 +228,24 @@ export default function ExperiencePage() {
             className="rounded-md"
           />
           <div className="flex flex-col">
-            <blockquote className="max-w-prose border-l-2 pl-6">
-              Now on my second co-op, I&apos;m coming into Hometap confident in
-              having the skillset to be a strong entry-level engineer
-              contributor to my team, the engineering dept, and the company as a
-              whole. I want to strive to break through that and take the next
-              step, encompassing more responsibilities and initiatives that an
-              SE2-level engineer or higher would.
+            <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
+              <p>
+                Now on my second co-op, I&apos;m coming into Hometap confident
+                in having the skillset to be a strong entry-level engineer
+                contributor to my team, the engineering dept, and the company as
+                a whole.
+              </p>
+              <p>
+                I want to strive to break through that and take the next step,
+                encompassing more responsibilities and initiatives that an
+                SE2-level engineer or higher would.
+              </p>
             </blockquote>
           </div>
           <GoalsCard />
         </Content>
       </Container>
-      <Container id="hometap" className="bg-input/20 min-h-screen" noisy>
+      <Container id="woodmac" className="bg-input/20 min-h-screen" noisy>
         <Content className="flex flex-col items-center gap-16 py-32">
           <div className="flex w-full max-w-prose justify-center gap-4">
             <div className="flex flex-col gap-8">
@@ -285,10 +290,10 @@ export default function ExperiencePage() {
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          JavaScript
+                          TypeScript
                           <Image
-                            src={"/js-logo.png"}
-                            alt="JavaScript logo"
+                            src={"/ts-logo.png"}
+                            alt="TypeScript logo"
                             width={96}
                             height={96}
                             className="h-5 w-fit"
@@ -309,10 +314,10 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Sass
+                          Node
                           <Image
-                            src={"/sass-logo.png"}
-                            alt="Sass logo"
+                            src={"/node-logo.png"}
+                            alt="Node logo"
                             width={96}
                             height={96}
                             className="h-5 w-fit"
@@ -353,25 +358,32 @@ export default function ExperiencePage() {
                 </div>
                 <div className="flex gap-4 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
-                    <p className="italic">database</p>
+                    <p className="italic">infra / deployment</p>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          PostgreSQL
+                          Jenkins
                           <Image
-                            src={"/postgres-logo.svg"}
-                            alt="Postgres logo"
+                            src={"/jenkins-logo.png"}
+                            alt="Jenkins logo"
                             width={96}
                             height={96}
                             className="h-5 w-fit"
                           />
                         </div>
                       </li>
-                    </ul>
-                  </div>
-                  <div className="flex flex-1 flex-col gap-2">
-                    <p className="italic">infra / deployment</p>
-                    <ul className="ml-6 flex flex-col gap-2">
+                      <li className="list-disc">
+                        <div className="flex items-center gap-2">
+                          AWS
+                          <Image
+                            src={"/aws-logo.webp"}
+                            alt="AWS logo"
+                            width={96}
+                            height={96}
+                            className="h-5 w-fit"
+                          />
+                        </div>
+                      </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
                           Docker
@@ -386,10 +398,10 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          GitLab
+                          Bitbucket
                           <Image
-                            src={"/gitlab-logo.svg"}
-                            alt="GitLab logo"
+                            src={"/bitbucket-logo.svg"}
+                            alt="Bitbucket logo"
                             width={96}
                             height={96}
                             className="h-5 w-fit"
@@ -404,13 +416,14 @@ export default function ExperiencePage() {
             <Card className="flex-1">
               <CardContent className="flex flex-col gap-8">
                 <Image
-                  src={"/HEDHero.webp"}
-                  alt={"Hometap HED"}
-                  width={1704}
-                  height={1248}
+                  src={"/lens-screenshot.png"}
+                  alt={"Lens Screenshot"}
+                  width={1600}
+                  height={1200}
+                  className="mt-6"
                 />
                 <ul className="ml-6 flex flex-col gap-2">
-                  {hometapBullets.map((bullet) => (
+                  {powerAdvocateBullets.map((bullet) => (
                     <li key={bullet.key} className="list-disc">
                       {bullet.bullet}
                     </li>
@@ -419,24 +432,32 @@ export default function ExperiencePage() {
               </CardContent>
             </Card>
           </section>
-          <Image
-            src={"/inquiry.jpeg"}
-            alt={"Inquiry page"}
-            width={1704}
-            height={1248}
-            className="rounded-md"
-          />
           <div className="flex flex-col">
-            <blockquote className="max-w-prose border-l-2 pl-6">
-              Now on my second co-op, I&apos;m coming into Hometap confident in
-              having the skillset to be a strong entry-level engineer
-              contributor to my team, the engineering dept, and the company as a
-              whole. I want to strive to break through that and take the next
-              step, encompassing more responsibilities and initiatives that an
-              SE2-level engineer or higher would.
+            <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
+              <p>
+                At WoodMac, I was blessed with the opportunity to take the lead
+                on a new initiative to create a new data curation platform.
+                Establishing a role as the application&apos;s point person, I
+                communicated project estimates, status updates, and technical
+                explanations to product and engineering managers, collaborated
+                frequently with our UK-based data team, onboarded new engineers
+                onto the codebase, and presented the product to company
+                executives and directors.
+              </p>
+              <p>
+                Over my 7 months, I collaborated with a agile scrum team of 8
+                engineers to deliver industry-leading software to customers in
+                the energy sector, utilizing a Jira board and 2-week sprints.
+              </p>
             </blockquote>
           </div>
-          <GoalsCard />
+          <Image
+            src={"/lens-gas-lng.png"}
+            alt={"Inquiry page"}
+            width={800}
+            height={419}
+            className="rounded-md"
+          />
         </Content>
       </Container>
     </section>
