@@ -22,7 +22,7 @@ export default function Container({
         )}
       >
         {noisy && (
-          <div className="bg-noise absolute left-0 top-0 -z-10 h-full w-full opacity-[0.08]" />
+          <div className="bg-noise absolute left-0 top-0 -z-40 h-full w-full opacity-[0.08]" />
         )}
         {children}
       </section>

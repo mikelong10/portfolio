@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu } from "lucide-react";
 
+import { Underline } from "@lib/icons";
 import H1 from "@components/typography/h1";
 import { Button } from "@components/ui/button";
 import { Separator } from "@components/ui/separator";
@@ -25,9 +26,12 @@ export default function MobileNav() {
 
   return (
     <div className="flex items-center justify-between md:hidden">
-      <Link href="/" className="hover:animate-pulse">
-        <H1 className="text-2xl sm:text-4xl lg:text-4xl">ml.</H1>
-      </Link>
+      <div className="relative">
+        <Link href="/" className="hover:animate-pulse">
+          <H1>ml.</H1>
+        </Link>
+        <Underline className="text-secondary absolute -left-1 bottom-[-80px] -z-10 w-12 sm:bottom-[-84px] sm:w-14" />
+      </div>
       <Sheet open={navOpen} onOpenChange={setNavOpen}>
         <SheetTrigger asChild>
           <Button variant={"ghost"} size={"icon"}>

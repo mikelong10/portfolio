@@ -12,6 +12,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
+import { Underline } from "@lib/icons";
 import { cn } from "@lib/utils";
 import H1 from "@components/typography/h1";
 import ThemeToggle from "@components/utils/ThemeToggle";
@@ -57,9 +58,12 @@ const projects: { title: string; href: string; description: string }[] = [
 export default function DesktopHeader() {
   return (
     <nav className="hidden items-center justify-between md:flex">
-      <Link href="/" className="hover:animate-pulse">
-        <H1 className="text-2xl sm:text-4xl lg:text-4xl">ml.</H1>
-      </Link>
+      <div className="relative">
+        <Link href="/" className="hover:animate-pulse">
+          <H1 className="text-2xl sm:text-4xl lg:text-4xl">ml.</H1>
+        </Link>
+        <Underline className="text-secondary absolute -left-2 bottom-[-88px] -z-10 w-16" />
+      </div>
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>

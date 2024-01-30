@@ -15,7 +15,7 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "bg-background text-foreground -z-30 flex min-h-screen min-w-[360px] justify-center scroll-smooth antialiased",
+          "bg-background text-foreground -z-50 flex min-h-screen min-w-[360px] justify-center scroll-smooth antialiased",
           dmSans.className
         )}
       >
