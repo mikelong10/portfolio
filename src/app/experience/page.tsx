@@ -65,7 +65,7 @@ export default function ExperiencePage() {
                 <p className="italic">Hometap Equity Partners, LLC</p>
               </div>
             </div>
-            <Alert className="flex gap-4">
+            <Alert className="relative flex gap-4">
               <p className="text-2xl">🚀</p>
               <div className="flex flex-col">
                 <AlertTitle>Jan 2024 - Present · 1 mo</AlertTitle>
@@ -73,6 +73,7 @@ export default function ExperiencePage() {
                   Boston, Massachusetts, United States
                 </AlertDescription>
               </div>
+              <div className="absolute inset-0 -z-10 rounded-lg bg-gradient-to-bl from-blue-300 to-violet-300 blur-lg dark:from-blue-600 dark:to-violet-600" />
             </Alert>
           </div>
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
@@ -248,7 +249,7 @@ export default function ExperiencePage() {
       <Container id="woodmac" className="bg-input/20 min-h-screen" noisy>
         <Content className="flex flex-col items-center gap-16 py-32">
           <div className="flex w-full max-w-prose justify-center gap-4">
-            <div className="flex flex-col gap-8">
+            <div className="flex w-full flex-col gap-8 sm:w-auto sm:items-center">
               <div className="flex flex-col">
                 <Image
                   src={"/woodmac-logo-horizontal.png"}
@@ -268,7 +269,7 @@ export default function ExperiencePage() {
                   <p className="italic">Wood Mackenzie Limited</p>
                 </div>
               </div>
-              <Alert className="flex gap-4">
+              <Alert className="relative flex gap-4">
                 <p className="text-2xl">⚡️</p>
                 <div className="flex flex-col">
                   <AlertTitle>Jan 2023 — Aug 2023 · 7 mo</AlertTitle>
@@ -276,6 +277,7 @@ export default function ExperiencePage() {
                     Boston, Massachusetts, United States
                   </AlertDescription>
                 </div>
+                <div className="absolute inset-0 -z-10 rounded-lg bg-gradient-to-br from-sky-300 to-indigo-300 blur-lg dark:from-sky-600 dark:to-indigo-600" />
               </Alert>
             </div>
           </div>
@@ -432,6 +434,13 @@ export default function ExperiencePage() {
               </CardContent>
             </Card>
           </section>
+          <Image
+            src={"/woodmac-lens-gas-lng.webp"}
+            alt={"Lens Gas & LNG"}
+            width={1280}
+            height={720}
+            className="w-full max-w-prose rounded-md"
+          />
           <div className="flex flex-col">
             <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
               <p>
@@ -451,13 +460,6 @@ export default function ExperiencePage() {
               </p>
             </blockquote>
           </div>
-          <Image
-            src={"/woodmac-lens-gas-lng.webp"}
-            alt={"Lens Gas & LNG"}
-            width={1280}
-            height={720}
-            className="w-full max-w-prose rounded-md"
-          />
         </Content>
       </Container>
     </section>
