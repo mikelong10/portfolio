@@ -33,7 +33,7 @@ export default function Home() {
       return (
         <div
           key={emoji}
-          className={`ease-out-circ animate-shoot-out- absolute -z-10 text-4xl${degree}`}
+          className={`ease-out-circ animate-shoot-out-${degree} absolute -z-10 text-4xl`}
         >
           {emoji}
         </div>
