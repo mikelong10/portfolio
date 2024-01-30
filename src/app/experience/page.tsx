@@ -50,9 +50,9 @@ export default function ExperiencePage() {
               <Image
                 src={"/hometap-logo-horizontal.png"}
                 alt="Hometap Logo"
-                width={180}
-                height={255}
-                className="-ml-1 h-16 w-fit"
+                width={450}
+                height={250}
+                className="-ml-1 w-32 sm:w-40 lg:w-48"
               />
               <div className="flex flex-col">
                 <H1 className="hidden sm:block">
@@ -202,7 +202,7 @@ export default function ExperiencePage() {
                 </div>
               </div>
             </div>
-            <Card className="flex-1">
+            <Card className="max-w-prose flex-1">
               <CardContent className="flex flex-col gap-8">
                 <Image
                   src={"/HEDHero.webp"}
@@ -225,7 +225,7 @@ export default function ExperiencePage() {
             alt={"Inquiry page"}
             width={1704}
             height={1248}
-            className="rounded-md"
+            className="w-full max-w-5xl rounded-md"
           />
           <div className="flex flex-col">
             <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
@@ -253,9 +253,9 @@ export default function ExperiencePage() {
                 <Image
                   src={"/woodmac-logo-horizontal.png"}
                   alt="WoodMac Logo"
-                  width={180}
-                  height={255}
-                  className="-ml-4 h-16 w-fit"
+                  width={1232}
+                  height={413}
+                  className="-ml-3 w-32 sm:w-40 lg:w-48"
                 />
                 <div className="flex flex-col">
                   <H1 className="hidden sm:block">
@@ -413,14 +413,14 @@ export default function ExperiencePage() {
                 </div>
               </div>
             </div>
-            <Card className="flex-1">
+            <Card className="max-w-prose flex-1">
               <CardContent className="flex flex-col gap-8">
                 <Image
                   src={"/lens-screenshot.png"}
                   alt={"Lens Screenshot"}
                   width={1600}
                   height={1200}
-                  className="mt-6"
+                  className="mt-8"
                 />
                 <ul className="ml-6 flex flex-col gap-2">
                   {powerAdvocateBullets.map((bullet) => (
@@ -452,11 +452,11 @@ export default function ExperiencePage() {
             </blockquote>
           </div>
           <Image
-            src={"/lens-gas-lng.png"}
-            alt={"Inquiry page"}
-            width={800}
-            height={419}
-            className="rounded-md"
+            src={"/woodmac-lens-gas-lng.webp"}
+            alt={"Lens Gas & LNG"}
+            width={1280}
+            height={720}
+            className="w-full max-w-prose rounded-md"
           />
         </Content>
       </Container>
