@@ -21,7 +21,7 @@ const mobileNavLinks = [
   { name: "resume", href: "/resume" },
 ];
 
-export default function MobileNav() {
+export default function MobileNav({ isScrolled }: { isScrolled: boolean }) {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
@@ -30,7 +30,11 @@ export default function MobileNav() {
         <Link href="/" className="hover:animate-pulse">
           <H1>ml.</H1>
         </Link>
-        <Underline className="text-secondary absolute -left-1 bottom-[-80px] -z-10 w-12 sm:bottom-[-84px] sm:w-14" />
+        <Underline
+          className={`text-secondary absolute -left-1 bottom-[-80px] -z-10 w-12 transition-all duration-500 sm:bottom-[-84px] sm:w-14 ${
+            isScrolled ? "opacity-0" : ""
+          }`}
+        />
       </div>
       <Sheet open={navOpen} onOpenChange={setNavOpen}>
         <SheetTrigger asChild>

@@ -55,14 +55,18 @@ const projects: { title: string; href: string; description: string }[] = [
   },
 ];
 
-export default function DesktopHeader() {
+export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
   return (
     <nav className="hidden items-center justify-between md:flex">
       <div className="relative">
         <Link href="/" className="hover:animate-pulse">
           <H1 className="text-2xl sm:text-4xl lg:text-4xl">ml.</H1>
         </Link>
-        <Underline className="text-secondary absolute -left-2 bottom-[-88px] -z-10 w-16" />
+        <Underline
+          className={`text-secondary absolute -left-2 bottom-[-88px] -z-10 w-16 transition-all duration-500 ${
+            isScrolled ? "opacity-0" : ""
+          }`}
+        />
       </div>
       <NavigationMenu>
         <NavigationMenuList>

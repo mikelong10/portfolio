@@ -30,8 +30,8 @@ export default function Header() {
     >
       <Container>
         <Content>
-          <MobileHeader />
-          <DesktopHeader />
+          <MobileHeader isScrolled={isScrolled} />
+          <DesktopHeader isScrolled={isScrolled} />
         </Content>
       </Container>
     </header>
