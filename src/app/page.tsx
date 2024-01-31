@@ -49,10 +49,10 @@ export default function Home() {
               alt="Picture of the author"
               className="h-40 w-40 bg-transparent lg:h-48 lg:w-48 xl:h-56 xl:w-56"
             />
-            <div className="animate-blob animation-delay-1000 absolute -left-20 bottom-0 -z-40 h-80 w-80 rounded-full bg-sky-300 opacity-70 mix-blend-darken blur-2xl ease-linear dark:bg-sky-600 dark:opacity-30 dark:mix-blend-lighten" />
-            <div className="animate-blob absolute -bottom-20 -z-40 h-80 w-80 rounded-full bg-blue-300 opacity-70 mix-blend-darken blur-2xl ease-linear dark:bg-blue-600 dark:opacity-30 dark:mix-blend-lighten" />
-            <div className="animate-blob animation-delay-2000 absolute -bottom-20 -left-40 -z-40 h-80 w-80 rounded-full bg-indigo-300 opacity-70 mix-blend-darken blur-2xl ease-linear dark:bg-indigo-600 dark:opacity-30 dark:mix-blend-lighten" />
-            <div className="animate-blob animation-delay-3000 absolute -left-20 top-0 -z-40 h-80 w-80 rounded-full bg-violet-300 opacity-70 mix-blend-darken blur-2xl ease-linear dark:bg-violet-600 dark:opacity-30 dark:mix-blend-lighten" />
+            <div className="animate-blob animation-delay-1000 absolute -left-20 bottom-0 -z-40 h-80 w-80 rounded-full bg-sky-300/70 mix-blend-darken blur-2xl ease-linear dark:bg-sky-600/30 dark:mix-blend-lighten" />
+            <div className="animate-blob absolute -bottom-20 -z-40 h-80 w-80 rounded-full bg-blue-300/70 mix-blend-darken blur-2xl ease-linear dark:bg-blue-600/30 dark:mix-blend-lighten" />
+            <div className="animate-blob animation-delay-2000 absolute -bottom-20 -left-40 -z-40 h-80 w-80 rounded-full bg-indigo-300/70 mix-blend-darken blur-2xl ease-linear dark:bg-indigo-600/30 dark:mix-blend-lighten" />
+            <div className="animate-blob animation-delay-3000 absolute -left-20 top-0 -z-40 h-80 w-80 rounded-full bg-violet-300/70 mix-blend-darken blur-2xl ease-linear dark:bg-violet-600/30 dark:mix-blend-lighten" />
             <div className="absolute inset-0 flex h-40 w-40 items-center justify-center">
               {renderEmojis()}
             </div>
