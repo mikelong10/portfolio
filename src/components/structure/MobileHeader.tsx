@@ -53,7 +53,7 @@ export default function MobileNav({ isScrolled }: { isScrolled: boolean }) {
                 <Image
                   src={avatar}
                   alt="Picture of the author"
-                  className="bg-muted border-border h-24 w-24 rounded-full border p-2"
+                  className="bg-muted border-border size-24 rounded-full border p-2"
                 />
               </Link>
               <div className="flex flex-col">

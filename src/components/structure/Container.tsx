@@ -5,11 +5,13 @@ export default function Container({
   className,
   id,
   noisy,
+  bgColorNoisy,
 }: {
   children: React.ReactNode;
   className?: string;
   id?: string;
   noisy?: boolean;
+  bgColorNoisy?: string;
 }) {
   return (
     <>
@@ -22,7 +24,15 @@ export default function Container({
         )}
       >
         {noisy && (
-          <div className="bg-noise absolute left-0 top-0 -z-40 h-full w-full opacity-[0.08]" />
+          <>
+            <div
+              className={cn(
+                "absolute left-0 top-0 -z-40 size-full",
+                bgColorNoisy && `bg-${bgColorNoisy}`
+              )}
+            />
+            <div className="bg-noise absolute left-0 top-0 -z-30 size-full opacity-10 dark:opacity-[0.08]" />
+          </>
         )}
         {children}
       </section>

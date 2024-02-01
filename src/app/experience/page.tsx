@@ -24,7 +24,7 @@ export default function ExperiencePage() {
                 alt="Northeastern University Seal"
                 width={400}
                 height={400}
-                className="h-16 w-16"
+                className="size-16"
               />
               <H1>my experience</H1>
             </div>
@@ -43,7 +43,12 @@ export default function ExperiencePage() {
           </div>
         </Content>
       </Container>
-      <Container id="hometap" className="bg-tertiary/10 min-h-screen" noisy>
+      <Container
+        id="hometap"
+        className="min-h-screen"
+        noisy
+        bgColorNoisy="tertiary/10"
+      >
         <Content className="flex flex-col items-center gap-16 py-32">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col">
@@ -246,7 +251,12 @@ export default function ExperiencePage() {
           <GoalsCard />
         </Content>
       </Container>
-      <Container id="woodmac" className="bg-input/20 min-h-screen" noisy>
+      <Container
+        id="woodmac"
+        className="min-h-screen"
+        noisy
+        bgColorNoisy="input/20"
+      >
         <Content className="flex flex-col items-center gap-16 py-32">
           <div className="flex w-full max-w-prose justify-center gap-4">
             <div className="flex w-full flex-col gap-8 sm:w-auto sm:items-center">

@@ -47,13 +47,13 @@ export default function Home() {
             <Image
               src={avatar}
               alt="Picture of the author"
-              className="h-40 w-40 bg-transparent lg:h-48 lg:w-48 xl:h-56 xl:w-56"
+              className="size-40 bg-transparent lg:size-48 xl:size-56"
             />
-            <div className="animate-blob animation-delay-1000 absolute -left-20 bottom-0 -z-40 h-80 w-80 rounded-full bg-sky-300/70 mix-blend-darken blur-2xl ease-linear dark:bg-sky-600/30 dark:mix-blend-lighten" />
-            <div className="animate-blob absolute -bottom-20 -z-40 h-80 w-80 rounded-full bg-blue-300/70 mix-blend-darken blur-2xl ease-linear dark:bg-blue-600/30 dark:mix-blend-lighten" />
-            <div className="animate-blob animation-delay-2000 absolute -bottom-20 -left-40 -z-40 h-80 w-80 rounded-full bg-indigo-300/70 mix-blend-darken blur-2xl ease-linear dark:bg-indigo-600/30 dark:mix-blend-lighten" />
-            <div className="animate-blob animation-delay-3000 absolute -left-20 top-0 -z-40 h-80 w-80 rounded-full bg-violet-300/70 mix-blend-darken blur-2xl ease-linear dark:bg-violet-600/30 dark:mix-blend-lighten" />
-            <div className="absolute inset-0 flex h-40 w-40 items-center justify-center">
+            <div className="animate-blob animation-delay-1000 absolute -left-20 bottom-0 -z-40 size-80 rounded-full bg-cyan-300 mix-blend-darken blur-3xl ease-linear dark:bg-cyan-700 dark:mix-blend-lighten" />
+            <div className="animate-blob absolute -bottom-20 -z-40 size-80 rounded-full bg-sky-300 mix-blend-darken blur-3xl ease-linear dark:bg-sky-700 dark:mix-blend-lighten" />
+            <div className="animate-blob animation-delay-2000 absolute -bottom-20 -left-40 -z-40 size-80 rounded-full bg-blue-300 mix-blend-darken blur-3xl ease-linear dark:bg-blue-700 dark:mix-blend-lighten" />
+            <div className="animate-blob animation-delay-3000 absolute -left-20 top-0 -z-40 size-80 rounded-full bg-indigo-300 mix-blend-darken blur-3xl ease-linear dark:bg-indigo-700 dark:mix-blend-lighten" />
+            <div className="absolute inset-0 flex size-40 items-center justify-center">
               {renderEmojis()}
             </div>
           </div>

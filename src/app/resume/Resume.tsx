@@ -9,7 +9,7 @@ type ResumeBullet = { key: string | number; bullet: React.ReactNode };
 
 export default function Resume() {
   return (
-    <Card className="bg-background w-full max-w-4xl">
+    <Card className="w-full max-w-4xl">
       <div className="flex flex-col gap-4 p-8 text-sm">
         <ResumeHeader />
         <EducationSection />

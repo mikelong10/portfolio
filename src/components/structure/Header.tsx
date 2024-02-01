@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+import { cn } from "@lib/utils";
 import Container from "@components/structure/Container";
 import Content from "./Content";
 import DesktopHeader from "./DesktopHeader";
@@ -24,9 +25,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 flex w-full justify-center py-6 transition-all ${
-        isScrolled ? "py-4 backdrop-blur-sm" : ""
-      }`}
+      className={cn(
+        "fixed left-0 top-0 z-50 flex w-full justify-center py-6 transition-all",
+        isScrolled && "py-4 backdrop-blur-sm"
+      )}
     >
       <Container>
         <Content>

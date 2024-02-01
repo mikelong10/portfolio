@@ -9,7 +9,7 @@ const config = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-  safelist: [{ pattern: /^animate-shoot-out-/ }],
+  safelist: [{ pattern: /^animate-shoot-out-/ }, { pattern: /^bg-/ }],
   prefix: "",
   theme: {
     container: {
