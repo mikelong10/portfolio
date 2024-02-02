@@ -49,10 +49,10 @@ export default function Home() {
               alt="Picture of the author"
               className="size-40 bg-transparent lg:size-48 xl:size-56"
             />
-            <div className="animate-blob animation-delay-1000 absolute -left-20 bottom-0 -z-40 size-80 rounded-full bg-cyan-300 mix-blend-darken blur-3xl ease-linear dark:bg-cyan-700 dark:mix-blend-lighten" />
+            <div className="animate-blob absolute -left-20 bottom-0 -z-40 size-80 rounded-full bg-cyan-300 mix-blend-darken blur-3xl ease-linear dark:bg-cyan-700 dark:mix-blend-lighten" />
             <div className="animate-blob absolute -bottom-20 -z-40 size-80 rounded-full bg-sky-300 mix-blend-darken blur-3xl ease-linear dark:bg-sky-700 dark:mix-blend-lighten" />
-            <div className="animate-blob animation-delay-2000 absolute -bottom-20 -left-40 -z-40 size-80 rounded-full bg-blue-300 mix-blend-darken blur-3xl ease-linear dark:bg-blue-700 dark:mix-blend-lighten" />
-            <div className="animate-blob animation-delay-3000 absolute -left-20 top-0 -z-40 size-80 rounded-full bg-indigo-300 mix-blend-darken blur-3xl ease-linear dark:bg-indigo-700 dark:mix-blend-lighten" />
+            <div className="animate-blob absolute -bottom-20 -left-40 -z-40 size-80 rounded-full bg-blue-300 mix-blend-darken blur-3xl ease-linear dark:bg-blue-700 dark:mix-blend-lighten" />
+            <div className="animate-blob absolute -left-20 top-0 -z-40 size-80 rounded-full bg-indigo-300 mix-blend-darken blur-3xl ease-linear dark:bg-indigo-700 dark:mix-blend-lighten" />
             <div className="absolute inset-0 flex size-40 items-center justify-center">
               {renderEmojis()}
             </div>
