@@ -7,12 +7,12 @@ import { Menu } from "lucide-react";
 
 import { Underline } from "@lib/icons";
 import H1 from "@components/typography/h1";
+import H2 from "@components/typography/h2";
 import { Button } from "@components/ui/button";
 import { Separator } from "@components/ui/separator";
 import { Sheet, SheetContent, SheetTrigger } from "@components/ui/sheet";
 import ThemeToggle from "@components/utils/ThemeToggle";
 import avatar from "../../../public/avatar.svg";
-import H2 from "@components/typography/h2";
 
 const mobileNavLinks = [
   { name: "home", href: "/" },

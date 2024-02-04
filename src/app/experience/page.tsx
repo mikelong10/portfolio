@@ -68,7 +68,9 @@ export default function ExperiencePage() {
                   <H2 className="text-foreground">Full-Stack</H2>
                   <H2 className="text-foreground">Engineering Co-op</H2>
                 </div>
-                <p className="italic text-muted-foreground">Hometap Equity Partners, LLC</p>
+                <p className="text-muted-foreground italic">
+                  Hometap Equity Partners, LLC
+                </p>
               </div>
             </div>
             <Alert className="relative flex gap-4">
@@ -277,7 +279,9 @@ export default function ExperiencePage() {
                     <H2 className="text-foreground">Software</H2>
                     <H2 className="text-foreground">Engineering Co-op</H2>
                   </div>
-                  <p className="italic text-muted-foreground">Wood Mackenzie Limited</p>
+                  <p className="text-muted-foreground italic">
+                    Wood Mackenzie Limited
+                  </p>
                 </div>
               </div>
               <Alert className="relative flex gap-4">
