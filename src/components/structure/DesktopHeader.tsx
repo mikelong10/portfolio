@@ -95,7 +95,7 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
                   making homeownership less stressful and more accessible
                 </ListItem>
                 <ListItem href="/experience#woodmac" title="Wood Mackenzie">
-                  providing the data and insights that power smart decisions to
+                  providing data and insights that power smart decisions to
                   power our planet
                 </ListItem>
               </ul>

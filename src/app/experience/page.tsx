@@ -5,6 +5,7 @@ import Container from "@components/structure/Container";
 import Content from "@components/structure/Content";
 import H1 from "@components/typography/h1";
 import H2 from "@components/typography/h2";
+import H3 from "@components/typography/h3";
 import { Alert, AlertDescription, AlertTitle } from "@components/ui/alert";
 import { Card, CardContent, CardHeader } from "@components/ui/card";
 import { Checkbox } from "@components/ui/checkbox";
@@ -60,14 +61,14 @@ export default function ExperiencePage() {
                 className="-ml-1 w-32 sm:w-40 lg:w-48"
               />
               <div className="flex flex-col">
-                <H1 className="hidden sm:block">
+                <H2 className="text-foreground hidden sm:block">
                   Full-Stack Engineering Co-op
-                </H1>
-                <div className="flex flex-col sm:hidden">
-                  <H1>Full-Stack</H1>
-                  <H1>Engineering Co-op</H1>
+                </H2>
+                <div className="text-foreground flex flex-col sm:hidden">
+                  <H2 className="text-foreground">Full-Stack</H2>
+                  <H2 className="text-foreground">Engineering Co-op</H2>
                 </div>
-                <p className="italic">Hometap Equity Partners, LLC</p>
+                <p className="italic text-muted-foreground">Hometap Equity Partners, LLC</p>
               </div>
             </div>
             <Alert className="relative flex gap-4">
@@ -83,7 +84,7 @@ export default function ExperiencePage() {
           </div>
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
             <div className="flex flex-col gap-6">
-              <H2 className="w-48">what i&apos;m doing</H2>
+              <H3 className="text-tertiary w-48">what i&apos;m doing</H3>
               <div className="flex flex-col gap-4">
                 <p className="font-extrabold">tech stack:</p>
                 <div className="flex gap-4 sm:flex-col">
@@ -269,14 +270,14 @@ export default function ExperiencePage() {
                   className="-ml-3 w-32 sm:w-40 lg:w-48"
                 />
                 <div className="flex flex-col">
-                  <H1 className="hidden sm:block">
+                  <H2 className="text-foreground hidden sm:block">
                     Software Engineering Co-op
-                  </H1>
+                  </H2>
                   <div className="flex flex-col sm:hidden">
-                    <H1>Software</H1>
-                    <H1>Engineering Co-op</H1>
+                    <H2 className="text-foreground">Software</H2>
+                    <H2 className="text-foreground">Engineering Co-op</H2>
                   </div>
-                  <p className="italic">Wood Mackenzie Limited</p>
+                  <p className="italic text-muted-foreground">Wood Mackenzie Limited</p>
                 </div>
               </div>
               <Alert className="relative flex gap-4">
@@ -293,7 +294,7 @@ export default function ExperiencePage() {
           </div>
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
             <div className="flex flex-col gap-6">
-              <H2 className="w-48">what i did</H2>
+              <H3 className="text-tertiary w-48">what i did</H3>
               <div className="flex flex-col gap-4">
                 <p className="font-extrabold">tech stack:</p>
                 <div className="flex gap-4 sm:flex-col">
@@ -481,7 +482,7 @@ function GoalsCard() {
     <Card className="mb-16 max-w-prose">
       <CardHeader className="flex flex-row items-center gap-4">
         <p className="text-4xl">🎯</p>
-        <H2>goals</H2>
+        <H3 className="text-tertiary">goals</H3>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <div className="flex gap-2">

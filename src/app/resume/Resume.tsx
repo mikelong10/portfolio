@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-import H1 from "@components/typography/h1";
 import H2 from "@components/typography/h2";
+import H3 from "@components/typography/h3";
 import { Card } from "@components/ui/card";
 import { Separator } from "@components/ui/separator";
 
@@ -25,7 +25,7 @@ function ResumeHeader() {
   return (
     <div className="flex flex-col justify-between gap-2 md:flex-row">
       <div className="flex flex-col">
-        <H1>Michael Long</H1>
+        <H2 className="text-foreground">Michael Long</H2>
         <p className="italic">Availability: May 2024 — Sep 2024</p>
       </div>
       <div className="flex flex-col gap-2 md:items-end">
@@ -73,7 +73,7 @@ function ResumeHeader() {
 function EducationSection() {
   return (
     <div className="flex flex-col gap-2">
-      <H2>Education</H2>
+      <H3 className="text-tertiary">Education</H3>
       <Separator className="h-1 rounded-full" />
       <div className="flex flex-col justify-between sm:flex-row">
         <p>
@@ -109,7 +109,7 @@ function EducationSection() {
 function SkillsSection() {
   return (
     <div className="flex flex-col gap-2">
-      <H2>Skills</H2>
+      <H3 className="text-tertiary">Skills</H3>
       <Separator className="h-1 rounded-full" />
       <div className="flex flex-col sm:flex-row">
         <p>
@@ -134,7 +134,7 @@ function SkillsSection() {
 function ExperienceSection() {
   return (
     <div className="flex flex-col gap-2">
-      <H2>Experience</H2>
+      <H3 className="text-tertiary">Experience</H3>
       <Separator className="h-1 rounded-full" />
       <ExperienceBlock
         company="Hometap"
@@ -365,7 +365,7 @@ export const wsaBullets: ResumeBullet[] = [
 function ProjectsSection() {
   return (
     <div className="flex flex-col gap-2">
-      <H2>Projects</H2>
+      <H3 className="text-tertiary">Projects</H3>
       <Separator className="h-1 rounded-full" />
       <ProjectBlock company="Shoots" bullets={shootsBullets} />
       <Separator />

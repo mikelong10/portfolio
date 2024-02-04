@@ -10,7 +10,7 @@ const H3 = React.forwardRef<
   <h3
     ref={ref}
     className={cn(
-      "text-muted-foreground scroll-m-20 text-xl font-semibold tracking-tight sm:text-2xl lg:text-3xl",
+      "text-muted-foreground scroll-m-20 text-2xl font-semibold tracking-tight lg:text-3xl",
       dmSerifDisplay.className,
       className
     )}

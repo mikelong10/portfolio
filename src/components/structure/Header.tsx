@@ -30,8 +30,8 @@ export default function Header() {
         isScrolled && "py-4 shadow-lg backdrop-blur-sm"
       )}
     >
-      <Container>
-        <Content>
+      <Container className="flex w-full justify-center">
+        <Content className="w-full">
           <MobileHeader isScrolled={isScrolled} />
           <DesktopHeader isScrolled={isScrolled} />
         </Content>

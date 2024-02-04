@@ -12,6 +12,7 @@ import { Separator } from "@components/ui/separator";
 import { Sheet, SheetContent, SheetTrigger } from "@components/ui/sheet";
 import ThemeToggle from "@components/utils/ThemeToggle";
 import avatar from "../../../public/avatar.svg";
+import H2 from "@components/typography/h2";
 
 const mobileNavLinks = [
   { name: "home", href: "/" },
@@ -28,7 +29,7 @@ export default function MobileNav({ isScrolled }: { isScrolled: boolean }) {
     <div className="flex items-center justify-between md:hidden">
       <div className="relative">
         <Link href="/" className="hover:animate-pulse">
-          <H1>ml.</H1>
+          <H2 className="text-foreground">ml.</H2>
         </Link>
         <Underline
           className={`text-secondary absolute -left-1 bottom-[-80px] -z-10 w-12 transition-all duration-500 sm:bottom-[-84px] sm:w-14 ${
