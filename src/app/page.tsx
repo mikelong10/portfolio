@@ -49,10 +49,10 @@ export default function Home() {
               alt="Picture of the author"
               className="size-40 bg-transparent lg:size-48 xl:size-56"
             />
-            <div className="animate-blob absolute -left-20 bottom-0 -z-40 size-80 rounded-full bg-cyan-300 mix-blend-darken blur-3xl ease-linear dark:bg-cyan-700 dark:mix-blend-lighten" />
-            <div className="animate-blob absolute -bottom-20 -z-40 size-80 rounded-full bg-sky-300 mix-blend-darken blur-3xl ease-linear dark:bg-sky-700 dark:mix-blend-lighten" />
-            <div className="animate-blob absolute -bottom-20 -left-40 -z-40 size-80 rounded-full bg-blue-300 mix-blend-darken blur-3xl ease-linear dark:bg-blue-700 dark:mix-blend-lighten" />
-            <div className="animate-blob absolute -left-20 top-0 -z-40 size-80 rounded-full bg-indigo-300 mix-blend-darken blur-3xl ease-linear dark:bg-indigo-700 dark:mix-blend-lighten" />
+            <div className="animate-blob-1 absolute -left-20 bottom-0 -z-40 size-80 rounded-full bg-indigo-300 mix-blend-multiply blur-2xl ease-linear lg:-left-16 xl:-left-12 dark:bg-indigo-700 dark:mix-blend-screen" />
+            <div className="animate-blob-3 absolute -bottom-20 -z-40 size-80 rounded-full bg-violet-300 mix-blend-multiply blur-2xl ease-linear lg:-bottom-16 xl:-bottom-12 dark:bg-violet-700 dark:mix-blend-screen" />
+            <div className="animate-blob-2 absolute -bottom-20 -left-40 -z-40 size-80 rounded-full bg-blue-300 mix-blend-multiply blur-2xl ease-linear lg:-bottom-16 lg:-left-36 xl:-bottom-12 xl:-left-32 dark:bg-blue-700 dark:mix-blend-screen" />
+            <div className="animate-blob-4 absolute -left-20 top-0 -z-40 size-80 rounded-full bg-sky-300 mix-blend-multiply blur-2xl ease-linear lg:-left-16 xl:-left-12 dark:bg-sky-700 dark:mix-blend-screen" />
             <div className="absolute inset-0 flex size-40 items-center justify-center">
               {renderEmojis()}
             </div>

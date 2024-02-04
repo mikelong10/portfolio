@@ -75,6 +75,9 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      transitionDuration: {
+        DEFAULT: "200ms",
+      },
       transitionTimingFunction: {
         "in-expo": "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
         "out-expo": "cubic-bezier(0.19, 1, 0.22, 1)",
@@ -89,7 +92,7 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        blob: {
+        "blob-1": {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",
           },
@@ -119,6 +122,111 @@ const config = {
           },
           "90%": {
             transform: "translate(32px, 64px) scale(1.1)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        "blob-2": {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "10%": {
+            transform: "translate(32px, 16px) scale(0.9)",
+          },
+          "20%": {
+            transform: "translate(64px, 32px) scale(1)",
+          },
+          "30%": {
+            transform: "translate(32px, 64px) scale(1.1)",
+          },
+          "40%": {
+            transform: "translate(0px, 96px) scale(1)",
+          },
+          "50%": {
+            transform: "translate(-32px, 64px) scale(0.9)",
+          },
+          "60%": {
+            transform: "translate(-64px, 32px) scale(1)",
+          },
+          "70%": {
+            transform: "translate(-96px, 0px) scale(1.1)",
+          },
+          "80%": {
+            transform: "translate(-64px, -32px) scale(1)",
+          },
+          "90%": {
+            transform: "translate(-32px, -64px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        "blob-3": {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "10%": {
+            transform: "translate(-16px, -32px) scale(1.1)",
+          },
+          "20%": {
+            transform: "translate(-32px, -64px) scale(1)",
+          },
+          "30%": {
+            transform: "translate(-64px, -32px) scale(0.9)",
+          },
+          "40%": {
+            transform: "translate(-96px, 0px) scale(1)",
+          },
+          "50%": {
+            transform: "translate(-64px, 32px) scale(1.1)",
+          },
+          "60%": {
+            transform: "translate(-32px, 64px) scale(1)",
+          },
+          "70%": {
+            transform: "translate(0px, 96px) scale(0.9)",
+          },
+          "80%": {
+            transform: "translate(32px, 64px) scale(1)",
+          },
+          "90%": {
+            transform: "translate(64px, 32px) scale(1.1)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        "blob-4": {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "10%": {
+            transform: "translate(16px, 32px) scale(0.9)",
+          },
+          "20%": {
+            transform: "translate(32px, 64px) scale(1)",
+          },
+          "30%": {
+            transform: "translate(64px, 32px) scale(1.1)",
+          },
+          "40%": {
+            transform: "translate(96px, 0px) scale(1)",
+          },
+          "50%": {
+            transform: "translate(64px, -32px) scale(0.9)",
+          },
+          "60%": {
+            transform: "translate(32px, -64px) scale(1)",
+          },
+          "70%": {
+            transform: "translate(0px, -96px) scale(1.1)",
+          },
+          "80%": {
+            transform: "translate(-32px, -64px) scale(1)",
+          },
+          "90%": {
+            transform: "translate(-64px, -32px) scale(0.9)",
           },
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
@@ -212,7 +320,10 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        blob: "blob 10s infinite ease-in-out",
+        "blob-1": "blob-1 10s infinite linear",
+        "blob-2": "blob-2 10s infinite linear",
+        "blob-3": "blob-3 10s infinite linear",
+        "blob-4": "blob-4 10s infinite linear",
         "shoot-out-0": "shoot-out-0 16s infinite",
         "shoot-out-30": "shoot-out-30 16s infinite",
         "shoot-out-60": "shoot-out-60 16s infinite",
