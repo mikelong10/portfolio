@@ -7,11 +7,13 @@ import Container from "@components/structure/Container";
 import Content from "@components/structure/Content";
 import H1 from "@components/typography/h1";
 import H2 from "@components/typography/h2";
+import H3 from "@components/typography/h3";
 import { Button } from "@components/ui/button";
 import { Separator } from "@components/ui/separator";
 import avatar from "../../public/avatar.svg";
 import hometapLogo from "../../public/hometap-icon.png";
 import woodmacLogo from "../../public/woodmac-icon.png";
+import wsaScreenshot from "../../public/wsa-screenshot.jpg";
 
 const emojis = [
   "🌎",
@@ -57,6 +59,7 @@ export default function Home() {
                 src={avatar}
                 alt="Picture of the author"
                 className="size-40 bg-transparent lg:size-48 xl:size-56"
+                priority
               />
               <div className="animate-blob-1 absolute -left-20 bottom-0 -z-40 size-80 rounded-full bg-indigo-300 mix-blend-multiply blur-2xl ease-linear lg:-left-16 xl:-left-12 dark:bg-indigo-700 dark:mix-blend-screen" />
               <div className="animate-blob-3 absolute -bottom-20 -z-40 size-80 rounded-full bg-violet-300 mix-blend-multiply blur-2xl ease-linear lg:-bottom-16 xl:-bottom-12 dark:bg-violet-700 dark:mix-blend-screen" />
@@ -68,13 +71,13 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <H1>{"hi, i'm michael."}</H1>
+              <H1>hi, i&rsquo;m michael.</H1>
               <p className="text-accent-foreground max-w-prose">
-                {
-                  "i'm a third-year student at northeastern university pursuing a computer science and business combined degree with a strong passion for entrepreneurship and innovation in tech."
-                }
+                i&rsquo;m a third-year student at northeastern university
+                pursuing a computer science and business combined degree with a
+                strong passion for entrepreneurship and innovation in tech.
               </p>
-              <div className="flex gap-2">
+              <div className="text-tertiary flex gap-2">
                 <Button asChild variant={"ghost"} size={"icon"}>
                   <Link href={"https://www.linkedin.com/in/michaeltlong10/"}>
                     <Linkedin />
@@ -97,57 +100,87 @@ export default function Home() {
         <Arrow className="text-secondary animate-bounce-slow absolute bottom-8 h-16 sm:bottom-10 sm:h-20 lg:bottom-12 lg:h-24" />
       </Container>
       <Container className="flex min-h-screen flex-col items-center" noisy>
-        <Content className="h-full py-16">
+        <Content className="h-full pb-32 pt-16">
           <div className="flex h-full flex-col items-center gap-16 sm:gap-20 lg:gap-24">
-            <div className="flex flex-col items-center gap-12">
-              <div className="flex flex-col gap-2">
-                <div className="text-muted-foreground flex items-center gap-2 text-xl lg:text-2xl">
+            <div className="flex flex-col items-center gap-4">
+              <div className="flex flex-col gap-4">
+                <div className="text-muted-foreground bg-muted flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-lg lg:px-4 lg:py-2 lg:text-xl">
                   <p>✨</p>
-                  <p className="font-semibold">experience</p>
+                  <p className="font-semibold tracking-tight">experience</p>
                 </div>
-                <H2>{"building real-world production software"}</H2>
+                <H2 className="text-accent-foreground">
+                  {"building real-world production software"}
+                </H2>
+                <blockquote className="border-secondary text-accent-foreground mb-16 mt-8 flex max-w-prose flex-col gap-2 border-l-2 pl-6 italic">
+                  <p>
+                    working in agile{" "}
+                    <Link
+                      href={"https://www.atlassian.com/agile/scrum"}
+                      target="_blank"
+                      className="hover:text-tertiary underline underline-offset-2 transition-colors"
+                    >
+                      scrum
+                    </Link>{" "}
+                    teams at a global leader in the energy industry to a
+                    fast-growing fintech startup, i&rsquo;ve had the opportunity
+                    to work on modern, dynamic, full-stack applications and to
+                    learn from great fellow engineers and mentors in industry.
+                  </p>
+                </blockquote>
               </div>
               <div className="flex w-fit flex-col gap-4">
                 <div className="flex gap-4">
-                  <Link href={"/experience"}>
+                  <Link href={"/experience"} className="size-8 min-w-8">
                     <Image
                       src={hometapLogo}
                       alt="Hometap Logo"
                       width={552}
                       height={552}
-                      className="h-fit w-8 rounded transition-transform hover:scale-105 hover:animate-pulse"
+                      className="rounded transition-transform hover:scale-105 hover:animate-pulse"
                     />
                   </Link>
                   <div className="flex flex-col gap-4">
-                    <Link
-                      href={"/experience"}
-                      className="text-primary hover:text-tertiary w-fit text-xl underline underline-offset-8 transition-colors"
-                    >
-                      Hometap
-                    </Link>
+                    <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                      <Link
+                        href={"/experience"}
+                        className="text-primary hover:text-tertiary w-fit text-xl underline underline-offset-[6px] transition-colors"
+                      >
+                        Hometap
+                      </Link>
+                      <p className="text-secondary hidden sm:flex">•</p>
+                      <p className="text-muted-foreground italic">
+                        full-stack engineering co-op
+                      </p>
+                    </div>
                     <p>
                       making homeownership less stressful and more accessible
                     </p>
                   </div>
                 </div>
-                <Separator className="h-1 rounded-full" />
+                <Separator />
                 <div className="flex gap-4">
-                  <Link href={"/experience"}>
+                  <Link href={"/experience"} className="size-8 min-w-8">
                     <Image
                       src={woodmacLogo}
                       alt="WoodMac Logo"
                       width={225}
                       height={225}
-                      className="h-fit w-8 rounded transition-transform hover:scale-105 hover:animate-pulse"
+                      className="rounded transition-transform hover:scale-105 hover:animate-pulse"
                     />
                   </Link>
                   <div className="flex flex-col gap-4">
-                    <Link
-                      href={"/experience"}
-                      className="text-primary hover:text-tertiary w-fit text-xl underline underline-offset-8 transition-colors"
-                    >
-                      Wood Mackenzie
-                    </Link>
+                    <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                      <Link
+                        href={"/experience"}
+                        className="text-primary hover:text-tertiary w-fit text-xl underline underline-offset-[6px] transition-colors"
+                      >
+                        Wood Mackenzie
+                      </Link>
+                      <p className="text-secondary hidden sm:flex">•</p>
+                      <p className="text-muted-foreground italic">
+                        software engineering co-op
+                      </p>
+                    </div>
                     <p>
                       providing data and insights that power smart decisions to
                       power our planet
@@ -158,11 +191,110 @@ export default function Home() {
             </div>
             <Squiggle className="text-secondary w-32 sm:w-40 lg:w-48" />
             <div className="flex flex-col gap-4">
-              <div className="text-muted-foreground flex items-center gap-2 text-xl lg:text-2xl">
+              <div className="text-muted-foreground bg-muted flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-lg lg:px-4 lg:py-2 lg:text-xl">
                 <p>🚀</p>
-                <p className="font-semibold">projects</p>
+                <p className="font-semibold tracking-tight">projects</p>
               </div>
-              <H2>{"creating, innovating, having fun"}</H2>
+              <H2 className="text-accent-foreground">
+                {"creating, innovating, & having fun"}
+              </H2>
+              <blockquote className="border-secondary text-accent-foreground mb-16 mt-8 flex max-w-prose flex-col gap-2 border-l-2 pl-6 italic">
+                <p>
+                  ranging from full-stack websites publicly deployed to the web
+                  to personal renditions of classic games, here are some of my
+                  favorite projects that i&rsquo;ve built.
+                </p>
+              </blockquote>
+              <div className="flex flex-col gap-20">
+                <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-16 xl:gap-24">
+                  <div className="flex max-w-prose flex-col gap-4">
+                    <Link href={"/projects"} className="w-fit">
+                      <H3 className="text-tertiary hover:text-tertiary/80 underline underline-offset-8 transition-all">
+                        Wayland Student-Athlete
+                      </H3>
+                    </Link>
+                    <p>
+                      website powering the local odd jobs business founded by me
+                      and my friends built on Next.js with TypeScript, React,
+                      TailwindCSS, and a PlanetScale MySQL database using Prisma
+                      ORM.
+                    </p>
+                  </div>
+                  <Image
+                    src={wsaScreenshot}
+                    alt="Wayland Student-Athlete homepage screenshot"
+                    width={3104}
+                    height={1974}
+                    className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                  />
+                </div>
+                <div className="flex w-full flex-col gap-8 lg:flex-row-reverse lg:items-center lg:gap-16 xl:gap-24">
+                  <div className="flex max-w-prose flex-col gap-4">
+                    <Link href={"/projects"} className="w-fit">
+                      <H3 className="text-tertiary hover:text-tertiary/80 underline underline-offset-8 transition-all">
+                        Wayland Student-Athlete
+                      </H3>
+                    </Link>
+                    <p>
+                      website powering the local odd jobs business founded by me
+                      and my friends built on Next.js with TypeScript, React,
+                      TailwindCSS, and a PlanetScale MySQL database using Prisma
+                      ORM.
+                    </p>
+                  </div>
+                  <Image
+                    src={wsaScreenshot}
+                    alt="Wayland Student-Athlete homepage screenshot"
+                    width={3104}
+                    height={1974}
+                    className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                  />
+                </div>
+                <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-16 xl:gap-24">
+                  <div className="flex max-w-prose flex-col gap-4">
+                    <Link href={"/projects"} className="w-fit">
+                      <H3 className="text-tertiary hover:text-tertiary/80 underline underline-offset-8 transition-all">
+                        Wayland Student-Athlete
+                      </H3>
+                    </Link>
+                    <p>
+                      website powering the local odd jobs business founded by me
+                      and my friends built on Next.js with TypeScript, React,
+                      TailwindCSS, and a PlanetScale MySQL database using Prisma
+                      ORM.
+                    </p>
+                  </div>
+                  <Image
+                    src={wsaScreenshot}
+                    alt="Wayland Student-Athlete homepage screenshot"
+                    width={3104}
+                    height={1974}
+                    className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                  />
+                </div>
+                <div className="flex w-full flex-col gap-8 lg:flex-row-reverse lg:items-center lg:gap-16 xl:gap-24">
+                  <div className="flex max-w-prose flex-col gap-4">
+                    <Link href={"/projects"} className="w-fit">
+                      <H3 className="text-tertiary hover:text-tertiary/80 underline underline-offset-8 transition-all">
+                        Wayland Student-Athlete
+                      </H3>
+                    </Link>
+                    <p>
+                      website powering the local odd jobs business founded by me
+                      and my friends built on Next.js with TypeScript, React,
+                      TailwindCSS, and a PlanetScale MySQL database using Prisma
+                      ORM.
+                    </p>
+                  </div>
+                  <Image
+                    src={wsaScreenshot}
+                    alt="Wayland Student-Athlete homepage screenshot"
+                    width={3104}
+                    height={1974}
+                    className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </Content>
