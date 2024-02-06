@@ -6,9 +6,12 @@ import Content from "@components/structure/Content";
 import H1 from "@components/typography/h1";
 import H2 from "@components/typography/h2";
 import H3 from "@components/typography/h3";
+import Monospace from "@components/typography/monospace";
 import { Alert, AlertDescription, AlertTitle } from "@components/ui/alert";
 import { Card, CardContent, CardHeader } from "@components/ui/card";
 import { Checkbox } from "@components/ui/checkbox";
+import { Separator } from "@components/ui/separator";
+import hometapInquiry from "../../../public/hometap-inquiry.jpg";
 
 export default function ExperiencePage() {
   return (
@@ -48,17 +51,17 @@ export default function ExperiencePage() {
         id="hometap"
         className="min-h-screen"
         noisy
-        bgColorNoisy="tertiary/10"
+        bgColorNoisy="border/20"
       >
         <Content className="flex flex-col items-center gap-16 py-32">
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-4">
               <Image
                 src={"/hometap-logo-horizontal.png"}
                 alt="Hometap Logo"
                 width={450}
-                height={250}
-                className="-ml-1 w-32 sm:w-40 lg:w-48"
+                height={174}
+                className="bg-background dark:bg-foreground -ml-1 w-28 rounded-full px-2 sm:w-32 md:w-36 lg:w-40"
               />
               <div className="flex flex-col">
                 <H2 className="text-foreground hidden sm:block">
@@ -68,9 +71,9 @@ export default function ExperiencePage() {
                   <H2 className="text-foreground">Full-Stack</H2>
                   <H2 className="text-foreground">Engineering Co-op</H2>
                 </div>
-                <p className="text-muted-foreground italic">
-                  Hometap Equity Partners, LLC
-                </p>
+                <Monospace className="text-muted-foreground">
+                  Hometap Equity Partners
+                </Monospace>
               </div>
             </div>
             <Alert className="relative flex gap-4">
@@ -85,13 +88,16 @@ export default function ExperiencePage() {
             </Alert>
           </div>
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4">
               <H3 className="text-tertiary w-48">what i&apos;m doing</H3>
-              <div className="flex flex-col gap-4">
+              <Separator />
+              <div className="flex flex-col gap-8">
                 <p className="font-extrabold">tech stack:</p>
-                <div className="flex gap-4 sm:flex-col">
+                <div className="flex gap-8 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
-                    <p className="italic">front end</p>
+                    <Monospace className="text-accent-foreground">
+                      front end
+                    </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
@@ -132,7 +138,9 @@ export default function ExperiencePage() {
                     </ul>
                   </div>
                   <div className="flex flex-1 flex-col gap-2">
-                    <p className="italic">back end</p>
+                    <Monospace className="text-accent-foreground">
+                      back end
+                    </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
@@ -161,9 +169,11 @@ export default function ExperiencePage() {
                     </ul>
                   </div>
                 </div>
-                <div className="flex gap-4 sm:flex-col">
+                <div className="flex gap-8 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
-                    <p className="italic">database</p>
+                    <Monospace className="text-accent-foreground">
+                      database
+                    </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
@@ -180,7 +190,9 @@ export default function ExperiencePage() {
                     </ul>
                   </div>
                   <div className="flex flex-1 flex-col gap-2">
-                    <p className="italic">infra / deployment</p>
+                    <Monospace className="text-accent-foreground">
+                      infra / deployment
+                    </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
@@ -230,11 +242,11 @@ export default function ExperiencePage() {
             </Card>
           </section>
           <Image
-            src={"/inquiry.jpeg"}
-            alt={"Inquiry page"}
-            width={1704}
-            height={1248}
-            className="w-full max-w-5xl rounded-md"
+            src={hometapInquiry}
+            alt={"Hometap inquiry page"}
+            width={2880}
+            height={1750}
+            className="w-full max-w-5xl rounded-sm"
           />
           <div className="flex flex-col">
             <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
@@ -263,13 +275,13 @@ export default function ExperiencePage() {
         <Content className="flex flex-col items-center gap-16 py-32">
           <div className="flex w-full max-w-prose justify-center gap-4">
             <div className="flex w-full flex-col gap-8 sm:w-auto sm:items-center">
-              <div className="flex flex-col">
+              <div className="flex flex-col gap-4">
                 <Image
                   src={"/woodmac-logo-horizontal.png"}
                   alt="WoodMac Logo"
                   width={1232}
                   height={413}
-                  className="-ml-3 w-32 sm:w-40 lg:w-48"
+                  className="bg-background dark:bg-foreground -ml-3 w-28 rounded-full px-2 py-1 sm:w-32 md:w-36 lg:w-40"
                 />
                 <div className="flex flex-col">
                   <H2 className="text-foreground hidden sm:block">
@@ -279,9 +291,9 @@ export default function ExperiencePage() {
                     <H2 className="text-foreground">Software</H2>
                     <H2 className="text-foreground">Engineering Co-op</H2>
                   </div>
-                  <p className="text-muted-foreground italic">
+                  <Monospace className="text-muted-foreground">
                     Wood Mackenzie Limited
-                  </p>
+                  </Monospace>
                 </div>
               </div>
               <Alert className="relative flex gap-4">
@@ -297,13 +309,16 @@ export default function ExperiencePage() {
             </div>
           </div>
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4">
               <H3 className="text-tertiary w-48">what i did</H3>
-              <div className="flex flex-col gap-4">
+              <Separator />
+              <div className="flex flex-col gap-8">
                 <p className="font-extrabold">tech stack:</p>
-                <div className="flex gap-4 sm:flex-col">
+                <div className="flex gap-8 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
-                    <p className="italic">front end</p>
+                    <Monospace className="text-accent-foreground">
+                      front end
+                    </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
@@ -344,7 +359,9 @@ export default function ExperiencePage() {
                     </ul>
                   </div>
                   <div className="flex flex-1 flex-col gap-2">
-                    <p className="italic">back end</p>
+                    <Monospace className="text-accent-foreground">
+                      back end
+                    </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
@@ -375,7 +392,9 @@ export default function ExperiencePage() {
                 </div>
                 <div className="flex gap-4 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
-                    <p className="italic">infra / deployment</p>
+                    <Monospace className="text-accent-foreground">
+                      infra / deployment
+                    </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">

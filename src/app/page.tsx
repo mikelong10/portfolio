@@ -124,7 +124,7 @@ export default function Home() {
                     >
                       scrum
                     </Link>{" "}
-                    teams at a global leader in the energy industry to a
+                    teams at a global leader in the energy industry and a
                     fast-growing fintech startup, i&rsquo;ve had the opportunity
                     to work on modern, dynamic, full-stack applications and to
                     learn from great fellow engineers and mentors in industry.

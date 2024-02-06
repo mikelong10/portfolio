@@ -7,10 +7,14 @@ import Resume from "./Resume";
 
 export default function ResumePage() {
   return (
-    <Container className="min-h-screen py-32" noisy bgColorNoisy="accent">
+    <Container className="min-h-screen py-32" noisy>
       <div className="flex w-full flex-col items-center justify-center gap-8">
         <Resume />
-        <Button asChild className="flex gap-4" size={"lg"}>
+        <Button
+          asChild
+          className="hover:shadow-secondary flex gap-4 transition-all duration-500 hover:shadow-lg"
+          size={"lg"}
+        >
           <Link
             href={"./Michael-Long-SWE-Resume-2024.pdf"}
             download={"Michael-Long-Resume.pdf"}
