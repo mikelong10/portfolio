@@ -2,12 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
 
+import { dmMono } from "@lib/fonts";
 import { Arrow, Squiggle } from "@lib/icons";
+import { cn } from "@lib/utils";
 import Container from "@components/structure/Container";
 import Content from "@components/structure/Content";
 import H1 from "@components/typography/h1";
 import H2 from "@components/typography/h2";
 import H3 from "@components/typography/h3";
+import Monospace from "@components/typography/monospace";
 import { Button } from "@components/ui/button";
 import { Separator } from "@components/ui/separator";
 import avatar from "../../public/avatar.svg";
@@ -106,12 +109,12 @@ export default function Home() {
               <div className="flex flex-col gap-4">
                 <div className="text-muted-foreground bg-muted flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-lg lg:px-4 lg:py-2 lg:text-xl">
                   <p>✨</p>
-                  <p className="font-semibold tracking-tight">experience</p>
+                  <Monospace>experience</Monospace>
                 </div>
                 <H2 className="text-accent-foreground">
                   {"building real-world production software"}
                 </H2>
-                <blockquote className="border-secondary text-accent-foreground mb-16 mt-8 flex max-w-prose flex-col gap-2 border-l-2 pl-6 italic">
+                <blockquote className="border-secondary text-accent-foreground mb-16 mt-8 flex max-w-prose flex-col gap-2 border-l-2 pl-6">
                   <p>
                     working in agile{" "}
                     <Link
@@ -147,10 +150,10 @@ export default function Home() {
                       >
                         Hometap
                       </Link>
-                      <p className="text-secondary hidden sm:flex">•</p>
-                      <p className="text-muted-foreground italic">
+                      <p className="text-tertiary hidden sm:flex">•</p>
+                      <Monospace className="text-muted-foreground">
                         full-stack engineering co-op
-                      </p>
+                      </Monospace>
                     </div>
                     <p>
                       making homeownership less stressful and more accessible
@@ -176,10 +179,10 @@ export default function Home() {
                       >
                         Wood Mackenzie
                       </Link>
-                      <p className="text-secondary hidden sm:flex">•</p>
-                      <p className="text-muted-foreground italic">
+                      <p className="text-tertiary hidden sm:flex">•</p>
+                      <Monospace className="text-muted-foreground">
                         software engineering co-op
-                      </p>
+                      </Monospace>
                     </div>
                     <p>
                       providing data and insights that power smart decisions to
@@ -193,12 +196,12 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <div className="text-muted-foreground bg-muted flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-lg lg:px-4 lg:py-2 lg:text-xl">
                 <p>🚀</p>
-                <p className="font-semibold tracking-tight">projects</p>
+                <Monospace>projects</Monospace>
               </div>
               <H2 className="text-accent-foreground">
                 {"creating, innovating, & having fun"}
               </H2>
-              <blockquote className="border-secondary text-accent-foreground mb-16 mt-8 flex max-w-prose flex-col gap-2 border-l-2 pl-6 italic">
+              <blockquote className="border-secondary text-accent-foreground mb-16 mt-8 flex max-w-prose flex-col gap-2 border-l-2 pl-6">
                 <p>
                   ranging from full-stack websites publicly deployed to the web
                   to personal renditions of classic games, here are some of my
@@ -209,7 +212,12 @@ export default function Home() {
                 <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-16 xl:gap-24">
                   <div className="flex max-w-prose flex-col gap-4">
                     <Link href={"/projects"} className="w-fit">
-                      <H3 className="text-tertiary hover:text-tertiary/80 underline underline-offset-8 transition-all">
+                      <H3
+                        className={cn(
+                          "text-tertiary hover:text-tertiary/80 tracking-normal underline underline-offset-8 transition-all",
+                          dmMono.className
+                        )}
+                      >
                         Wayland Student-Athlete
                       </H3>
                     </Link>
@@ -231,7 +239,12 @@ export default function Home() {
                 <div className="flex w-full flex-col gap-8 lg:flex-row-reverse lg:items-center lg:gap-16 xl:gap-24">
                   <div className="flex max-w-prose flex-col gap-4">
                     <Link href={"/projects"} className="w-fit">
-                      <H3 className="text-tertiary hover:text-tertiary/80 underline underline-offset-8 transition-all">
+                      <H3
+                        className={cn(
+                          "text-tertiary hover:text-tertiary/80 tracking-normal underline underline-offset-8 transition-all",
+                          dmMono.className
+                        )}
+                      >
                         Wayland Student-Athlete
                       </H3>
                     </Link>
@@ -253,7 +266,12 @@ export default function Home() {
                 <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-16 xl:gap-24">
                   <div className="flex max-w-prose flex-col gap-4">
                     <Link href={"/projects"} className="w-fit">
-                      <H3 className="text-tertiary hover:text-tertiary/80 underline underline-offset-8 transition-all">
+                      <H3
+                        className={cn(
+                          "text-tertiary hover:text-tertiary/80 tracking-normal underline underline-offset-8 transition-all",
+                          dmMono.className
+                        )}
+                      >
                         Wayland Student-Athlete
                       </H3>
                     </Link>
@@ -275,7 +293,12 @@ export default function Home() {
                 <div className="flex w-full flex-col gap-8 lg:flex-row-reverse lg:items-center lg:gap-16 xl:gap-24">
                   <div className="flex max-w-prose flex-col gap-4">
                     <Link href={"/projects"} className="w-fit">
-                      <H3 className="text-tertiary hover:text-tertiary/80 underline underline-offset-8 transition-all">
+                      <H3
+                        className={cn(
+                          "text-tertiary hover:text-tertiary/80 tracking-normal underline underline-offset-8 transition-all",
+                          dmMono.className
+                        )}
+                      >
                         Wayland Student-Athlete
                       </H3>
                     </Link>

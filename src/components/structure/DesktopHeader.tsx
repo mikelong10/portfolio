@@ -2,6 +2,10 @@
 
 import Link from "next/link";
 import React from "react";
+
+import { Underline } from "@lib/icons";
+import { cn } from "@lib/utils";
+import H1 from "@components/typography/h1";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,12 +14,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-
-import { Underline } from "@lib/icons";
-import { cn } from "@lib/utils";
-import H1 from "@components/typography/h1";
-import ThemeToggle from "@components/utils/ThemeToggle";
+} from "@components/ui/navigation-menu";
+import ThemeButtons from "@components/utils/ThemeButtons";
 
 const projects: { title: string; href: string; description: string }[] = [
   {
@@ -135,7 +135,7 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-      <ThemeToggle />
+      <ThemeButtons />
     </nav>
   );
 }
