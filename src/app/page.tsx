@@ -2,17 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-import { dmMono } from "@lib/fonts";
+import { dmMono, dmSerifDisplay } from "@lib/fonts";
 import { Arrow, Squiggle } from "@lib/icons";
 import { cn } from "@lib/utils";
 import Container from "@components/structure/Container";
 import Content from "@components/structure/Content";
-import H1 from "@components/typography/h1";
 import H2 from "@components/typography/h2";
 import H3 from "@components/typography/h3";
 import Monospace from "@components/typography/monospace";
 import { Button } from "@components/ui/button";
 import { Separator } from "@components/ui/separator";
+import { TypewriterEffect } from "@components/ui/typewriter-effect";
 import avatar from "../../public/avatar.svg";
 import hometapLogo from "../../public/hometap-icon.png";
 import woodmacLogo from "../../public/woodmac-icon.png";
@@ -74,7 +74,14 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <H1>hi, i&rsquo;m michael.</H1>
+              <TypewriterEffect
+                className={cn(
+                  "flex scroll-m-20 items-center text-left text-5xl font-extrabold tracking-tight sm:text-6xl md:text-6xl lg:text-7xl",
+                  dmSerifDisplay.className
+                )}
+                cursorClassName="h-[56px] sm:h-[68px] md:h-[68px] lg:h-[80px]"
+                words={[{ text: "hi," }, { text: "i'm" }, { text: "michael" }]}
+              />
               <p className="text-accent-foreground max-w-prose">
                 i&rsquo;m a third-year student at northeastern university
                 pursuing a computer science and business combined degree with a
@@ -107,7 +114,7 @@ export default function Home() {
           <div className="flex h-full flex-col items-center gap-16 sm:gap-20 lg:gap-24">
             <div className="flex flex-col items-center gap-4">
               <div className="flex flex-col gap-4">
-                <div className="text-muted-foreground bg-muted flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-lg lg:px-4 lg:py-2 lg:text-xl">
+                <div className="text-muted-foreground bg-accent flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-lg lg:px-4 lg:py-2 lg:text-xl">
                   <p>✨</p>
                   <Monospace>experience</Monospace>
                 </div>
@@ -193,21 +200,23 @@ export default function Home() {
               </div>
             </div>
             <Squiggle className="text-secondary w-32 sm:w-40 lg:w-48" />
-            <div className="flex flex-col gap-4">
-              <div className="text-muted-foreground bg-muted flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-lg lg:px-4 lg:py-2 lg:text-xl">
-                <p>🚀</p>
-                <Monospace>projects</Monospace>
+            <div className="flex flex-col items-center gap-4">
+              <div className="flex flex-col gap-4">
+                <div className="text-muted-foreground bg-accent flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-lg lg:px-4 lg:py-2 lg:text-xl">
+                  <p>🚀</p>
+                  <Monospace>projects</Monospace>
+                </div>
+                <H2 className="text-accent-foreground">
+                  {"creating, innovating, & having fun"}
+                </H2>
+                <blockquote className="border-secondary text-accent-foreground mb-16 mt-8 flex max-w-prose flex-col gap-2 border-l-2 pl-6">
+                  <p>
+                    ranging from full-stack websites publicly deployed to the
+                    web to personal renditions of classic games, here are some
+                    of my favorite projects that i&rsquo;ve built.
+                  </p>
+                </blockquote>
               </div>
-              <H2 className="text-accent-foreground">
-                {"creating, innovating, & having fun"}
-              </H2>
-              <blockquote className="border-secondary text-accent-foreground mb-16 mt-8 flex max-w-prose flex-col gap-2 border-l-2 pl-6">
-                <p>
-                  ranging from full-stack websites publicly deployed to the web
-                  to personal renditions of classic games, here are some of my
-                  favorite projects that i&rsquo;ve built.
-                </p>
-              </blockquote>
               <div className="flex flex-col gap-20">
                 <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-16 xl:gap-24">
                   <div className="flex max-w-prose flex-col gap-4">
