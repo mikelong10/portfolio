@@ -88,13 +88,13 @@ export default function ExperiencePage() {
             </Alert>
           </div>
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
-            <div className="flex flex-col gap-4 shrink-0">
-              <H3 className="text-tertiary text-nowrap shrink-0">
+            <div className="flex shrink-0 flex-col gap-4">
+              <H3 className="text-tertiary shrink-0 text-nowrap">
                 what i&apos;m doing
               </H3>
               <Separator />
               <div className="flex flex-col gap-8">
-                <p className="font-extrabold text-muted-foreground">
+                <p className="text-muted-foreground font-extrabold">
                   tech stack:
                 </p>
                 <div className="flex gap-8 sm:flex-col">
@@ -314,10 +314,10 @@ export default function ExperiencePage() {
           </div>
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
             <div className="flex flex-col gap-4">
-              <H3 className="text-tertiary text-nowrap shrink-0">what i did</H3>
+              <H3 className="text-tertiary shrink-0 text-nowrap">what i did</H3>
               <Separator />
               <div className="flex flex-col gap-8">
-                <p className="font-extrabold text-muted-foreground">
+                <p className="text-muted-foreground font-extrabold">
                   tech stack:
                 </p>
                 <div className="flex gap-8 sm:flex-col">
