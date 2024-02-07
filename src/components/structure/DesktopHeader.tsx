@@ -77,7 +77,7 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <Link
-                      className="from-accent/50 to-accent flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
+                      className="from-accent/50 to-accent hover:bg-secondary flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none transition-all focus:shadow-md"
                       href="/experience"
                     >
                       <p className="text-4xl">👨‍💻</p>

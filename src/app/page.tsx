@@ -261,7 +261,7 @@ export default function Home() {
                 <ThreeDimensionalDisplayCard
                   title={"getitdone to-do app"}
                   description={
-                    "fully-featured CRUD to-do app built with EJS HTML templating and vanilla CSS on an Express.js Node server"
+                    "fully-featured CRUD to-do app built with EJS HTML templating and vanilla CSS on the frontend and a REST API Express.js + Node.js server on the backend"
                   }
                   image={
                     <Image
