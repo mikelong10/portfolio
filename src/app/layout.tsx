@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 
 import { dmSans } from "@lib/fonts";
 import { cn } from "@lib/utils";
+import Footer from "@components/structure/Footer";
 import Header from "@components/structure/Header";
 import { ThemeProvider } from "@components/utils/Providers";
 
@@ -15,7 +16,7 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "bg-background text-foreground -z-50 flex min-h-screen min-w-[360px] justify-center overflow-x-hidden scroll-smooth antialiased",
+          "bg-background text-foreground -z-50 flex flex-col min-h-screen min-w-[360px] justify-center overflow-x-hidden scroll-smooth antialiased",
           dmSans.className
         )}
       >
@@ -27,6 +28,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
