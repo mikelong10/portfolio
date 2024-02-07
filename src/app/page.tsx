@@ -150,6 +150,7 @@ export default function Home() {
                       width={552}
                       height={552}
                       className="rounded transition-transform hover:scale-105 hover:animate-pulse"
+                      priority
                     />
                   </Link>
                   <div className="flex flex-col gap-4">
@@ -179,6 +180,7 @@ export default function Home() {
                       width={225}
                       height={225}
                       className="rounded transition-transform hover:scale-105 hover:animate-pulse"
+                      priority
                     />
                   </Link>
                   <div className="flex flex-col gap-4">
@@ -233,6 +235,7 @@ export default function Home() {
                       width={2880}
                       height={1750}
                       className="rounded-sm"
+                      priority
                     />
                   }
                   footerButtons={[
@@ -270,6 +273,7 @@ export default function Home() {
                       width={2880}
                       height={1750}
                       className="rounded-sm"
+                      priority
                     />
                   }
                   footerButtons={[
@@ -307,6 +311,7 @@ export default function Home() {
                       width={2880}
                       height={1750}
                       className="rounded-sm"
+                      priority
                     />
                   }
                   footerButtons={[
@@ -344,6 +349,7 @@ export default function Home() {
                       width={2880}
                       height={1750}
                       className="rounded-sm"
+                      priority
                     />
                   }
                   footerButtons={[

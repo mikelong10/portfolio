@@ -82,10 +82,12 @@ export default function ExperiencePage() {
               </div>
             </div>
             <Alert className="relative flex gap-4 overflow-hidden border-0 p-6 shadow-lg dark:border">
-              <p className="text-2xl">🏡</p>
+              <p className="z-20 text-2xl">🏡</p>
               <div className="flex flex-col gap-1">
-                <AlertTitle>Jan 2024 - Present · 1 mo</AlertTitle>
-                <AlertDescription>
+                <AlertTitle className="z-20">
+                  Jan 2024 - Present · 1 mo
+                </AlertTitle>
+                <AlertDescription className="z-20">
                   Boston, Massachusetts, United States
                 </AlertDescription>
               </div>
@@ -313,10 +315,12 @@ export default function ExperiencePage() {
                 </div>
               </div>
               <Alert className="relative flex gap-4 overflow-hidden border-none p-6 shadow-lg">
-                <p className="text-2xl">⚡️</p>
+                <p className="z-20 text-2xl">⚡️</p>
                 <div className="flex flex-col gap-1">
-                  <AlertTitle>Jan 2023 — Aug 2023 · 7 mo</AlertTitle>
-                  <AlertDescription>
+                  <AlertTitle className="z-20">
+                    Jan 2023 — Aug 2023 · 7 mo
+                  </AlertTitle>
+                  <AlertDescription className="z-20">
                     Boston, Massachusetts, United States
                   </AlertDescription>
                 </div>
