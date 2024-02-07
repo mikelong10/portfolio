@@ -22,7 +22,7 @@ export default function Footer() {
               className="size-14 bg-transparent lg:size-16 xl:size-20"
               priority
             />
-            <H3 className="text-muted-foreground">michael long.</H3>
+            <H3 className="text-accent-foreground">michael long.</H3>
           </div>
           <div className="text-muted-foreground flex gap-2">
             <Button asChild variant={"ghost"} size={"icon"}>

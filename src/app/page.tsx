@@ -232,7 +232,7 @@ export default function Home() {
                       alt="Wayland Student-Athlete homepage screenshot"
                       width={2880}
                       height={1750}
-                      className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                      className="rounded-sm"
                     />
                   }
                   footerButtons={[
@@ -269,7 +269,7 @@ export default function Home() {
                       alt="Getitdone to-do app screenshot"
                       width={2880}
                       height={1750}
-                      className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                      className="rounded-sm"
                     />
                   }
                   footerButtons={[
@@ -306,7 +306,7 @@ export default function Home() {
                       alt="Calculator app screenshot"
                       width={2880}
                       height={1750}
-                      className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                      className="rounded-sm"
                     />
                   }
                   footerButtons={[
@@ -343,7 +343,7 @@ export default function Home() {
                       alt="Volleyball scorekeeper app screenshot"
                       width={2880}
                       height={1750}
-                      className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                      className="rounded-sm"
                     />
                   }
                   footerButtons={[

@@ -232,6 +232,14 @@ const config = {
             transform: "translate(0px, 0px) scale(1)",
           },
         },
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
         "shoot-out-0": {
           "0%": { transform: "translate(0px, 0px)", opacity: "0" },
           "40%": { transform: "translate(0px, 0px)", opacity: "1" },
@@ -325,6 +333,7 @@ const config = {
         "blob-2": "blob-2 16s infinite linear",
         "blob-3": "blob-3 16s infinite linear",
         "blob-4": "blob-4 16s infinite linear",
+        "meteor-effect": "meteor 5s linear infinite",
         "shoot-out-0": "shoot-out-0 16s infinite",
         "shoot-out-30": "shoot-out-30 16s infinite",
         "shoot-out-60": "shoot-out-60 16s infinite",

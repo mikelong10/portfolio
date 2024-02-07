@@ -7,9 +7,11 @@ import H1 from "@components/typography/h1";
 import H2 from "@components/typography/h2";
 import H3 from "@components/typography/h3";
 import Monospace from "@components/typography/monospace";
+import { CardBody, CardContainer } from "@components/ui/3d-card";
 import { Alert, AlertDescription, AlertTitle } from "@components/ui/alert";
 import { Card, CardContent, CardHeader } from "@components/ui/card";
 import { Checkbox } from "@components/ui/checkbox";
+import { Meteors } from "@components/ui/meteors";
 import { Separator } from "@components/ui/separator";
 import hometapInquiry from "../../../public/hometap-inquiry.jpg";
 
@@ -56,13 +58,16 @@ export default function ExperiencePage() {
         <Content className="flex flex-col items-center gap-16 py-32">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-4">
-              <Image
-                src={"/hometap-logo-horizontal.png"}
-                alt="Hometap Logo"
-                width={450}
-                height={174}
-                className="bg-background dark:bg-foreground -ml-1 w-28 rounded-full px-2 sm:w-32 md:w-36 lg:w-40"
-              />
+              <div className="relative w-fit">
+                <Image
+                  src={"/hometap-logo-horizontal.png"}
+                  alt="Hometap Logo"
+                  width={450}
+                  height={174}
+                  className="bg-background dark:bg-foreground w-28 rounded-full px-2 sm:w-32 md:w-36 lg:w-40"
+                />
+                <div className="absolute inset-0 -z-10  w-28 rounded-full bg-gradient-to-bl from-blue-300 to-violet-300 px-2 blur-lg sm:w-32 md:w-36 lg:w-40 dark:from-blue-600 dark:to-violet-600" />
+              </div>
               <div className="flex flex-col">
                 <H2 className="text-foreground hidden sm:block">
                   Full-Stack Engineering Co-op
@@ -76,15 +81,15 @@ export default function ExperiencePage() {
                 </Monospace>
               </div>
             </div>
-            <Alert className="relative flex gap-4">
-              <p className="text-2xl">🚀</p>
-              <div className="flex flex-col">
+            <Alert className="relative flex gap-4 overflow-hidden border-0 p-6 shadow-lg dark:border">
+              <p className="text-2xl">🏡</p>
+              <div className="flex flex-col gap-1">
                 <AlertTitle>Jan 2024 - Present · 1 mo</AlertTitle>
                 <AlertDescription>
                   Boston, Massachusetts, United States
                 </AlertDescription>
               </div>
-              <div className="absolute inset-0 -z-10 rounded-lg bg-gradient-to-bl from-blue-300 to-violet-300 blur-lg dark:from-blue-600 dark:to-violet-600" />
+              <Meteors number={24} />
             </Alert>
           </div>
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
@@ -245,13 +250,17 @@ export default function ExperiencePage() {
               </CardContent>
             </Card>
           </section>
-          <Image
-            src={hometapInquiry}
-            alt={"Hometap inquiry page"}
-            width={2880}
-            height={1750}
-            className="w-full max-w-5xl rounded-sm"
-          />
+          <CardContainer containerClassName="w-full max-w-4xl">
+            <CardBody>
+              <Image
+                src={hometapInquiry}
+                alt={"Hometap inquiry page"}
+                width={2880}
+                height={1750}
+                className="rounded-md shadow-xl"
+              />
+            </CardBody>
+          </CardContainer>
           <div className="flex flex-col">
             <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
               <p>
@@ -280,13 +289,16 @@ export default function ExperiencePage() {
           <div className="flex w-full max-w-prose justify-center gap-4">
             <div className="flex w-full flex-col gap-8 sm:w-auto sm:items-center">
               <div className="flex flex-col gap-4">
-                <Image
-                  src={"/woodmac-logo-horizontal.png"}
-                  alt="WoodMac Logo"
-                  width={1232}
-                  height={413}
-                  className="bg-background dark:bg-foreground -ml-3 w-28 rounded-full px-2 py-1 sm:w-32 md:w-36 lg:w-40"
-                />
+                <div className="relative w-fit">
+                  <Image
+                    src={"/woodmac-logo-horizontal.png"}
+                    alt="WoodMac Logo"
+                    width={1232}
+                    height={413}
+                    className="bg-background dark:bg-foreground w-28 rounded-full px-2 py-1 sm:w-32 md:w-36 lg:w-40"
+                  />
+                  <div className="absolute inset-0 -z-10 w-28 rounded-full bg-gradient-to-br from-sky-300 to-indigo-300 blur-xl sm:w-32 md:w-36 lg:w-40 dark:from-sky-600 dark:to-indigo-600" />
+                </div>
                 <div className="flex flex-col">
                   <H2 className="text-foreground hidden sm:block">
                     Software Engineering Co-op
@@ -300,15 +312,15 @@ export default function ExperiencePage() {
                   </Monospace>
                 </div>
               </div>
-              <Alert className="relative flex gap-4">
+              <Alert className="relative flex gap-4 overflow-hidden border-none p-6 shadow-lg">
                 <p className="text-2xl">⚡️</p>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-1">
                   <AlertTitle>Jan 2023 — Aug 2023 · 7 mo</AlertTitle>
                   <AlertDescription>
                     Boston, Massachusetts, United States
                   </AlertDescription>
                 </div>
-                <div className="absolute inset-0 -z-10 rounded-lg bg-gradient-to-br from-sky-300 to-indigo-300 blur-lg dark:from-sky-600 dark:to-indigo-600" />
+                <Meteors number={24} />
               </Alert>
             </div>
           </div>
@@ -462,7 +474,7 @@ export default function ExperiencePage() {
                   alt={"Lens Screenshot"}
                   width={1600}
                   height={1200}
-                  className="mt-8"
+                  className="mt-8 rounded-sm"
                 />
                 <ul className="ml-6 flex flex-col gap-2">
                   {powerAdvocateBullets.map((bullet) => (
@@ -474,13 +486,17 @@ export default function ExperiencePage() {
               </CardContent>
             </Card>
           </section>
-          <Image
-            src={"/woodmac-lens-gas-lng.webp"}
-            alt={"Lens Gas & LNG"}
-            width={1280}
-            height={720}
-            className="w-full max-w-prose rounded-md"
-          />
+          <CardContainer containerClassName="w-full max-w-4xl">
+            <CardBody>
+              <Image
+                src={"/woodmac-lens-gas-lng.webp"}
+                alt={"Lens Gas & LNG"}
+                width={1280}
+                height={720}
+                className=" rounded-md shadow-xl"
+              />
+            </CardBody>
+          </CardContainer>
           <div className="flex flex-col">
             <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
               <p>
