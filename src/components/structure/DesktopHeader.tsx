@@ -17,43 +17,43 @@ import {
 } from "@components/ui/navigation-menu";
 import ThemeButtons from "@components/utils/ThemeButtons";
 
-const projects: { title: string; href: string; description: string }[] = [
-  {
-    title: "Wayland Student-Athlete",
-    href: "/projects/wsa",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Big City Diner",
-    href: "/projects/bcd",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Shoots",
-    href: "/projects/shoots",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Pokétown",
-    href: "/projects/poketown",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Computer Networking",
-    href: "/projects/networks",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Fun & Games",
-    href: "/projects/fun",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
+// const projects: { title: string; href: string; description: string }[] = [
+//   {
+//     title: "Wayland Student-Athlete",
+//     href: "/projects/wsa",
+//     description:
+//       "A modal dialog that interrupts the user with important content and expects a response.",
+//   },
+//   {
+//     title: "Big City Diner",
+//     href: "/projects/bcd",
+//     description:
+//       "For sighted users to preview content available behind a link.",
+//   },
+//   {
+//     title: "Shoots",
+//     href: "/projects/shoots",
+//     description:
+//       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+//   },
+//   {
+//     title: "Pokétown",
+//     href: "/projects/poketown",
+//     description: "Visually or semantically separates content.",
+//   },
+//   {
+//     title: "Computer Networking",
+//     href: "/projects/networks",
+//     description:
+//       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+//   },
+//   {
+//     title: "Fun & Games",
+//     href: "/projects/fun",
+//     description:
+//       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+//   },
+// ];
 
 export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
   return (
@@ -101,7 +101,7 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/* <NavigationMenuItem>
             <NavigationMenuTrigger>projects</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -116,15 +116,15 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
                 ))}
               </ul>
             </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
+          </NavigationMenuItem> */}
+          {/* <NavigationMenuItem>
             <NavigationMenuLink
               asChild
               className={navigationMenuTriggerStyle()}
             >
               <Link href="/about">about me</Link>
             </NavigationMenuLink>
-          </NavigationMenuItem>
+          </NavigationMenuItem> */}
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild

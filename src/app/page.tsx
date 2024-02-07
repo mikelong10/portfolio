@@ -1,20 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
 
-import { dmMono, dmSerifDisplay } from "@lib/fonts";
+import { dmSerifDisplay } from "@lib/fonts";
 import { Arrow, Squiggle } from "@lib/icons";
 import { cn } from "@lib/utils";
+import ThreeDimensionalDisplayCard from "@components/3dDisplayCard";
 import Container from "@components/structure/Container";
 import Content from "@components/structure/Content";
 import H2 from "@components/typography/h2";
-import H3 from "@components/typography/h3";
 import Monospace from "@components/typography/monospace";
 import { Button } from "@components/ui/button";
 import { Separator } from "@components/ui/separator";
 import { TypewriterEffect } from "@components/ui/typewriter-effect";
 import avatar from "../../public/avatar.svg";
+import calcAppScreenshot from "../../public/calc-app-screenshot.jpg";
+import getitdoneScreenshot from "../../public/getitdone-screenshot.jpg";
 import hometapLogo from "../../public/hometap-icon.png";
+import vballScorekeeperScreenshot from "../../public/vball-scorekeeper-screenshot.jpg";
 import woodmacLogo from "../../public/woodmac-icon.png";
 import wsaScreenshot from "../../public/wsa-screenshot.jpg";
 
@@ -134,7 +137,7 @@ export default function Home() {
                     teams at a global leader in the energy industry and a
                     fast-growing fintech startup, i&rsquo;ve had the opportunity
                     to work on modern, dynamic, full-stack applications and to
-                    learn from great fellow engineers and mentors in industry.
+                    learn from amazing fellow engineers and mentors in industry.
                   </p>
                 </blockquote>
               </div>
@@ -217,115 +220,157 @@ export default function Home() {
                   </p>
                 </blockquote>
               </div>
-              <div className="flex flex-col gap-20">
-                <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-16 xl:gap-24">
-                  <div className="flex max-w-prose flex-col gap-4">
-                    <Link href={"/projects"} className="w-fit">
-                      <H3
-                        className={cn(
-                          "text-tertiary hover:text-tertiary/80 tracking-normal underline underline-offset-8 transition-all",
-                          dmMono.className
-                        )}
+              <div className="xs:gap-8 grid w-full grid-cols-1 gap-6 lg:grid-cols-2">
+                <ThreeDimensionalDisplayCard
+                  title={"Wayland Student-Athlete"}
+                  description={
+                    "website powering the local odd jobs business founded by me and my friends built on Next.js with TypeScript, React, TailwindCSS, and a PlanetScale MySQL database using Prisma ORM"
+                  }
+                  image={
+                    <Image
+                      src={wsaScreenshot}
+                      alt="Wayland Student-Athlete homepage screenshot"
+                      width={2880}
+                      height={1750}
+                      className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                    />
+                  }
+                  footerButtons={[
+                    <Button
+                      key={"explore"}
+                      asChild
+                      variant={"ghost"}
+                      className="flex gap-2"
+                    >
+                      <Link href={"/projects"}>
+                        explore
+                        <ArrowRight className="size-5" />
+                      </Link>
+                    </Button>,
+                    <Button key={"visit"} asChild className="flex gap-2">
+                      <Link
+                        href={"https://www.waylandstudentathlete.com/"}
+                        target="_blank"
                       >
-                        Wayland Student-Athlete
-                      </H3>
-                    </Link>
-                    <p>
-                      website powering the local odd jobs business founded by me
-                      and my friends built on Next.js with TypeScript, React,
-                      TailwindCSS, and a PlanetScale MySQL database using Prisma
-                      ORM.
-                    </p>
-                  </div>
-                  <Image
-                    src={wsaScreenshot}
-                    alt="Wayland Student-Athlete homepage screenshot"
-                    width={3104}
-                    height={1974}
-                    className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
-                  />
-                </div>
-                <div className="flex w-full flex-col gap-8 lg:flex-row-reverse lg:items-center lg:gap-16 xl:gap-24">
-                  <div className="flex max-w-prose flex-col gap-4">
-                    <Link href={"/projects"} className="w-fit">
-                      <H3
-                        className={cn(
-                          "text-tertiary hover:text-tertiary/80 tracking-normal underline underline-offset-8 transition-all",
-                          dmMono.className
-                        )}
+                        visit
+                        <ExternalLink className="size-5" />
+                      </Link>
+                    </Button>,
+                  ]}
+                />
+                <ThreeDimensionalDisplayCard
+                  title={"getitdone to-do app"}
+                  description={
+                    "fully-featured CRUD to-do app built with EJS HTML templating and vanilla CSS on an Express.js Node server"
+                  }
+                  image={
+                    <Image
+                      src={getitdoneScreenshot}
+                      alt="Getitdone to-do app screenshot"
+                      width={2880}
+                      height={1750}
+                      className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                    />
+                  }
+                  footerButtons={[
+                    <Button
+                      key={"explore"}
+                      asChild
+                      variant={"ghost"}
+                      className="flex gap-2"
+                    >
+                      <Link href={"/projects"}>
+                        explore
+                        <ArrowRight className="size-5" />
+                      </Link>
+                    </Button>,
+                    <Button key={"visit"} asChild className="flex gap-2">
+                      <Link
+                        href={"https://todo-app-khaki-nine.vercel.app/"}
+                        target="_blank"
                       >
-                        Wayland Student-Athlete
-                      </H3>
-                    </Link>
-                    <p>
-                      website powering the local odd jobs business founded by me
-                      and my friends built on Next.js with TypeScript, React,
-                      TailwindCSS, and a PlanetScale MySQL database using Prisma
-                      ORM.
-                    </p>
-                  </div>
-                  <Image
-                    src={wsaScreenshot}
-                    alt="Wayland Student-Athlete homepage screenshot"
-                    width={3104}
-                    height={1974}
-                    className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
-                  />
-                </div>
-                <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-16 xl:gap-24">
-                  <div className="flex max-w-prose flex-col gap-4">
-                    <Link href={"/projects"} className="w-fit">
-                      <H3
-                        className={cn(
-                          "text-tertiary hover:text-tertiary/80 tracking-normal underline underline-offset-8 transition-all",
-                          dmMono.className
-                        )}
+                        visit
+                        <ExternalLink className="size-5" />
+                      </Link>
+                    </Button>,
+                  ]}
+                />
+                <ThreeDimensionalDisplayCard
+                  title={"calculator app"}
+                  description={
+                    "simplistic, clean calculator app built from scratch with React (TypeScript) and vanilla CSS modeled after the Apple calculator app"
+                  }
+                  image={
+                    <Image
+                      src={calcAppScreenshot}
+                      alt="Calculator app screenshot"
+                      width={2880}
+                      height={1750}
+                      className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                    />
+                  }
+                  footerButtons={[
+                    <Button
+                      key={"explore"}
+                      asChild
+                      variant={"ghost"}
+                      className="flex gap-2"
+                    >
+                      <Link href={"/projects"}>
+                        explore
+                        <ArrowRight className="size-5" />
+                      </Link>
+                    </Button>,
+                    <Button key={"visit"} asChild className="flex gap-2">
+                      <Link
+                        href={"https://react-ts-calculator.vercel.app/"}
+                        target="_blank"
                       >
-                        Wayland Student-Athlete
-                      </H3>
-                    </Link>
-                    <p>
-                      website powering the local odd jobs business founded by me
-                      and my friends built on Next.js with TypeScript, React,
-                      TailwindCSS, and a PlanetScale MySQL database using Prisma
-                      ORM.
-                    </p>
-                  </div>
-                  <Image
-                    src={wsaScreenshot}
-                    alt="Wayland Student-Athlete homepage screenshot"
-                    width={3104}
-                    height={1974}
-                    className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
-                  />
-                </div>
-                <div className="flex w-full flex-col gap-8 lg:flex-row-reverse lg:items-center lg:gap-16 xl:gap-24">
-                  <div className="flex max-w-prose flex-col gap-4">
-                    <Link href={"/projects"} className="w-fit">
-                      <H3
-                        className={cn(
-                          "text-tertiary hover:text-tertiary/80 tracking-normal underline underline-offset-8 transition-all",
-                          dmMono.className
-                        )}
+                        visit
+                        <ExternalLink className="size-5" />
+                      </Link>
+                    </Button>,
+                  ]}
+                />
+                <ThreeDimensionalDisplayCard
+                  title={"volleyball scorekeeper"}
+                  description={
+                    "digitized rendition of a classic volleyball score flipper with point and set tracking and variable target scores built with vanilla HTML, CSS, and JS"
+                  }
+                  image={
+                    <Image
+                      src={vballScorekeeperScreenshot}
+                      alt="Volleyball scorekeeper app screenshot"
+                      width={2880}
+                      height={1750}
+                      className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
+                    />
+                  }
+                  footerButtons={[
+                    <Button
+                      key={"explore"}
+                      asChild
+                      variant={"ghost"}
+                      className="flex gap-2"
+                    >
+                      <Link href={"/projects"}>
+                        explore
+                        <ArrowRight className="size-5" />
+                      </Link>
+                    </Button>,
+                    <Button key={"visit"} asChild className="flex gap-2">
+                      <Link
+                        href={
+                          "https://mikelong10.github.io/volleyball-scorekeeper/"
+                        }
+                        target="_blank"
                       >
-                        Wayland Student-Athlete
-                      </H3>
-                    </Link>
-                    <p>
-                      website powering the local odd jobs business founded by me
-                      and my friends built on Next.js with TypeScript, React,
-                      TailwindCSS, and a PlanetScale MySQL database using Prisma
-                      ORM.
-                    </p>
-                  </div>
-                  <Image
-                    src={wsaScreenshot}
-                    alt="Wayland Student-Athlete homepage screenshot"
-                    width={3104}
-                    height={1974}
-                    className="xs:w-[400px] rounded sm:w-[448px] md:w-[496px] lg:w-[448px] xl:w-[496px]"
-                  />
-                </div>
+                        visit
+                        <ExternalLink className="size-5" />
+                      </Link>
+                    </Button>,
+                  ]}
+                />
               </div>
             </div>
           </div>

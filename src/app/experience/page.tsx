@@ -191,7 +191,7 @@ export default function ExperiencePage() {
                   </div>
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
-                      infra / deployment
+                      infra
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
@@ -393,7 +393,7 @@ export default function ExperiencePage() {
                 <div className="flex gap-4 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
-                      infra / deployment
+                      infra
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">

@@ -18,7 +18,7 @@ export default function Container({
       <section
         id={id}
         className={cn(
-          "xs:px-12 sm:px-18 lg:px-30 2xl:px-42 w-full px-6 md:px-24 xl:px-36",
+          "xs:px-12 lg:px-30 2xl:px-42 w-full px-6 sm:px-[72px] md:px-24 xl:px-36",
           className,
           noisy && "relative"
         )}

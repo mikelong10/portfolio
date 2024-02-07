@@ -11,14 +11,14 @@ import H2 from "@components/typography/h2";
 import { Button } from "@components/ui/button";
 import { Separator } from "@components/ui/separator";
 import { Sheet, SheetContent, SheetTrigger } from "@components/ui/sheet";
-import ThemeToggle from "@components/utils/ThemeToggle";
+import ThemeButtons from "@components/utils/ThemeButtons";
 import avatar from "../../../public/avatar.svg";
 
 const mobileNavLinks = [
   { name: "home", href: "/" },
   { name: "experience", href: "/experience" },
-  { name: "projects", href: "/projects" },
-  { name: "about me", href: "/about" },
+  // { name: "projects", href: "/projects" },
+  // { name: "about me", href: "/about" },
   { name: "resume", href: "/resume" },
 ];
 
@@ -44,7 +44,7 @@ export default function MobileNav({ isScrolled }: { isScrolled: boolean }) {
           </Button>
         </SheetTrigger>
         <SheetContent className="flex w-full min-w-[360px] flex-col items-center gap-12 p-6">
-          <div className="flex w-full flex-col items-center justify-center gap-2 pt-8">
+          <div className="flex w-full flex-col items-center justify-center gap-6 pt-8">
             <div className="flex items-center justify-center gap-4">
               <Link
                 href="/"
@@ -64,7 +64,7 @@ export default function MobileNav({ isScrolled }: { isScrolled: boolean }) {
                 <p className="text-sm">think different.</p>
               </div>
             </div>
-            <ThemeToggle />
+            <ThemeButtons />
           </div>
           <Separator />
           <div className="flex h-full flex-col items-center justify-between">

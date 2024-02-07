@@ -27,7 +27,7 @@ export default function Header() {
     <header
       className={cn(
         "fixed left-0 top-0 z-50 flex w-full justify-center py-6 transition-all duration-1000",
-        isScrolled && "py-4 shadow-lg backdrop-blur-sm"
+        isScrolled && "bg-background/70 py-4 shadow-lg backdrop-blur-sm"
       )}
     >
       <Container className="flex w-full justify-center">
