@@ -243,7 +243,7 @@ export default function Home() {
                       key={"explore"}
                       asChild
                       variant={"outline"}
-                      className="flex gap-2"
+                      className="fixed right-[104px] z-50 flex gap-2"
                     >
                       <Link
                         href={
@@ -255,7 +255,11 @@ export default function Home() {
                         <Code2 className="size-5" />
                       </Link>
                     </Button>,
-                    <Button key={"visit"} asChild className="flex gap-2">
+                    <Button
+                      key={"visit"}
+                      asChild
+                      className="fixed z-50 flex gap-2"
+                    >
                       <Link
                         href={"https://www.waylandstudentathlete.com/"}
                         target="_blank"
@@ -286,7 +290,7 @@ export default function Home() {
                       key={"explore"}
                       asChild
                       variant={"outline"}
-                      className="flex gap-2"
+                      className="fixed right-[104px] z-50 flex gap-2"
                     >
                       <Link
                         href={
@@ -297,7 +301,11 @@ export default function Home() {
                         <Code2 className="size-5" />
                       </Link>
                     </Button>,
-                    <Button key={"visit"} asChild className="flex gap-2">
+                    <Button
+                      key={"visit"}
+                      asChild
+                      className="fixed z-50 flex gap-2"
+                    >
                       <Link
                         href={"https://getitdone-to-do-app.vercel.app/"}
                         target="_blank"
@@ -328,7 +336,7 @@ export default function Home() {
                       key={"explore"}
                       asChild
                       variant={"outline"}
-                      className="flex gap-2"
+                      className="fixed right-[104px] z-50 flex gap-2"
                     >
                       <Link
                         href={
@@ -340,7 +348,11 @@ export default function Home() {
                         <Code2 className="size-5" />
                       </Link>
                     </Button>,
-                    <Button key={"visit"} asChild className="flex gap-2">
+                    <Button
+                      key={"visit"}
+                      asChild
+                      className="fixed z-50 flex gap-2"
+                    >
                       <Link
                         href={"https://react-ts-calculator.vercel.app/"}
                         target="_blank"
@@ -371,7 +383,7 @@ export default function Home() {
                       key={"explore"}
                       asChild
                       variant={"outline"}
-                      className="flex gap-2"
+                      className="fixed right-[104px] z-50 flex gap-2"
                     >
                       <Link
                         href={
@@ -382,7 +394,11 @@ export default function Home() {
                         <Code2 className="size-5" />
                       </Link>
                     </Button>,
-                    <Button key={"visit"} asChild className="flex gap-2">
+                    <Button
+                      key={"visit"}
+                      asChild
+                      className="fixed z-50 flex gap-2"
+                    >
                       <Link
                         href={
                           "https://mikelong10.github.io/volleyball-scorekeeper/"
