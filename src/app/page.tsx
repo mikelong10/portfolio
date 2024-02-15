@@ -159,7 +159,7 @@ export default function Home() {
                         href={"/experience"}
                         className="text-primary hover:text-tertiary w-fit text-xl underline underline-offset-[6px] transition-colors"
                       >
-                        Hometap
+                        hometap
                       </Link>
                       <p className="text-tertiary hidden sm:flex">•</p>
                       <Monospace className="text-muted-foreground">
@@ -189,7 +189,7 @@ export default function Home() {
                         href={"/experience"}
                         className="text-primary hover:text-tertiary w-fit text-xl underline underline-offset-[6px] transition-colors"
                       >
-                        Wood Mackenzie
+                        wood mackenzie
                       </Link>
                       <p className="text-tertiary hidden sm:flex">•</p>
                       <Monospace className="text-muted-foreground">
@@ -224,7 +224,7 @@ export default function Home() {
               </div>
               <div className="xs:gap-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
                 <DisplayCard
-                  title={"Wayland Student-Athlete"}
+                  title={"wayland student-athlete"}
                   description={
                     "website powering the local odd jobs business founded by me and my friends built on Next.js with TypeScript, React, TailwindCSS, and a PlanetScale MySQL database using Prisma ORM"
                   }

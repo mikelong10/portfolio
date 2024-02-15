@@ -3,7 +3,6 @@ import { hometapBullets, powerAdvocateBullets } from "@app/resume/Resume";
 
 import Container from "@components/structure/Container";
 import Content from "@components/structure/Content";
-import H1 from "@components/typography/h1";
 import H2 from "@components/typography/h2";
 import H3 from "@components/typography/h3";
 import Monospace from "@components/typography/monospace";
@@ -18,37 +17,6 @@ import hometapInquiry from "../../../public/hometap-inquiry.jpg";
 export default function ExperiencePage() {
   return (
     <section className="min-h-screen w-full">
-      <Container
-        className="flex min-h-screen items-center justify-center py-32"
-        noisy
-      >
-        <Content>
-          <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-2">
-              <Image
-                src={"/neu-seal-red.png"}
-                alt="Northeastern University Seal"
-                width={400}
-                height={400}
-                className="size-16"
-              />
-              <H1>my experience</H1>
-            </div>
-            <div className="flex max-w-prose flex-col gap-2">
-              <p>
-                Through 2 amazing co-op opportunities thus far, I have 9 (and
-                will graduate with 12+) months of real-world industry software
-                development experience.
-              </p>
-              <p>
-                I&apos;m incredibly grateful for the co-op program at
-                Northeastern, and I&apos;m excited to see what impact I can make
-                with my knowledge and skillset.
-              </p>
-            </div>
-          </div>
-        </Content>
-      </Container>
       <Container
         id="hometap"
         className="min-h-screen"
@@ -70,14 +38,14 @@ export default function ExperiencePage() {
               </div>
               <div className="flex flex-col">
                 <H2 className="text-foreground hidden sm:block">
-                  Full-Stack Engineering Co-op
+                  full-stack engineering co-op
                 </H2>
                 <div className="text-foreground flex flex-col sm:hidden">
-                  <H2 className="text-foreground">Full-Stack</H2>
-                  <H2 className="text-foreground">Engineering Co-op</H2>
+                  <H2 className="text-foreground">full-stack</H2>
+                  <H2 className="text-foreground">engineering co-op</H2>
                 </div>
                 <Monospace className="text-muted-foreground">
-                  Hometap Equity Partners
+                  hometap equity partners
                 </Monospace>
               </div>
             </div>
@@ -85,10 +53,10 @@ export default function ExperiencePage() {
               <p className="z-20 text-2xl">🏡</p>
               <div className="flex flex-col gap-1">
                 <AlertTitle className="z-20">
-                  Jan 2024 - Present · 1 mo
+                  jan 2024 - present · 2 mo
                 </AlertTitle>
                 <AlertDescription className="z-20">
-                  Boston, Massachusetts, United States
+                  boston, massachusetts, united states
                 </AlertDescription>
               </div>
               <Meteors number={24} />
@@ -303,14 +271,14 @@ export default function ExperiencePage() {
                 </div>
                 <div className="flex flex-col">
                   <H2 className="text-foreground hidden sm:block">
-                    Software Engineering Co-op
+                    software engineering co-op
                   </H2>
                   <div className="flex flex-col sm:hidden">
-                    <H2 className="text-foreground">Software</H2>
-                    <H2 className="text-foreground">Engineering Co-op</H2>
+                    <H2 className="text-foreground">software</H2>
+                    <H2 className="text-foreground">engineering co-op</H2>
                   </div>
                   <Monospace className="text-muted-foreground">
-                    Wood Mackenzie Limited
+                    wood mackenzie limited
                   </Monospace>
                 </div>
               </div>
@@ -318,10 +286,10 @@ export default function ExperiencePage() {
                 <p className="z-20 text-2xl">⚡️</p>
                 <div className="flex flex-col gap-1">
                   <AlertTitle className="z-20">
-                    Jan 2023 — Aug 2023 · 7 mo
+                    jan 2023 — aug 2023 · 7 mo
                   </AlertTitle>
                   <AlertDescription className="z-20">
-                    Boston, Massachusetts, United States
+                    boston, massachusetts, united states
                   </AlertDescription>
                 </div>
                 <Meteors number={24} />

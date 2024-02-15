@@ -75,26 +75,21 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
-                  <NavigationMenuLink asChild>
-                    <Link
-                      className="from-accent/50 to-accent hover:bg-secondary flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none transition-all focus:shadow-md"
-                      href="/experience"
-                    >
-                      <p className="text-4xl">👨‍💻</p>
-                      <div className="mb-2 mt-4 text-lg font-medium">
-                        work experience
-                      </div>
-                      <p className="text-muted-foreground text-sm leading-tight">
-                        9 months and counting of real-world industry experience
-                        as a software engineer
-                      </p>
-                    </Link>
-                  </NavigationMenuLink>
+                  <div className="from-secondary/20 to-secondary/50 flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none transition-all focus:shadow-md">
+                    <p className="text-4xl">👨‍💻</p>
+                    <div className="mb-2 mt-4 text-lg font-medium">
+                      work experience
+                    </div>
+                    <p className="text-accent-foreground text-sm leading-tight">
+                      9 months and counting of real-world industry experience as
+                      a software engineer
+                    </p>
+                  </div>
                 </li>
-                <ListItem href="/experience#hometap" title="Hometap">
+                <ListItem href="/experience#hometap" title="hometap">
                   making homeownership less stressful and more accessible
                 </ListItem>
-                <ListItem href="/experience#woodmac" title="Wood Mackenzie">
+                <ListItem href="/experience#woodmac" title="wood mackenzie">
                   providing data and insights that power smart decisions to
                   power our planet
                 </ListItem>
