@@ -18,10 +18,12 @@ export const CardContainer = ({
   children,
   className,
   containerClassName,
+  tilt = 30,
 }: {
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
+  tilt?: number;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -30,8 +32,8 @@ export const CardContainer = ({
     if (!containerRef.current) return;
     const { top, right, width, height } =
       containerRef.current.getBoundingClientRect();
-    const x = (right - e.clientX - width / 2) / 40;
-    const y = (e.clientY - top - height / 2) / 40;
+    const x = (right - e.clientX - width / 2) / tilt;
+    const y = (e.clientY - top - height / 2) / tilt;
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
 

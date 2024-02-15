@@ -222,7 +222,7 @@ export default function Home() {
                   </p>
                 </blockquote>
               </div>
-              <div className="xs:gap-8 grid w-full grid-cols-1 gap-6 lg:grid-cols-2">
+              <div className="xs:gap-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
                 <DisplayCard
                   title={"Wayland Student-Athlete"}
                   description={
