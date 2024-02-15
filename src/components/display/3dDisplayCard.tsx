@@ -17,7 +17,7 @@ export default function ThreeDimensionalDisplayCard({
       <div className="bg-background absolute -z-20 size-full rounded-3xl" />
       <div className="bg-secondary dark:bg-secondary absolute -z-10 size-3/4 rounded-full blur-3xl dark:size-4/5" />
       <CardBody className="group/card xs:p-8 xs:rounded-2xl border-border bg-background/70 dark:bg-background/50 relative h-full w-auto rounded-xl p-6 shadow-xl sm:rounded-3xl sm:p-10 md:p-12 dark:border">
-        <CardBody className="flex h-full flex-col justify-between gap-12 pb-10">
+        <CardBody className="flex h-full flex-col justify-between gap-12">
           <div className="flex flex-col gap-4">
             <CardItem translateZ="30">
               <H3 className="text-tertiary">{title}</H3>
@@ -30,8 +30,8 @@ export default function ThreeDimensionalDisplayCard({
             <CardItem translateZ="60" className="mb-8 w-full">
               {image}
             </CardItem>
-            <CardItem translateZ="40" className="relative w-full">
-              <div className="absolute right-0 z-50 flex items-center justify-end gap-4">
+            <CardItem translateZ="40" className="w-full">
+              <div className="relative flex h-10 items-center justify-end gap-4">
                 {footerButtons}
               </div>
             </CardItem>
