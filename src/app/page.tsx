@@ -5,7 +5,7 @@ import { Code2, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
 import { dmSerifDisplay } from "@lib/fonts";
 import { Arrow, Squiggle } from "@lib/icons";
 import { cn } from "@lib/utils";
-import ThreeDimensionalDisplayCard from "@components/3dDisplayCard";
+import DisplayCard from "@components/display/DisplayCard";
 import Container from "@components/structure/Container";
 import Content from "@components/structure/Content";
 import H2 from "@components/typography/h2";
@@ -223,7 +223,7 @@ export default function Home() {
                 </blockquote>
               </div>
               <div className="xs:gap-8 grid w-full grid-cols-1 gap-6 lg:grid-cols-2">
-                <ThreeDimensionalDisplayCard
+                <DisplayCard
                   title={"Wayland Student-Athlete"}
                   description={
                     "website powering the local odd jobs business founded by me and my friends built on Next.js with TypeScript, React, TailwindCSS, and a PlanetScale MySQL database using Prisma ORM"
@@ -243,7 +243,7 @@ export default function Home() {
                       key={"explore"}
                       asChild
                       variant={"outline"}
-                      className="fixed right-[104px] z-50 flex gap-2"
+                      className="flex gap-2"
                     >
                       <Link
                         href={
@@ -255,11 +255,7 @@ export default function Home() {
                         <Code2 className="size-5" />
                       </Link>
                     </Button>,
-                    <Button
-                      key={"visit"}
-                      asChild
-                      className="fixed z-50 flex gap-2"
-                    >
+                    <Button key={"visit"} asChild className="flex gap-2">
                       <Link
                         href={"https://www.waylandstudentathlete.com/"}
                         target="_blank"
@@ -270,7 +266,7 @@ export default function Home() {
                     </Button>,
                   ]}
                 />
-                <ThreeDimensionalDisplayCard
+                <DisplayCard
                   title={"getitdone to-do app"}
                   description={
                     "fully-featured CRUD to-do app built with EJS HTML templating and vanilla CSS on the frontend and a REST API Express.js + Node.js server on the backend"
@@ -290,7 +286,7 @@ export default function Home() {
                       key={"explore"}
                       asChild
                       variant={"outline"}
-                      className="fixed right-[104px] z-50 flex gap-2"
+                      className="flex gap-2"
                     >
                       <Link
                         href={
@@ -301,11 +297,7 @@ export default function Home() {
                         <Code2 className="size-5" />
                       </Link>
                     </Button>,
-                    <Button
-                      key={"visit"}
-                      asChild
-                      className="fixed z-50 flex gap-2"
-                    >
+                    <Button key={"visit"} asChild className="flex gap-2">
                       <Link
                         href={"https://getitdone-to-do-app.vercel.app/"}
                         target="_blank"
@@ -316,7 +308,7 @@ export default function Home() {
                     </Button>,
                   ]}
                 />
-                <ThreeDimensionalDisplayCard
+                <DisplayCard
                   title={"calculator app"}
                   description={
                     "simplistic, clean calculator app built from scratch with React (TypeScript) and vanilla CSS modeled after the Apple calculator app"
@@ -336,7 +328,7 @@ export default function Home() {
                       key={"explore"}
                       asChild
                       variant={"outline"}
-                      className="fixed right-[104px] z-50 flex gap-2"
+                      className="flex gap-2"
                     >
                       <Link
                         href={
@@ -348,11 +340,7 @@ export default function Home() {
                         <Code2 className="size-5" />
                       </Link>
                     </Button>,
-                    <Button
-                      key={"visit"}
-                      asChild
-                      className="fixed z-50 flex gap-2"
-                    >
+                    <Button key={"visit"} asChild className="flex gap-2">
                       <Link
                         href={"https://react-ts-calculator.vercel.app/"}
                         target="_blank"
@@ -363,7 +351,7 @@ export default function Home() {
                     </Button>,
                   ]}
                 />
-                <ThreeDimensionalDisplayCard
+                <DisplayCard
                   title={"volleyball scorekeeper"}
                   description={
                     "classic volleyball score flipper with point and set tracking and variable target scores built with vanilla HTML, CSS, and JS"
@@ -383,7 +371,7 @@ export default function Home() {
                       key={"explore"}
                       asChild
                       variant={"outline"}
-                      className="fixed right-[104px] z-50 flex gap-2"
+                      className="flex gap-2"
                     >
                       <Link
                         href={
@@ -394,11 +382,7 @@ export default function Home() {
                         <Code2 className="size-5" />
                       </Link>
                     </Button>,
-                    <Button
-                      key={"visit"}
-                      asChild
-                      className="fixed z-50 flex gap-2"
-                    >
+                    <Button key={"visit"} asChild className="flex gap-2">
                       <Link
                         href={
                           "https://mikelong10.github.io/volleyball-scorekeeper/"
