@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="flex w-full justify-center gap-8 sm:justify-start sm:gap-12 sm:pt-4 lg:gap-16 lg:pt-6">
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
-              <Link href={"/experience#hometap"}>
+              <Link href={"/experience"}>
                 <Monospace className="hover:text-secondary transition-colors">
                   experience
                 </Monospace>
