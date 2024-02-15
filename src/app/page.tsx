@@ -156,7 +156,7 @@ export default function Home() {
                   <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                       <Link
-                        href={"/experience"}
+                        href={"/experience#hometap"}
                         className="text-primary hover:text-tertiary w-fit text-xl underline underline-offset-[6px] transition-colors"
                       >
                         hometap
@@ -173,7 +173,7 @@ export default function Home() {
                 </div>
                 <Separator />
                 <div className="flex gap-4">
-                  <Link href={"/experience"} className="size-8 min-w-8">
+                  <Link href={"/experience#woodmac"} className="size-8 min-w-8">
                     <Image
                       src={woodmacLogo}
                       alt="WoodMac Logo"
