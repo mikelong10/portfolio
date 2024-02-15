@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
+import { Code2, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
 
 import { dmSerifDisplay } from "@lib/fonts";
 import { Arrow, Squiggle } from "@lib/icons";
@@ -242,12 +242,17 @@ export default function Home() {
                     <Button
                       key={"explore"}
                       asChild
-                      variant={"ghost"}
+                      variant={"outline"}
                       className="flex gap-2"
                     >
-                      <Link href={"/projects"}>
+                      <Link
+                        href={
+                          "https://github.com/mikelong10/wayland-student-athlete-app"
+                        }
+                        target="_blank"
+                      >
                         explore
-                        <ArrowRight className="size-5" />
+                        <Code2 className="size-5" />
                       </Link>
                     </Button>,
                     <Button key={"visit"} asChild className="flex gap-2">
@@ -280,17 +285,21 @@ export default function Home() {
                     <Button
                       key={"explore"}
                       asChild
-                      variant={"ghost"}
+                      variant={"outline"}
                       className="flex gap-2"
                     >
-                      <Link href={"/projects"}>
+                      <Link
+                        href={
+                          "https://github.com/mikelong10/getitdone-to-do-app"
+                        }
+                      >
                         explore
-                        <ArrowRight className="size-5" />
+                        <Code2 className="size-5" />
                       </Link>
                     </Button>,
                     <Button key={"visit"} asChild className="flex gap-2">
                       <Link
-                        href={"https://todo-app-khaki-nine.vercel.app/"}
+                        href={"https://getitdone-to-do-app.vercel.app/"}
                         target="_blank"
                       >
                         visit
@@ -318,12 +327,17 @@ export default function Home() {
                     <Button
                       key={"explore"}
                       asChild
-                      variant={"ghost"}
+                      variant={"outline"}
                       className="flex gap-2"
                     >
-                      <Link href={"/projects"}>
+                      <Link
+                        href={
+                          "https://github.com/mikelong10/react-ts-calculator"
+                        }
+                        target="_blank"
+                      >
                         explore
-                        <ArrowRight className="size-5" />
+                        <Code2 className="size-5" />
                       </Link>
                     </Button>,
                     <Button key={"visit"} asChild className="flex gap-2">
@@ -340,7 +354,7 @@ export default function Home() {
                 <ThreeDimensionalDisplayCard
                   title={"volleyball scorekeeper"}
                   description={
-                    "digitized rendition of a classic volleyball score flipper with point and set tracking and variable target scores built with vanilla HTML, CSS, and JS"
+                    "classic volleyball score flipper with point and set tracking and variable target scores built with vanilla HTML, CSS, and JS"
                   }
                   image={
                     <Image
@@ -356,12 +370,16 @@ export default function Home() {
                     <Button
                       key={"explore"}
                       asChild
-                      variant={"ghost"}
+                      variant={"outline"}
                       className="flex gap-2"
                     >
-                      <Link href={"/projects"}>
+                      <Link
+                        href={
+                          "https://github.com/mikelong10/volleyball-scorekeeper"
+                        }
+                      >
                         explore
-                        <ArrowRight className="size-5" />
+                        <Code2 className="size-5" />
                       </Link>
                     </Button>,
                     <Button key={"visit"} asChild className="flex gap-2">

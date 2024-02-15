@@ -27,7 +27,7 @@ export default function ThreeDimensionalDisplayCard({
             </CardItem>
           </div>
           <div className="flex flex-col gap-8">
-            <CardItem translateZ="50" className="w-full">
+            <CardItem translateZ="60" className="w-full">
               {image}
             </CardItem>
             <CardItem translateZ="40" className="w-full">
