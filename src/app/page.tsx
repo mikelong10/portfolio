@@ -86,9 +86,9 @@ export default function Home() {
                 words={[{ text: "hi," }, { text: "i'm" }, { text: "michael" }]}
               />
               <p className="text-accent-foreground max-w-prose">
-                i&rsquo;m a third-year student at northeastern university
-                pursuing a computer science and business combined degree with a
-                strong passion for entrepreneurship and innovation in tech.
+                {
+                  "i'm a third-year student at northeastern university pursuing a computer science and business combined degree with a strong passion for entrepreneurship and innovation in tech."
+                }
               </p>
               <div className="text-tertiary flex gap-2">
                 <Button asChild variant={"ghost"} size={"icon"}>
@@ -126,18 +126,9 @@ export default function Home() {
                 </H2>
                 <blockquote className="border-secondary text-accent-foreground mb-16 mt-8 flex max-w-prose flex-col gap-2 border-l-2 pl-6">
                   <p>
-                    working in agile{" "}
-                    <Link
-                      href={"https://www.atlassian.com/agile/scrum"}
-                      target="_blank"
-                      className="hover:text-tertiary underline underline-offset-2 transition-colors"
-                    >
-                      scrum
-                    </Link>{" "}
-                    teams at a global leader in the energy industry and a
-                    fast-growing fintech startup, i&rsquo;ve had the opportunity
-                    to work on modern, dynamic, full-stack applications and to
-                    learn from amazing fellow engineers and mentors in industry.
+                    {
+                      "working in agile scrum teams at a global leader in the energy industry and a fast-growing fintech startup building a brand-new asset class, i've had the opportunity to work on modern, dynamic, full-stack applications and to learn from amazing fellow engineers and mentors in industry."
+                    }
                   </p>
                 </blockquote>
               </div>
