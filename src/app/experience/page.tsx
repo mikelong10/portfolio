@@ -38,14 +38,14 @@ export default function ExperiencePage() {
               </div>
               <div className="flex flex-col">
                 <H2 className="text-foreground hidden sm:block">
-                  full-stack engineering co-op
+                  {"full-stack engineering co-op"}
                 </H2>
                 <div className="text-foreground flex flex-col sm:hidden">
-                  <H2 className="text-foreground">full-stack</H2>
-                  <H2 className="text-foreground">engineering co-op</H2>
+                  <H2 className="text-foreground">{"full-stack"}</H2>
+                  <H2 className="text-foreground">{"engineering co-op"}</H2>
                 </div>
                 <Monospace className="text-muted-foreground">
-                  hometap equity partners
+                  {"hometap equity partners"}
                 </Monospace>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function ExperiencePage() {
               <p className="z-20 text-2xl">🏡</p>
               <div className="flex flex-col gap-1">
                 <AlertTitle className="z-20">
-                  jan 2024 - present · 2 mo
+                  {"jan 2024 - jun 2024 · 6 mo"}
                 </AlertTitle>
                 <AlertDescription className="z-20">
                   boston, massachusetts, united states
@@ -65,22 +65,22 @@ export default function ExperiencePage() {
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
             <div className="flex shrink-0 flex-col gap-4">
               <H3 className="text-tertiary shrink-0 text-nowrap">
-                what i&apos;m doing
+                {"what i'm doing"}
               </H3>
               <Separator />
               <div className="flex flex-col gap-8">
                 <p className="text-muted-foreground font-extrabold">
-                  tech stack:
+                  {"tech stack:"}
                 </p>
                 <div className="flex gap-8 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
-                      front end
+                      {"front end"}
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          JavaScript
+                          {"JavaScript"}
                           <Image
                             src={"/js-logo.png"}
                             alt="JavaScript logo"
@@ -92,7 +92,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          React
+                          {"React"}
                           <Image
                             src={"/react-logo.png"}
                             alt="React logo"
@@ -104,7 +104,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Sass
+                          {"Sass"}
                           <Image
                             src={"/sass-logo.png"}
                             alt="Sass logo"
@@ -118,12 +118,12 @@ export default function ExperiencePage() {
                   </div>
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
-                      back end
+                      {"back end"}
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Python
+                          {"Python"}
                           <Image
                             src={"/python-logo.png"}
                             alt="Python logo"
@@ -135,7 +135,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Django
+                          {"Django"}
                           <Image
                             src={"/django-logo.png"}
                             alt="Django logo"
@@ -151,12 +151,12 @@ export default function ExperiencePage() {
                 <div className="flex gap-8 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
-                      database
+                      {"database"}
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          PostgreSQL
+                          {"PostgreSQL"}
                           <Image
                             src={"/postgres-logo.svg"}
                             alt="Postgres logo"
@@ -170,12 +170,12 @@ export default function ExperiencePage() {
                   </div>
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
-                      infra
+                      {"infra"}
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Docker
+                          {"Docker"}
                           <Image
                             src={"/docker-logo.png"}
                             alt="Docker logo"
@@ -187,7 +187,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          GitLab
+                          {"GitLab"}
                           <Image
                             src={"/gitlab-logo.svg"}
                             alt="GitLab logo"
@@ -234,15 +234,14 @@ export default function ExperiencePage() {
           <div className="flex flex-col">
             <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
               <p>
-                Now on my second co-op, I&apos;m coming into Hometap confident
-                in having the skillset to be a strong entry-level engineer
-                contributor to my team, the engineering dept, and the company as
-                a whole.
+                {
+                  "Now on my second co-op, I'm coming into Hometap confident in having the skillset to be a strong entry-level engineer contributor to my team, the engineering dept, and the company as a whole."
+                }
               </p>
               <p>
-                I want to strive to break through that and take the next step,
-                encompassing more responsibilities and initiatives that an
-                SE2-level engineer or higher would.
+                {
+                  "I want to strive to break through that and take the next step, encompassing more responsibilities and initiatives that an SE2-level engineer or higher would."
+                }
               </p>
             </blockquote>
           </div>
@@ -271,14 +270,14 @@ export default function ExperiencePage() {
                 </div>
                 <div className="flex flex-col">
                   <H2 className="text-foreground hidden sm:block">
-                    software engineering co-op
+                    {"software engineering co-op"}
                   </H2>
                   <div className="flex flex-col sm:hidden">
-                    <H2 className="text-foreground">software</H2>
-                    <H2 className="text-foreground">engineering co-op</H2>
+                    <H2 className="text-foreground">{"software"}</H2>
+                    <H2 className="text-foreground">{"engineering co-op"}</H2>
                   </div>
                   <Monospace className="text-muted-foreground">
-                    wood mackenzie limited
+                    {"wood mackenzie limited"}
                   </Monospace>
                 </div>
               </div>
@@ -286,10 +285,10 @@ export default function ExperiencePage() {
                 <p className="z-20 text-2xl">⚡️</p>
                 <div className="flex flex-col gap-1">
                   <AlertTitle className="z-20">
-                    jan 2023 — aug 2023 · 7 mo
+                    {"jan 2023 — aug 2023 · 8 mo"}
                   </AlertTitle>
                   <AlertDescription className="z-20">
-                    boston, massachusetts, united states
+                    {"boston, massachusetts, united states"}
                   </AlertDescription>
                 </div>
                 <Meteors number={24} />
@@ -298,21 +297,23 @@ export default function ExperiencePage() {
           </div>
           <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
             <div className="flex flex-col gap-4">
-              <H3 className="text-tertiary shrink-0 text-nowrap">what i did</H3>
+              <H3 className="text-tertiary shrink-0 text-nowrap">
+                {"what i did"}
+              </H3>
               <Separator />
               <div className="flex flex-col gap-8">
                 <p className="text-muted-foreground font-extrabold">
-                  tech stack:
+                  {"tech stack:"}
                 </p>
                 <div className="flex gap-8 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
-                      front end
+                      {"front end"}
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          TypeScript
+                          {"TypeScript"}
                           <Image
                             src={"/ts-logo.png"}
                             alt="TypeScript logo"
@@ -324,7 +325,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          React
+                          {"React"}
                           <Image
                             src={"/react-logo.png"}
                             alt="React logo"
@@ -336,7 +337,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Node
+                          {"Node"}
                           <Image
                             src={"/node-logo.png"}
                             alt="Node logo"
@@ -350,12 +351,12 @@ export default function ExperiencePage() {
                   </div>
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
-                      back end
+                      {"back end"}
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Python
+                          {"Python"}
                           <Image
                             src={"/python-logo.png"}
                             alt="Python logo"
@@ -367,7 +368,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Django
+                          {"Django"}
                           <Image
                             src={"/django-logo.png"}
                             alt="Django logo"
@@ -383,12 +384,12 @@ export default function ExperiencePage() {
                 <div className="flex gap-4 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
-                      infra
+                      {"infra"}
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Jenkins
+                          {"Jenkins"}
                           <Image
                             src={"/jenkins-logo.png"}
                             alt="Jenkins logo"
@@ -400,7 +401,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          AWS
+                          {"AWS"}
                           <Image
                             src={"/aws-logo.webp"}
                             alt="AWS logo"
@@ -412,7 +413,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Docker
+                          {"Docker"}
                           <Image
                             src={"/docker-logo.png"}
                             alt="Docker logo"
@@ -424,7 +425,7 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          Bitbucket
+                          {"Bitbucket"}
                           <Image
                             src={"/bitbucket-logo.svg"}
                             alt="Bitbucket logo"
@@ -472,19 +473,14 @@ export default function ExperiencePage() {
           <div className="flex flex-col">
             <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
               <p>
-                At WoodMac, I was blessed with the opportunity to take the lead
-                on a new initiative to create a new data curation platform.
-                Establishing a role as the application&apos;s point person, I
-                communicated project estimates, status updates, and technical
-                explanations to product and engineering managers, collaborated
-                frequently with our UK-based data team, onboarded new engineers
-                onto the codebase, and presented the product to company
-                executives and directors.
+                {
+                  "At WoodMac, I was blessed with the opportunity to take the lead on a new initiative to create a new data curation platform. Establishing a role as the application's point person, I communicated project estimates, status updates, and technical explanations to product and engineering managers, collaborated frequently with our UK-based data team, onboarded new engineers onto the codebase, and presented the product to company executives and directors."
+                }
               </p>
               <p>
-                Over my 7 months, I collaborated with a agile scrum team of 8
-                engineers to deliver industry-leading software to customers in
-                the energy sector, utilizing a Jira board and 2-week sprints.
+                {
+                  "Over my 7 months, I collaborated with a agile scrum team of 8 engineers to deliver industry-leading software to customers in the energy sector, utilizing a Jira board and 2-week sprints."
+                }
               </p>
             </blockquote>
           </div>
@@ -499,63 +495,82 @@ function GoalsCard() {
     <Card className="mb-16 max-w-prose">
       <CardHeader className="flex flex-row items-center gap-4">
         <p className="text-4xl">🎯</p>
-        <H3 className="text-tertiary">goals</H3>
+        <H3 className="text-tertiary">{"goals"}</H3>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <div className="flex gap-2">
-          <Checkbox disabled className="disabled:cursor-default" id="django" />
+          <Checkbox
+            checked
+            disabled
+            className="disabled:cursor-default"
+            id="django"
+          />
           <label htmlFor="django" className="-mt-1">
-            Master django, graphql, docker technologies
+            {"Master django, graphql, docker technologies"}
           </label>
         </div>
         <div className="ml-6 flex flex-col gap-2">
           <div className="flex gap-2">
             <Checkbox
+              checked
               disabled
               className="disabled:cursor-default"
               id="explain"
             />
             <label htmlFor="explain" className="-mt-1">
-              be able to explain why these technologies were created (what
-              problem they solve)
+              {
+                "be able to explain why these technologies were created (what problem they solve)"
+              }
             </label>
           </div>
           <div className="flex gap-2">
-            <Checkbox disabled className="disabled:cursor-default" id="work" />
+            <Checkbox
+              checked
+              disabled
+              className="disabled:cursor-default"
+              id="work"
+            />
             <label htmlFor="work" className="-mt-1">
-              be able to explain how they work under the hood
+              {"be able to explain how they work under the hood"}
             </label>
           </div>
           <div className="flex gap-2">
-            <Checkbox disabled className="disabled:cursor-default" id="use" />
+            <Checkbox
+              checked
+              disabled
+              className="disabled:cursor-default"
+              id="use"
+            />
             <label htmlFor="use" className="-mt-1">
-              be able to explain why someone/some company should use them
+              {"be able to explain why someone/some company should use them"}
             </label>
           </div>
         </div>
         <div className="flex gap-2">
           <Checkbox
+            checked
             disabled
             className="disabled:cursor-default"
             id="team-player"
           />
           <label htmlFor="team-player" className="-mt-1">
-            Be more of a team player as a software engineer. In an individual
-            contributor role, it is easy for me to focus too primarily on
-            burning story points and closing merge requests. I want to still do
-            that—but also offer more to the team and the company.
+            {
+              "Be more of a team player as a software engineer. In an individual contributor role, it is easy for me to focus too primarily on burning story points and closing merge requests. I want to still do that—but also offer more to the team and the company."
+            }
           </label>
         </div>
         <div className="ml-6">
           <div className="flex gap-2">
             <Checkbox
+              checked
               disabled
               className="disabled:cursor-default"
               id="monitor"
             />
             <label htmlFor="monitor" className="-mt-1">
-              monitor logs/alerts/production issues that come up and take
-              initiative to bring it up to the team and address it
+              {
+                "monitor logs/alerts/production issues that come up and take initiative to bring it up to the team and address it"
+              }
             </label>
           </div>
         </div>
@@ -566,43 +581,49 @@ function GoalsCard() {
             id="engineering-projects"
           />
           <label htmlFor="engineering-projects" className="-mt-1">
-            Champion engineering projects + create tickets/tasks, working on
-            software architecting and project management skills
+            {
+              "Champion engineering projects + create tickets/tasks, working on software architecting and project management skills"
+            }
           </label>
         </div>
         <div className="flex gap-2">
           <Checkbox
+            checked
             disabled
             className="disabled:cursor-default"
             id="hometap-business"
           />
           <label htmlFor="hometap-business" className="-mt-1">
-            Learn and fully understand Hometap as a business, comprehending the
-            investment and financial structure of the business model. Practice
-            the business half of my major in addition to CS.
+            {
+              "Learn and fully understand Hometap as a business, comprehending the investment and financial structure of the business model. Practice the business half of my major in addition to CS."
+            }
           </label>
         </div>
         <div className="flex gap-2">
           <Checkbox
+            checked
             disabled
             className="disabled:cursor-default"
             id="successful-startup"
           />
           <label htmlFor="successful-startup" className="-mt-1">
-            Learn, understand, analyze what makes a successful startup/company
+            {
+              "Learn, understand, analyze what makes a successful startup/company"
+            }
           </label>
         </div>
         <div className="ml-6">
           <div className="flex gap-2">
             <Checkbox
+              checked
               disabled
               className="disabled:cursor-default"
               id="interview"
             />
             <label htmlFor="interview" className="-mt-1">
-              ask/interview people in different functions of the business what
-              about the company culture, people, founders, management make
-              Hometap great
+              {
+                "ask/interview people in different functions of the business what about the company culture, people, founders, management make Hometap great"
+              }
             </label>
           </div>
         </div>
