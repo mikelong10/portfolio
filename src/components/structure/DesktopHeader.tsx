@@ -125,6 +125,14 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
               asChild
               className={navigationMenuTriggerStyle()}
             >
+              <Link href="/#projects">projects</Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className={navigationMenuTriggerStyle()}
+            >
               <Link href="/resume">resume</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>

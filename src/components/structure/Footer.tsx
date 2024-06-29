@@ -22,7 +22,10 @@ export default function Footer() {
               className="size-14 bg-transparent lg:size-16 xl:size-20"
               priority
             />
-            <H3 className="text-accent-foreground">michael long.</H3>
+            <div className="flex flex-col">
+              <H3 className="text-accent-foreground">michael long</H3>
+              <p className="text-lg">〽️🐉</p>
+            </div>
           </div>
           <div className="text-muted-foreground flex gap-2">
             <Button asChild variant={"ghost"} size={"icon"}>
@@ -62,6 +65,14 @@ export default function Footer() {
                 wood mac
               </Monospace>
             </Link>
+          </div>
+          <div className="flex flex-col gap-2">
+            <Link href={"/#projects"}>
+              <Monospace className="hover:text-secondary transition-colors">
+                projects
+              </Monospace>
+            </Link>
+            <Separator />
           </div>
           <div className="flex flex-col gap-2">
             <Link href={"/resume"}>

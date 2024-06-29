@@ -195,7 +195,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Squiggle className="text-secondary w-32 sm:w-40 lg:w-48" />
+            <div id="projects">
+              <Squiggle className="text-secondary w-32 sm:w-40 lg:w-48" />
+            </div>
             <div className="flex flex-col items-center gap-4">
               <div className="flex flex-col gap-4">
                 <div className="text-muted-foreground bg-accent flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-lg lg:px-4 lg:py-2 lg:text-xl">
