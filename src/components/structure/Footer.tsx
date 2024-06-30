@@ -13,8 +13,8 @@ import Content from "./Content";
 export default function Footer() {
   return (
     <Container className=" border-border from-background to-secondary/20 border-t bg-gradient-to-br py-12">
-      <Content className="flex w-full flex-col items-center gap-8 sm:flex-row sm:items-start sm:gap-16 md:gap-24 lg:gap-32 xl:gap-40">
-        <div className="flex h-full shrink-0 flex-col items-center justify-between gap-2 sm:items-start sm:gap-10 lg:gap-8">
+      <Content className="flex w-full flex-col items-center gap-8 md:flex-row md:items-start md:gap-16 lg:gap-24 xl:gap-32">
+        <div className="flex h-full shrink-0 flex-col items-center justify-between gap-2 md:items-start md:gap-4 lg:gap-6">
           <div className="-ml-2 flex items-center gap-4">
             <Image
               src={avatar}
@@ -45,7 +45,7 @@ export default function Footer() {
             </Button>
           </div>
         </div>
-        <div className="flex w-full justify-center gap-8 sm:justify-start sm:gap-12 sm:pt-4 lg:gap-16 lg:pt-6">
+        <div className="flex w-full justify-center gap-8 md:justify-start md:gap-12 md:pt-4 lg:gap-16 lg:pt-6">
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <Link href={"/experience"}>

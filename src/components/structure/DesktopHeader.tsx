@@ -81,8 +81,8 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
                       work experience
                     </div>
                     <p className="text-accent-foreground text-sm leading-tight">
-                      9 months and counting of real-world industry experience as
-                      a software engineer
+                      14+ months of real-world software engineering industry
+                      experience
                     </p>
                   </div>
                 </li>
