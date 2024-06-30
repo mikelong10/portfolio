@@ -81,8 +81,8 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
                       work experience
                     </div>
                     <p className="text-accent-foreground text-sm leading-tight">
-                      9 months and counting of real-world industry experience as
-                      a software engineer
+                      14+ months of real-world software engineering industry
+                      experience
                     </p>
                   </div>
                 </li>
@@ -120,6 +120,14 @@ export default function DesktopHeader({ isScrolled }: { isScrolled: boolean }) {
               <Link href="/about">about me</Link>
             </NavigationMenuLink>
           </NavigationMenuItem> */}
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className={navigationMenuTriggerStyle()}
+            >
+              <Link href="/#projects">projects</Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild

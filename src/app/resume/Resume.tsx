@@ -125,7 +125,7 @@ function SkillsSection() {
             {"Tools"}
           </span>
           {
-            ": React, Node.js, Express.js, Next.js, Django, SwiftUI, MySQL, PostgreSQL, AWS (ECS+Fargate, S3, CDK), Git, Jenkins, Docker, GraphQL, NumPy, Pandas, Matplotlib, Scikit-Learn, BeautifulSoup"
+            ": React, Node.js, Express.js, Next.js, Django, GraphQL, MySQL, PostgreSQL, AWS (ECS+Fargate, S3, CDK), Git, Jenkins, Docker, SwiftUI, NumPy, Pandas, Matplotlib, Scikit-Learn, BeautifulSoup"
           }
         </p>
       </div>
@@ -213,7 +213,7 @@ export const hometapBullets = [
     key: 1,
     bullet: (
       <p>
-        {"Developing "}
+        {"Developed "}
         <span className="font-extrabold">{"React (JavaScript)"}</span>
         {
           " frontends for client and staff portals to facilitate home equity investments"
@@ -225,7 +225,7 @@ export const hometapBullets = [
     key: 2,
     bullet: (
       <p>
-        {"Building "}
+        {"Built "}
         <span className="font-extrabold">{"REST and GraphQL APIs"}</span>
         {" on top of "}
         <span className="font-extrabold">{"Django (Python)"}</span>
@@ -243,7 +243,7 @@ export const hometapBullets = [
     key: 3,
     bullet: (
       <p>
-        {"Implementing "}
+        {"Implemented "}
         <span className="font-extrabold">
           {"integrations with third-party APIs"}
         </span>

@@ -62,17 +62,17 @@ export default function ExperiencePage() {
               <Meteors number={24} />
             </Alert>
           </div>
-          <section className="flex flex-col gap-8 sm:flex-row lg:gap-12 xl:gap-16">
+          <section className="flex flex-col justify-center gap-8 sm:flex-row lg:gap-12 xl:gap-16">
             <div className="flex shrink-0 flex-col gap-4">
               <H3 className="text-tertiary shrink-0 text-nowrap">
-                {"what i'm doing"}
+                {"what i did"}
               </H3>
               <Separator />
               <div className="flex flex-col gap-8">
                 <p className="text-muted-foreground font-extrabold">
                   {"tech stack:"}
                 </p>
-                <div className="flex gap-8 sm:flex-col">
+                <div className="grid grid-cols-2 gap-8 sm:grid-cols-1 xl:grid-cols-2">
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
                       {"front end"}
@@ -118,6 +118,37 @@ export default function ExperiencePage() {
                   </div>
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
+                      {"api"}
+                    </Monospace>
+                    <ul className="ml-6 flex flex-col gap-2">
+                      <li className="list-disc">
+                        <div className="flex items-center gap-2">
+                          {"GraphQL"}
+                          <Image
+                            src={"/graphql-logo.png"}
+                            alt="GraphQL logo"
+                            width={96}
+                            height={96}
+                            className="h-5 w-fit"
+                          />
+                        </div>
+                      </li>
+                      <li className="list-disc">
+                        <div className="flex items-center gap-2">
+                          {"DRF"}
+                          <Image
+                            src={"/drf-logo.png"}
+                            alt="DRF logo"
+                            width={96}
+                            height={96}
+                            className="h-5 w-fit"
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-1 flex-col gap-2">
+                    <Monospace className="text-accent-foreground">
                       {"back end"}
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
@@ -147,8 +178,6 @@ export default function ExperiencePage() {
                       </li>
                     </ul>
                   </div>
-                </div>
-                <div className="flex gap-8 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
                       {"database"}
@@ -202,7 +231,7 @@ export default function ExperiencePage() {
                 </div>
               </div>
             </div>
-            <Card className="max-w-prose flex-1">
+            <Card className="h-fit max-w-prose">
               <CardContent className="flex flex-col gap-8">
                 <Image
                   src={"/HEDHero.webp"}
@@ -220,7 +249,7 @@ export default function ExperiencePage() {
               </CardContent>
             </Card>
           </section>
-          <CardContainer containerClassName="w-full max-w-4xl">
+          <CardContainer containerClassName="w-full max-w-4xl" tilt={50}>
             <CardBody>
               <Image
                 src={hometapInquiry}
@@ -305,7 +334,7 @@ export default function ExperiencePage() {
                 <p className="text-muted-foreground font-extrabold">
                   {"tech stack:"}
                 </p>
-                <div className="flex gap-8 sm:flex-col">
+                <div className="grid grid-cols-2 gap-8 sm:grid-cols-1 xl:grid-cols-2">
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
                       {"front end"}
@@ -351,6 +380,37 @@ export default function ExperiencePage() {
                   </div>
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
+                      {"api"}
+                    </Monospace>
+                    <ul className="ml-6 flex flex-col gap-2">
+                      <li className="list-disc">
+                        <div className="flex items-center gap-2">
+                          {"Express"}
+                          <Image
+                            src={"/express-logo.png"}
+                            alt="Express logo"
+                            width={96}
+                            height={96}
+                            className="h-5 w-fit"
+                          />
+                        </div>
+                      </li>
+                      <li className="list-disc">
+                        <div className="flex items-center gap-2">
+                          {"GraphQL"}
+                          <Image
+                            src={"/graphql-logo.png"}
+                            alt="GraphQL logo"
+                            width={96}
+                            height={96}
+                            className="h-5 w-fit"
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-1 flex-col gap-2">
+                    <Monospace className="text-accent-foreground">
                       {"back end"}
                     </Monospace>
                     <ul className="ml-6 flex flex-col gap-2">
@@ -380,8 +440,6 @@ export default function ExperiencePage() {
                       </li>
                     </ul>
                   </div>
-                </div>
-                <div className="flex gap-4 sm:flex-col">
                   <div className="flex flex-1 flex-col gap-2">
                     <Monospace className="text-accent-foreground">
                       {"infra"}
@@ -459,7 +517,7 @@ export default function ExperiencePage() {
               </CardContent>
             </Card>
           </section>
-          <CardContainer containerClassName="w-full max-w-4xl">
+          <CardContainer containerClassName="w-full max-w-4xl" tilt={50}>
             <CardBody>
               <Image
                 src={"/woodmac-lens-gas-lng.webp"}

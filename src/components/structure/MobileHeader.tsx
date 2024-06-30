@@ -17,7 +17,7 @@ import avatar from "../../../public/avatar.svg";
 const mobileNavLinks = [
   { name: "home", href: "/" },
   { name: "experience", href: "/experience" },
-  // { name: "projects", href: "/projects" },
+  { name: "projects", href: "/#projects" },
   // { name: "about me", href: "/about" },
   { name: "resume", href: "/resume" },
 ];
@@ -61,7 +61,7 @@ export default function MobileNav({ isScrolled }: { isScrolled: boolean }) {
                 <H1 className="text-2xl sm:text-4xl lg:text-4xl">
                   michael long
                 </H1>
-                <p className="text-sm">think different.</p>
+                <p className="text-sm">〽️🐉</p>
               </div>
             </div>
             <ThemeButtons />
