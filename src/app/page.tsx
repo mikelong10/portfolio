@@ -110,22 +110,28 @@ export default function Home() {
               </div>
               <div className="text-tertiary flex gap-2">
                 <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link href={"https://www.linkedin.com/in/michaeltlong10/"}>
+                  <Link
+                    target="_blank"
+                    href={"https://www.linkedin.com/in/michaeltlong10/"}
+                  >
                     <Linkedin />
                   </Link>
                 </Button>
                 <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link href={"https://github.com/mikelong10/"}>
+                  <Link target="_blank" href={"https://github.com/mikelong10/"}>
                     <Github />
                   </Link>
                 </Button>
                 <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link href={"https://x.com/mikelong107/"}>
+                  <Link target="_blank" href={"https://x.com/mikelong107/"}>
                     <Twitter />
                   </Link>
                 </Button>
                 <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link href={"mailto:long.mich@northeastern.edu"}>
+                  <Link
+                    target="_blank"
+                    href={"mailto:long.mich@northeastern.edu"}
+                  >
                     <Mail />
                   </Link>
                 </Button>
