@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Code2, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
+import {
+  Code2,
+  ExternalLink,
+  Github,
+  Linkedin,
+  Mail,
+  Twitter,
+} from "lucide-react";
 
 import { dmSerifDisplay } from "@lib/fonts";
 import { Arrow, Squiggle } from "@lib/icons";
@@ -25,7 +32,7 @@ const emojis = [
   "🌎",
   "👨‍🍳",
   "🏝️",
-  "🥷",
+  "🌊",
   "🏂",
   "🤠",
   "🎶",
@@ -85,24 +92,46 @@ export default function Home() {
                 cursorClassName="h-[56px] sm:h-[68px] md:h-[68px] lg:h-[80px]"
                 words={[{ text: "hi," }, { text: "i'm" }, { text: "michael" }]}
               />
-              <p className="text-accent-foreground max-w-prose">
-                {
-                  "i'm a third-year student at northeastern university pursuing a computer science and business combined degree with a strong passion for entrepreneurship and innovation in tech."
-                }
-              </p>
+              <div className="text-accent-foreground flex max-w-prose flex-col gap-2">
+                <p>
+                  {
+                    "fourth-year student at northeastern university completing a computer science and business combined degree."
+                  }
+                </p>
+                <p>
+                  {
+                    "believer in delightful software, disruptive innovation, and human connection."
+                  }
+                </p>
+                <p>
+                  {"liverpool f.c., classical music, and water enthusiast."}
+                </p>
+                <p>{"welcome — enjoy your time here."}</p>
+              </div>
               <div className="text-tertiary flex gap-2">
                 <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link href={"https://www.linkedin.com/in/michaeltlong10/"}>
+                  <Link
+                    target="_blank"
+                    href={"https://www.linkedin.com/in/michaeltlong10/"}
+                  >
                     <Linkedin />
                   </Link>
                 </Button>
                 <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link href={"https://github.com/mikelong10/"}>
+                  <Link target="_blank" href={"https://github.com/mikelong10/"}>
                     <Github />
                   </Link>
                 </Button>
                 <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link href={"mailto:long.mich@northeastern.edu"}>
+                  <Link target="_blank" href={"https://x.com/mikelong107/"}>
+                    <Twitter />
+                  </Link>
+                </Button>
+                <Button asChild variant={"ghost"} size={"icon"}>
+                  <Link
+                    target="_blank"
+                    href={"mailto:long.mich@northeastern.edu"}
+                  >
                     <Mail />
                   </Link>
                 </Button>

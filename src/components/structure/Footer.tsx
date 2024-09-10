@@ -53,7 +53,7 @@ export default function Footer() {
                   experience
                 </Monospace>
               </Link>
-              <Separator />
+              <Separator className="bg-muted" />
             </div>
             <Link href={"/experience#hometap"}>
               <Monospace className="text-muted-foreground hover:text-secondary transition-colors">
@@ -72,7 +72,7 @@ export default function Footer() {
                 projects
               </Monospace>
             </Link>
-            <Separator />
+            <Separator className="bg-muted" />
           </div>
           <div className="flex flex-col gap-2">
             <Link href={"/resume"}>
@@ -80,7 +80,7 @@ export default function Footer() {
                 resume
               </Monospace>
             </Link>
-            <Separator />
+            <Separator className="bg-muted" />
           </div>
         </div>
       </Content>

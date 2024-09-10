@@ -1,7 +1,6 @@
 import Link from "next/link";
 
-import H2 from "@components/typography/h2";
-import H3 from "@components/typography/h3";
+import { H3, H4 } from "@lib/typography";
 import { Card } from "@components/ui/card";
 import { Separator } from "@components/ui/separator";
 
@@ -9,7 +8,7 @@ type ResumeBullet = { key: string | number; bullet: React.ReactNode };
 
 export default function Resume() {
   return (
-    <Card className="w-full max-w-4xl">
+    <Card className="bg-background w-full max-w-4xl">
       <div className="flex flex-col gap-4 p-8 text-sm">
         <ResumeHeader />
         <EducationSection />
@@ -25,11 +24,11 @@ function ResumeHeader() {
   return (
     <div className="flex flex-col justify-between gap-2 md:flex-row">
       <div className="flex flex-col">
-        <H2 className="text-foreground">{"Michael Long"}</H2>
-        <p className="italic">{"Availability: Starting Jul 2025"}</p>
+        <H3 className="text-foreground">{"Michael Long"}</H3>
+        <p className="italic">{"Availabile starting May 2025"}</p>
       </div>
       <div className="flex flex-col gap-2 md:items-end">
-        <div className="flex flex-col items-start gap-2 md:items-end lg:flex-row lg:items-center">
+        <div className="flex flex-col items-start md:items-end lg:flex-row lg:items-center lg:gap-2">
           <Link href={"mailto:long.mich@northeastern.edu"}>
             {"long.mich@northeastern.edu"}
           </Link>
@@ -39,7 +38,7 @@ function ResumeHeader() {
           />
           <Link href={"tel:+18574889299"}>{"(857) 488-9299"}</Link>
         </div>
-        <div className="flex flex-col items-start gap-2 md:items-end lg:flex-row lg:items-center">
+        <div className="flex flex-col items-start gap-1 md:items-end lg:flex-row lg:items-center lg:gap-2">
           <Link
             href={"https://www.linkedin.com/in/michaeltlong10/"}
             className="text-primary underline underline-offset-4"
@@ -73,32 +72,32 @@ function ResumeHeader() {
 function EducationSection() {
   return (
     <div className="flex flex-col gap-2">
-      <H3 className="text-tertiary">{"Education"}</H3>
+      <H4 className="text-tertiary">{"Education"}</H4>
       <Separator className="h-1 rounded-full" />
-      <div className="flex flex-col justify-between sm:flex-row">
-        <p>
-          <span className="text-accent-foreground font-extrabold">
-            {"Northeastern University"}
-          </span>
-          {", Boston, MA"}
-        </p>
-        <p>{"Sep 2021 — May 2025"}</p>
-      </div>
-      <div className="flex flex-col justify-between md:flex-row">
-        <p>
-          <span className="text-accent-foreground font-extrabold">
-            {"B.S. in Computer Science and Business Administration"}
-          </span>
-        </p>
-        <p>{"GPA: 3.9 / 4.0"}</p>
+      <div className="flex flex-col gap-1 sm:gap-0">
+        <div className="flex flex-col justify-between sm:flex-row">
+          <p>
+            <span className="text-foreground font-extrabold">
+              {"Northeastern University"}
+            </span>
+            {", Boston, MA"}
+          </p>
+          <p className="italic">{"Sep 2021 — May 2025"}</p>
+        </div>
+        <div className="flex flex-col justify-between sm:flex-row">
+          <p>
+            <span className="text-foreground italic">
+              {"B.S. in Computer Science and Business Administration"}
+            </span>
+          </p>
+          <p>{"GPA: 3.9 / 4.0"}</p>
+        </div>
       </div>
       <div className="flex flex-col sm:flex-row">
         <p>
-          <span className="text-accent-foreground font-extrabold">
-            {"Coursework"}
-          </span>
+          <span className="text-foreground font-extrabold">{"Coursework"}</span>
           {
-            ": Algorithms & Data Structures, Object-Oriented Design, Networks & Distributed Systems, Database Design, Software Engineering, Data Science, Discrete Mathematics, Calculus 3"
+            ": Algorithms & Data Structures, Object-Oriented Design, Networks & Distributed Systems, Database Design, Discrete Mathematics, Software Engineering, Data Science, Calculus 3"
           }
         </p>
       </div>
@@ -109,7 +108,7 @@ function EducationSection() {
 function SkillsSection() {
   return (
     <div className="flex flex-col gap-2">
-      <H3 className="text-tertiary">{"Skills"}</H3>
+      <H4 className="text-tertiary">{"Skills"}</H4>
       <Separator className="h-1 rounded-full" />
       <div className="flex flex-col sm:flex-row">
         <p>
@@ -125,7 +124,7 @@ function SkillsSection() {
             {"Tools"}
           </span>
           {
-            ": React, Node.js, Express.js, Next.js, Django, GraphQL, MySQL, PostgreSQL, AWS (ECS+Fargate, S3, CDK), Git, Jenkins, Docker, SwiftUI, NumPy, Pandas, Matplotlib, Scikit-Learn, BeautifulSoup"
+            ": React, Django, Next.js, Node, Express, Tailwind CSS, SwiftUI, GraphQL, MySQL, PostgreSQL, Docker, AWS, Jenkins"
           }
         </p>
       </div>
@@ -136,11 +135,10 @@ function SkillsSection() {
 function ExperienceSection() {
   return (
     <div className="flex flex-col gap-2">
-      <H3 className="text-tertiary">{"Experience"}</H3>
+      <H4 className="text-tertiary">{"Experience"}</H4>
       <Separator className="h-1 rounded-full" />
       <ExperienceBlock
         company="Hometap"
-        location="Boston, MA"
         start="Jan 2024"
         end="Jun 2024"
         title="Full-Stack Engineering Co-op"
@@ -149,7 +147,6 @@ function ExperienceSection() {
       <Separator />
       <ExperienceBlock
         company="Wood Mackenzie"
-        location="Boston, MA"
         start="Jan 2023"
         end="Aug 2023"
         title="Software Engineering Co-op"
@@ -158,7 +155,6 @@ function ExperienceSection() {
       <Separator />
       <ExperienceBlock
         company="Wayland Student-Athlete"
-        location="Wayland, MA"
         start="May 2020"
         end="Present"
         title="Co-Founder"
@@ -170,14 +166,12 @@ function ExperienceSection() {
 
 function ExperienceBlock({
   company,
-  location,
   start,
   end,
   title,
   bullets,
 }: {
   company: string;
-  location: string;
   start: string;
   end: string;
   title: string;
@@ -187,15 +181,16 @@ function ExperienceBlock({
     <div className="flex flex-col gap-2">
       <div className="flex flex-col gap-2">
         <div className="flex flex-col justify-between md:flex-row">
-          <p>
-            <span className="text-accent-foreground font-extrabold">
-              {company}
-            </span>
-            {`, ${location}`}
-          </p>
+          <div className="xs:flex-row xs:gap-2 xs:items-center flex flex-col items-start">
+            <p className="text-accent-foreground font-extrabold">{company}</p>
+            <Separator
+              orientation="vertical"
+              className="xs:block hidden h-4 w-[2px] rounded-full"
+            />
+            <p className="font-extrabold italic">{title}</p>
+          </div>
           <p className="italic">{`${start} — ${end}`}</p>
         </div>
-        <p className="italic">{title}</p>
         <ul className="ml-6 flex flex-col gap-2">
           {bullets.map((bullet) => (
             <li key={bullet.key} className="list-disc">
@@ -213,11 +208,15 @@ export const hometapBullets = [
     key: 1,
     bullet: (
       <p>
-        {"Developed "}
-        <span className="font-extrabold">{"React (JavaScript)"}</span>
+        {"Revived database obfuscation package to "}
+        <span className="font-extrabold">{"protect thousands of rows"}</span>
         {
-          " frontends for client and staff portals to facilitate home equity investments"
+          " of sensitive PII, financial information, and property details across "
         }
+        <span className="font-extrabold">{"hundreds of db tables"}</span>
+        {" by fixing "}
+        <span className="font-extrabold">{"PostgreSQL"}</span>
+        {" JSON serialization mismatch"}
       </p>
     ),
   },
@@ -225,17 +224,19 @@ export const hometapBullets = [
     key: 2,
     bullet: (
       <p>
-        {"Built "}
-        <span className="font-extrabold">{"REST and GraphQL APIs"}</span>
-        {" on top of "}
-        <span className="font-extrabold">{"Django (Python)"}</span>
-        {" backend containerized with "}
-        <span className="font-extrabold">{"Docker"}</span>
-        {
-          " to handle homeowner applications, contracts, documents, appraisals, etc. stored in "
-        }
-        <span className="font-extrabold">{"PostgreSQL"}</span>
-        {" database"}
+        {"Developed website maintenance mode functionality "}
+        <span className="font-extrabold">
+          {"now used every sprint during deployment"}
+        </span>
+        {" by creating a dedicated "}
+        <span className="font-extrabold">{"REST endpoint"}</span>
+        {" and "}
+        <span className="font-extrabold">{"WebSocket channel"}</span>
+        {" between "}
+        <span className="font-extrabold">{"Django"}</span>
+        {" backend and "}
+        <span className="font-extrabold">{"React"}</span>
+        {" frontend"}
       </p>
     ),
   },
@@ -243,11 +244,21 @@ export const hometapBullets = [
     key: 3,
     bullet: (
       <p>
-        {"Implemented "}
+        {
+          "Created management workflow to handle ordering, tracking, and canceling of "
+        }
         <span className="font-extrabold">
-          {"integrations with third-party APIs"}
+          {"hundreds of home appraisals each day"}
         </span>
-        {" (Salesforce, HouseCanary, Segment, Experian, and more)"}
+        {" by building "}
+        <span className="font-extrabold">
+          {"integration with 3rd-party API"}
+        </span>
+        {" hooked up to "}
+        <span className="font-extrabold">{"React"}</span>
+        {" tables/forms and "}
+        <span className="font-extrabold">{"GraphQL"}</span>
+        {" endpoints"}
       </p>
     ),
   },
@@ -258,16 +269,17 @@ export const powerAdvocateBullets: ResumeBullet[] = [
     key: 1,
     bullet: (
       <p>
-        <span className="font-extrabold">
-          {"Spearheaded brand-new data curation web application"}
-        </span>
-        {" with "}
-        <span className="font-extrabold">{"React (TypeScript)"}</span>
-        {" frontend and "}
-        <span className="font-extrabold">{"Node (TypeScript) REST API"}</span>
-        {" that served requests and responses to/from shared "}
-        <span className="font-extrabold">{"Django (Python)"}</span>
-        {" microservice"}
+        {"Built new data curation app and deployed to "}
+        <span className="font-extrabold">{"production"}</span>
+        {" from start to finish by spearheading development of "}
+        <span className="font-extrabold">{"React"}</span>
+        {" UI and "}
+        <span className="font-extrabold">{"Node"}</span>
+        {" API, generating "}
+        <span className="font-extrabold">{"Jenkins"}</span>
+        {" pipelines, and constructing "}
+        <span className="font-extrabold">{"AWS"}</span>
+        {" CDK stacks with ECS and Route 53"}
       </p>
     ),
   },
@@ -275,15 +287,12 @@ export const powerAdvocateBullets: ResumeBullet[] = [
     key: 2,
     bullet: (
       <p>
-        <span className="font-extrabold">
-          {"Deployed app to production environment"}
-        </span>
-        {" by writing and running "}
-        <span className="font-extrabold">{"Jenkins"}</span>
-        {" pipelines and constructing "}
-        <span className="font-extrabold">{"AWS"}</span>
+        {"Reduced page load times "}
+        <span className="font-extrabold">{"from ~15s to ~3s"}</span>
+        {" by designing new optimized endpoints for "}
+        <span className="font-extrabold">{"Python"}</span>
         {
-          " CDK stacks using ECS Fargate containers and Route 53 public and private zones"
+          " data microservice and writing Jira tickets to lead our data team in rebuilding them"
         }
       </p>
     ),
@@ -292,15 +301,11 @@ export const powerAdvocateBullets: ResumeBullet[] = [
     key: 3,
     bullet: (
       <p>
-        <span className="font-extrabold">
-          {"Architected new API endpoints"}
-        </span>
-        {" for Python data service that "}
-        <span className="font-extrabold">{"reduced page load times"}</span>
-        {" from "}
-        <span className="font-extrabold">{"~15s"}</span>
-        {" to "}
-        <span className="font-extrabold">{"~3s"}</span>
+        {"Streamlined code "}
+        <span className="font-extrabold">{"~20%"}</span>
+        {
+          " by implementing “react-hook-form” library after convincing senior engineers of benefits"
+        }
       </p>
     ),
   },
@@ -308,23 +313,9 @@ export const powerAdvocateBullets: ResumeBullet[] = [
     key: 4,
     bullet: (
       <p>
-        <span className="font-extrabold">{"Streamlined code"}</span>
-        {" by "}
-        <span className="font-extrabold">{"400+ lines"}</span>
-        {
-          " by implementing “react-hook-form” library after proposing idea and convincing senior engineers of library’s benefits and security"
-        }
-      </p>
-    ),
-  },
-  {
-    key: 5,
-    bullet: (
-      <p>
-        <span className="font-extrabold">{"Ensured code quality"}</span>
-        {" by "}
-        <span className="font-extrabold">{"writing 90+ Jest tests"}</span>
-        {" covering rendering, routing, events, requests/responses"}
+        {"Ensured code reliability by writing "}
+        <span className="font-extrabold">{"90+ Jest tests"}</span>
+        {" covering rendering, routing, events, and API requests/responses"}
       </p>
     ),
   },
@@ -335,14 +326,11 @@ export const wsaBullets: ResumeBullet[] = [
     key: 1,
     bullet: (
       <p>
-        <span className="font-extrabold">
-          {"Envisioned, launched, and managed local odd jobs business"}
-        </span>
-        {" that completed "}
-        <span className="font-extrabold">{"260+ jobs for 140+ clients"}</span>
-        {" across 10+ towns "}
-        <span className="font-extrabold">{"earning $48,000+ in revenue"}</span>
-        {" and donating over $1,000+ to charitable foundations"}
+        {"Founded local odd jobs business "}
+        <span className="font-extrabold">{"generating $62,000+ revenue"}</span>
+        {" and "}
+        <span className="font-extrabold">{"donating $2,000+"}</span>
+        {" to non-profit orgs to date"}
       </p>
     ),
   },
@@ -350,14 +338,19 @@ export const wsaBullets: ResumeBullet[] = [
     key: 2,
     bullet: (
       <p>
-        <span className="font-extrabold">{"Developed business website"}</span>
-        {" with "}
-        <span className="font-extrabold">
-          {"TypeScript, Next.js, React, TailwindCSS, and MySQL"}
-        </span>
         {
-          " implementing a user request form and admin job dashboard to connect families with requests for odd jobs to high school students"
+          "Created website with job request form, email notification system, and full admin dashboard using "
         }
+        <span className="font-extrabold">
+          {"TypeScript, Next.js, React, Tailwind CSS, SQLite"}
+        </span>
+        {" to facilitate "}
+        <span className="font-extrabold">{"800+ completed jobs"}</span>
+        {" and "}
+        <span className="font-extrabold">{"200+ served users"}</span>
+        {" across "}
+        <span className="font-extrabold">{"800+ completed jobs"}</span>
+        {" 8+ towns"}
       </p>
     ),
   },
@@ -365,12 +358,9 @@ export const wsaBullets: ResumeBullet[] = [
     key: 3,
     bullet: (
       <p>
-        <span className="font-extrabold">
-          {"Organized, delegated, and personally fulfilled"}
-        </span>
-        {" job requests to "}
-        <span className="font-extrabold">{"grow and lead business"}</span>
-        {" with 8 peers"}
+        {"Scaled business by "}
+        <span className="font-extrabold">{"leading team of 7 classmates"}</span>
+        {" in communicating with clients and fulfilling job requests"}
       </p>
     ),
   },
@@ -379,11 +369,9 @@ export const wsaBullets: ResumeBullet[] = [
     bullet: (
       <p>
         <span className="font-extrabold">{"Sold business"}</span>
-        {" to "}
-        <span className="font-extrabold">
-          {"new generation of high school students"}
-        </span>
-        {" to build upon its success"}
+        {
+          " to younger group of high school students and mentored them for further growth"
+        }
       </p>
     ),
   },
@@ -392,29 +380,32 @@ export const wsaBullets: ResumeBullet[] = [
 function ProjectsSection() {
   return (
     <div className="flex flex-col gap-2">
-      <H3 className="text-tertiary">{"Projects"}</H3>
+      <H4 className="text-tertiary">{"Projects"}</H4>
       <Separator className="h-1 rounded-full" />
-      <ProjectBlock company="Shoots" bullets={shootsBullets} />
+      <ProjectBlock name="Shoots" bullets={shootsBullets} />
       <Separator />
-      <ProjectBlock company="Big City Diner" bullets={bigCityDinerBullets} />
+      <ProjectBlock name="Big City Diner" bullets={bigCityDinerBullets} />
+      <Separator />
+      <ProjectBlock
+        name="MikMike Photoshop"
+        bullets={mikMikePhotoshopBullets}
+      />
     </div>
   );
 }
 
 function ProjectBlock({
-  company,
+  name,
   bullets,
 }: {
-  company: string;
+  name: string;
   bullets: ResumeBullet[];
 }) {
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex flex-col gap-2 lg:flex-row">
-        <p className="text-accent-foreground min-w-24 font-extrabold">
-          {company}
-        </p>
-        <ul className="ml-6 flex flex-col gap-2">
+      <div className="flex flex-col gap-2 md:flex-row">
+        <p className="text-accent-foreground font-extrabold md:w-24">{name}</p>
+        <ul className="ml-6 flex flex-1 flex-col gap-2">
           {bullets.map((bullet) => (
             <li key={bullet.key} className="list-disc">
               {bullet.bullet}
@@ -433,7 +424,7 @@ const shootsBullets = [
       <p>
         <span className="font-extrabold">{"Invented mobile app"}</span>
         {
-          " designed to motivate users and provide accountability in reducing undesirable screen time through friendly competition and potential rewards"
+          " designed to motivate users and provide accountability in reducing screen time through friendly competition and potential rewards"
         }
       </p>
     ),
@@ -443,11 +434,11 @@ const shootsBullets = [
     bullet: (
       <p>
         {"Developed "}
-        <span className="font-extrabold">{"Swift/SwiftUI"}</span>
+        <span className="font-extrabold">{"SwiftUI (Swift)"}</span>
         {" iOS frontend designed with "}
         <span className="font-extrabold">{"Figma"}</span>
         {" on top of "}
-        <span className="font-extrabold">{"Python FastAPI"}</span>
+        <span className="font-extrabold">{"FastAPI (Python)"}</span>
         {" backend"}
       </p>
     ),
@@ -462,7 +453,7 @@ const bigCityDinerBullets = [
         <span className="font-extrabold">{"Rebuilt website"}</span>
         {" for local Hawaiian restaurant chain with "}
         <span className="font-extrabold">
-          {"Next.js, React + TS, and TailwindCSS"}
+          {"TypeScript, Next.js, React, and Tailwind"}
         </span>
       </p>
     ),
@@ -471,8 +462,9 @@ const bigCityDinerBullets = [
     key: 2,
     bullet: (
       <p>
+        {"Leveraged "}
         <span className="font-extrabold">
-          {"Leveraged GraphQL-based content management system"}
+          {"GraphQL-based content management system"}
         </span>
         {
           " to allow restaurant managers to add menu items, update location operating hours, and more on no-code platform"
@@ -484,13 +476,52 @@ const bigCityDinerBullets = [
     key: 3,
     bullet: (
       <p>
+        {"Designed "}
         <span className="font-extrabold">
-          {"Designed color palette, typography, wireframes, and mockups"}
+          {"color palette, typography, wireframes, and mockups"}
         </span>
-        {" for site’s "}
-        <span className="font-extrabold">{"UI/UX"}</span>
-        {" with "}
+        {" for site’s UI/UX with "}
         <span className="font-extrabold">{"Figma"}</span>
+      </p>
+    ),
+  },
+];
+
+const mikMikePhotoshopBullets = [
+  {
+    key: 1,
+    bullet: (
+      <p>
+        {"Designed "}
+        <span className="font-extrabold">{"Java"}</span>
+        {" photoshop program interactable through a "}
+        <span className="font-extrabold">{"CLI"}</span>
+        {" and "}
+        <span className="font-extrabold">{"Java Swing GUI"}</span>
+      </p>
+    ),
+  },
+  {
+    key: 2,
+    bullet: (
+      <p>
+        {"Built "}
+        <span className="font-extrabold">{"15+ color filters"}</span>
+        {" and "}
+        <span className="font-extrabold">
+          {"blur, sharpen, brighten, and darken"}
+        </span>
+        {" operations on user image files"}
+      </p>
+    ),
+  },
+  {
+    key: 3,
+    bullet: (
+      <p>
+        {"Provided support for loading and saving "}
+        <span className="font-extrabold">{"5+ image file types"}</span>
+        {"  (JPG, PNG, GIF, BMP, PPM)"}
       </p>
     ),
   },
