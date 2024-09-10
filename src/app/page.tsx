@@ -106,7 +106,7 @@ export default function Home() {
                 <p>
                   {"liverpool f.c., classical music, and water enthusiast."}
                 </p>
-                <p>{"welcome, and enjoy your time here!"}</p>
+                <p>{"welcome — enjoy your time here."}</p>
               </div>
               <div className="text-tertiary flex gap-2">
                 <Button asChild variant={"ghost"} size={"icon"}>
