@@ -38,11 +38,11 @@ export default function ExperiencePage() {
               </div>
               <div className="flex flex-col">
                 <H2 className="text-foreground hidden sm:block">
-                  {"full-stack engineering co-op"}
+                  {"software engineering intern"}
                 </H2>
                 <div className="text-foreground flex flex-col sm:hidden">
-                  <H2 className="text-foreground">{"full-stack"}</H2>
-                  <H2 className="text-foreground">{"engineering co-op"}</H2>
+                  <H2 className="text-foreground">{"software"}</H2>
+                  <H2 className="text-foreground">{"engineering intern"}</H2>
                 </div>
                 <Monospace className="text-muted-foreground">
                   {"hometap equity partners"}
@@ -264,12 +264,12 @@ export default function ExperiencePage() {
             <blockquote className="border-secondary flex max-w-prose flex-col gap-2 border-l-2 pl-6">
               <p>
                 {
-                  "Now on my second co-op, I'm coming into Hometap confident in having the skillset to be a strong entry-level engineer contributor to my team, the engineering dept, and the company as a whole."
+                  "Going into my second internship, I came into Hometap confident in having the skillset to be a strong entry-level engineer contributor to my team, the engineering dept, and the company as a whole."
                 }
               </p>
               <p>
                 {
-                  "I want to strive to break through that and take the next step, encompassing more responsibilities and initiatives that an SE2-level engineer or higher would."
+                  "I strived to break through that and take the next step, encompassing more responsibilities and initiatives that an SE2-level engineer or higher would."
                 }
               </p>
             </blockquote>
@@ -299,11 +299,11 @@ export default function ExperiencePage() {
                 </div>
                 <div className="flex flex-col">
                   <H2 className="text-foreground hidden sm:block">
-                    {"software engineering co-op"}
+                    {"software engineering intern"}
                   </H2>
                   <div className="flex flex-col sm:hidden">
                     <H2 className="text-foreground">{"software"}</H2>
-                    <H2 className="text-foreground">{"engineering co-op"}</H2>
+                    <H2 className="text-foreground">{"engineering intern"}</H2>
                   </div>
                   <Monospace className="text-muted-foreground">
                     {"wood mackenzie limited"}
@@ -634,6 +634,7 @@ function GoalsCard() {
         </div>
         <div className="flex gap-2">
           <Checkbox
+            checked
             disabled
             className="disabled:cursor-default"
             id="engineering-projects"

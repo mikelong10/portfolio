@@ -141,7 +141,7 @@ function ExperienceSection() {
         company="Hometap"
         start="Jan 2024"
         end="Jun 2024"
-        title="Full-Stack Engineering Co-op"
+        title="Software Engineering Intern"
         bullets={hometapBullets}
       />
       <Separator />
@@ -149,7 +149,7 @@ function ExperienceSection() {
         company="Wood Mackenzie"
         start="Jan 2023"
         end="Aug 2023"
-        title="Software Engineering Co-op"
+        title="Software Engineering Intern"
         bullets={powerAdvocateBullets}
       />
       <Separator />
