@@ -7,6 +7,7 @@ import {
   Linkedin,
   Mail,
   Twitter,
+  VenetianMask,
 } from "lucide-react";
 
 import { dmSerifDisplay } from "@lib/fonts";
@@ -24,6 +25,8 @@ import avatar from "../../public/avatar.svg";
 import calcAppScreenshot from "../../public/calc-app-screenshot.jpg";
 import getitdoneScreenshot from "../../public/getitdone-screenshot.jpg";
 import hometapLogo from "../../public/hometap-icon.png";
+import portfolioScreenshot from "../../public/portfolio-screenshot.png";
+import soshiScreenshot from "../../public/soshi-screenshot.png";
 import vballScorekeeperScreenshot from "../../public/vball-scorekeeper-screenshot.jpg";
 import woodmacLogo from "../../public/woodmac-icon.png";
 import wsaScreenshot from "../../public/wsa-screenshot.jpg";
@@ -86,13 +89,25 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <TypewriterEffect
                 className={cn(
-                  "flex scroll-m-20 items-center text-left text-5xl font-extrabold tracking-tight sm:text-6xl md:text-6xl lg:text-7xl",
+                  "flex scroll-m-20 items-center text-left text-5xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl",
                   dmSerifDisplay.className
                 )}
                 cursorClassName="h-[56px] sm:h-[68px] md:h-[68px] lg:h-[80px]"
                 words={[{ text: "hi," }, { text: "i'm" }, { text: "michael" }]}
               />
               <div className="text-accent-foreground flex max-w-prose flex-col gap-2">
+                <p>
+                  {"currently building "}
+                  <span>
+                    <Link
+                      href={"https://www.soshi.io/"}
+                      target="_blank"
+                      className="text-primary hover:text-tertiary bg-accent relative text-nowrap rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold"
+                    >
+                      soshi
+                    </Link>
+                  </span>
+                </p>
                 <p>
                   {
                     "fourth-year student at northeastern university completing a computer science and business combined degree."
@@ -103,9 +118,7 @@ export default function Home() {
                     "believer in delightful software, disruptive innovation, and human connection."
                   }
                 </p>
-                <p>
-                  {"liverpool f.c., classical music, and water enthusiast."}
-                </p>
+                <p>{"fan of liverpool f.c., classical music, and water."}</p>
                 <p>{"welcome — enjoy your time here."}</p>
               </div>
               <div className="text-tertiary flex gap-2">
@@ -130,7 +143,7 @@ export default function Home() {
                 <Button asChild variant={"ghost"} size={"icon"}>
                   <Link
                     target="_blank"
-                    href={"mailto:long.mich@northeastern.edu"}
+                    href={"mailto:michaeltlong10@gmail.com"}
                   >
                     <Mail />
                   </Link>
@@ -183,7 +196,7 @@ export default function Home() {
                       </Link>
                       <p className="text-tertiary hidden sm:flex">•</p>
                       <Monospace className="text-muted-foreground">
-                        full-stack engineering co-op
+                        {"software engineering intern"}
                       </Monospace>
                     </div>
                     <p>
@@ -213,7 +226,7 @@ export default function Home() {
                       </Link>
                       <p className="text-tertiary hidden sm:flex">•</p>
                       <Monospace className="text-muted-foreground">
-                        software engineering co-op
+                        {"software engineering intern"}
                       </Monospace>
                     </div>
                     <p>
@@ -246,9 +259,42 @@ export default function Home() {
               </div>
               <div className="xs:gap-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
                 <DisplayCard
+                  title={"soshi"}
+                  description={
+                    "AI web agents automating social media growth for tech founders and B2B companies built with Next.js, TypeScript, Python, FastAPI, Supabase, Browserbase, Claude, and more"
+                  }
+                  image={
+                    <Image
+                      src={soshiScreenshot}
+                      alt="Soshi Logo"
+                      width={2880}
+                      height={1750}
+                      className="rounded-sm object-cover"
+                      priority
+                    />
+                  }
+                  footerButtons={[
+                    <Button
+                      key={"explore"}
+                      variant={"outline"}
+                      className="flex gap-2"
+                      disabled
+                    >
+                      private
+                      <VenetianMask className="size-5" />
+                    </Button>,
+                    <Button key={"visit"} asChild className="flex gap-2">
+                      <Link href={"https://www.soshi.io/"} target="_blank">
+                        visit
+                        <ExternalLink className="size-5" />
+                      </Link>
+                    </Button>,
+                  ]}
+                />
+                <DisplayCard
                   title={"wayland student-athlete"}
                   description={
-                    "website powering the local odd jobs business founded by me and my friends built on Next.js with TypeScript, React, TailwindCSS, and a PlanetScale MySQL database using Prisma ORM"
+                    "website powering the local odd jobs business founded by me and my friends built on Next.js with TypeScript, React, TailwindCSS, and a Turso SQLite database using Drizzle ORM"
                   }
                   image={
                     <Image
@@ -280,6 +326,84 @@ export default function Home() {
                     <Button key={"visit"} asChild className="flex gap-2">
                       <Link
                         href={"https://www.waylandstudentathlete.com/"}
+                        target="_blank"
+                      >
+                        visit
+                        <ExternalLink className="size-5" />
+                      </Link>
+                    </Button>,
+                  ]}
+                />
+                <DisplayCard
+                  title={"portfolio"}
+                  description={
+                    "personal website built with Next.js, React, TypeScript, TailwindCSS, and shadcn/ui"
+                  }
+                  image={
+                    <Image
+                      src={portfolioScreenshot}
+                      alt="Portfolio screenshot"
+                      width={2880}
+                      height={1750}
+                      className="rounded-sm"
+                      priority
+                    />
+                  }
+                  footerButtons={[
+                    <Button
+                      key={"explore"}
+                      asChild
+                      variant={"outline"}
+                      className="flex gap-2"
+                    >
+                      <Link
+                        href={"https://github.com/mikelong10/portfolio"}
+                        target="_blank"
+                      >
+                        explore
+                        <Code2 className="size-5" />
+                      </Link>
+                    </Button>,
+                    <Button key={"visit"} className="flex gap-2" disabled>
+                      {"you're here :)"}
+                    </Button>,
+                  ]}
+                />
+                <DisplayCard
+                  title={"calculator app"}
+                  description={
+                    "simplistic, clean calculator app built from scratch with React (TypeScript) and vanilla CSS modeled after the Apple calculator app"
+                  }
+                  image={
+                    <Image
+                      src={calcAppScreenshot}
+                      alt="Calculator app screenshot"
+                      width={2880}
+                      height={1750}
+                      className="rounded-sm"
+                      priority
+                    />
+                  }
+                  footerButtons={[
+                    <Button
+                      key={"explore"}
+                      asChild
+                      variant={"outline"}
+                      className="flex gap-2"
+                    >
+                      <Link
+                        href={
+                          "https://github.com/mikelong10/react-ts-calculator"
+                        }
+                        target="_blank"
+                      >
+                        explore
+                        <Code2 className="size-5" />
+                      </Link>
+                    </Button>,
+                    <Button key={"visit"} asChild className="flex gap-2">
+                      <Link
+                        href={"https://react-ts-calculator.vercel.app/"}
                         target="_blank"
                       >
                         visit
@@ -322,49 +446,6 @@ export default function Home() {
                     <Button key={"visit"} asChild className="flex gap-2">
                       <Link
                         href={"https://getitdone-to-do-app.vercel.app/"}
-                        target="_blank"
-                      >
-                        visit
-                        <ExternalLink className="size-5" />
-                      </Link>
-                    </Button>,
-                  ]}
-                />
-                <DisplayCard
-                  title={"calculator app"}
-                  description={
-                    "simplistic, clean calculator app built from scratch with React (TypeScript) and vanilla CSS modeled after the Apple calculator app"
-                  }
-                  image={
-                    <Image
-                      src={calcAppScreenshot}
-                      alt="Calculator app screenshot"
-                      width={2880}
-                      height={1750}
-                      className="rounded-sm"
-                      priority
-                    />
-                  }
-                  footerButtons={[
-                    <Button
-                      key={"explore"}
-                      asChild
-                      variant={"outline"}
-                      className="flex gap-2"
-                    >
-                      <Link
-                        href={
-                          "https://github.com/mikelong10/react-ts-calculator"
-                        }
-                        target="_blank"
-                      >
-                        explore
-                        <Code2 className="size-5" />
-                      </Link>
-                    </Button>,
-                    <Button key={"visit"} asChild className="flex gap-2">
-                      <Link
-                        href={"https://react-ts-calculator.vercel.app/"}
                         target="_blank"
                       >
                         visit
