@@ -13,7 +13,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <meta
+          name="copyright"
+          content={`© ${new Date().getFullYear()} Michael Long.`}
+        />
+        <meta name="author" content="Michael Long" />
+      </head>
       <body
         className={cn(
           "bg-background text-foreground -z-50 flex min-h-screen min-w-[360px] flex-col justify-center overflow-x-hidden scroll-smooth antialiased",
