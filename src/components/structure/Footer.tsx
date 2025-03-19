@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
 
+import SocialButtons from "@components/display/SocialButtons";
 import H3 from "@components/typography/h3";
 import Monospace from "@components/typography/monospace";
-import { Button } from "@components/ui/button";
 import { Separator } from "@components/ui/separator";
 import avatar from "../../../public/avatar.svg";
 import Container from "./Container";
@@ -29,21 +28,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="text-muted-foreground flex gap-2">
-              <Button asChild variant={"ghost"} size={"icon"}>
-                <Link href={"https://www.linkedin.com/in/michaeltlong10/"}>
-                  <Linkedin />
-                </Link>
-              </Button>
-              <Button asChild variant={"ghost"} size={"icon"}>
-                <Link href={"https://github.com/mikelong10/"}>
-                  <Github />
-                </Link>
-              </Button>
-              <Button asChild variant={"ghost"} size={"icon"}>
-                <Link href={"mailto:long.mich@northeastern.edu"}>
-                  <Mail />
-                </Link>
-              </Button>
+              <SocialButtons />
             </div>
           </div>
           <div className="flex w-full justify-center gap-8 md:justify-start md:gap-12 md:pt-4 lg:gap-16 lg:pt-6">
