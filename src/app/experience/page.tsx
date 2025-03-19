@@ -447,10 +447,10 @@ export default function ExperiencePage() {
                     <ul className="ml-6 flex flex-col gap-2">
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          {"Jenkins"}
+                          {"AWS"}
                           <Image
-                            src={"/jenkins-logo.png"}
-                            alt="Jenkins logo"
+                            src={"/aws-logo.webp"}
+                            alt="AWS logo"
                             width={96}
                             height={96}
                             className="h-5 w-fit"
@@ -459,10 +459,10 @@ export default function ExperiencePage() {
                       </li>
                       <li className="list-disc">
                         <div className="flex items-center gap-2">
-                          {"AWS"}
+                          {"Jenkins"}
                           <Image
-                            src={"/aws-logo.webp"}
-                            alt="AWS logo"
+                            src={"/jenkins-logo.png"}
+                            alt="Jenkins logo"
                             width={96}
                             height={96}
                             className="h-5 w-fit"
@@ -537,7 +537,7 @@ export default function ExperiencePage() {
               </p>
               <p>
                 {
-                  "Over my 7 months, I collaborated with a agile scrum team of 8 engineers to deliver industry-leading software to customers in the energy sector, utilizing a Jira board and 2-week sprints."
+                  "Over my 8 months, I collaborated with a agile scrum team of 8 engineers to deliver industry-leading software to customers in the energy sector, utilizing a Jira board and 2-week sprints."
                 }
               </p>
             </blockquote>

@@ -1,19 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Code2,
-  ExternalLink,
-  Github,
-  Linkedin,
-  Mail,
-  Twitter,
-  VenetianMask,
-} from "lucide-react";
+import { Code2, ExternalLink, VenetianMask } from "lucide-react";
 
 import { dmSerifDisplay } from "@lib/fonts";
 import { Arrow, Squiggle } from "@lib/icons";
 import { cn } from "@lib/utils";
 import DisplayCard from "@components/display/DisplayCard";
+import SocialButtons from "@components/display/SocialButtons";
 import Container from "@components/structure/Container";
 import Content from "@components/structure/Content";
 import H2 from "@components/typography/h2";
@@ -122,32 +115,7 @@ export default function Home() {
                 <p>{"welcome — enjoy your time here."}</p>
               </div>
               <div className="text-tertiary flex gap-2">
-                <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link
-                    target="_blank"
-                    href={"https://www.linkedin.com/in/michaeltlong10/"}
-                  >
-                    <Linkedin />
-                  </Link>
-                </Button>
-                <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link target="_blank" href={"https://github.com/mikelong10/"}>
-                    <Github />
-                  </Link>
-                </Button>
-                <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link target="_blank" href={"https://x.com/mikelong107/"}>
-                    <Twitter />
-                  </Link>
-                </Button>
-                <Button asChild variant={"ghost"} size={"icon"}>
-                  <Link
-                    target="_blank"
-                    href={"mailto:michaeltlong10@gmail.com"}
-                  >
-                    <Mail />
-                  </Link>
-                </Button>
+                <SocialButtons />
               </div>
             </div>
           </div>

@@ -16,8 +16,8 @@ export default function ResumePage() {
           size={"lg"}
         >
           <Link
-            href={"./Michael-Long-SWE-Resume-2025.pdf"}
-            download={"Michael-Long-Resume.pdf"}
+            href={"./Michael_Long_Resume.pdf"}
+            download={"Michael_Long_Resume.pdf"}
             target="_blank"
           >
             <FileDown />
